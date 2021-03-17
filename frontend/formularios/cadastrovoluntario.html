@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <title>Seja um Voluntário</title>
+</head>
+
+<body>
+    <div class="cadastro_voluntario">
+        <div>
+            <h1 id="titulo">Seja um voluntário</h1>
+            <br>
+            <p>Seja um voluntário do nosso centro comunitário, qualquer ajuda é válida. Não é apenas quem é
+                “especialista” em alguma atividade que pode ser voluntário. Todos podem participar e contribuir. O que
+                conta é a motivação solidária, o desejo de ajudar, o prazer de se sentir útil. <br>
+
+                – Você pode compartilhar apenas com as crianças os seus talentos e paixões, abrindo para elas um mundo
+                totalmente diferente. <br>
+
+                – Você pode participar na renovação e nas obras de construção <br>
+
+                – Pode pintar nossas paredes ou colocar algumas pichações sobre eles, trazendo um pouco mais de cor na
+                vida cotidiana das crianças. <br>
+
+                – Se você é fotógrafo ou operador, pode nos ajudar a criar meios de comunicação de base com boas fotos e
+                vídeos da nossa escola e alunos. <br>
+
+                – Se você é um especialista em qualquer área do desenvolvimento infantil e educação: médico, dançarino,
+                músico, professor de línguas estrangeiras ou psicólogo venha colaborar conosco. <br>
+
+                – Se você tem suas próprias ideias teremos gosto em discuti-las. <br>
+            </p>
+        </div>
+        <br>
+        <form class="formulario">
+            <h2 id="subtitulo">Cadastro de Voluntário</h2>
+            <br><br>
+            <fieldset class="grupo">
+                <div class="campo left">
+                    <label for="nome"><strong>Nome Completo</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo right">
+                    <label for="datanascimento"><strong>Data de nascimento</strong></label>
+                    <input type="date" name="datanasc" id="datanascimento" required>
+                </div>
+
+                <div class="campo left">
+                    <label for="cpf"><strong>CPF</strong></label>
+                    <input type="text" name="cpf" id="cpf" required>
+                </div>
+
+                <div class="campo right">
+                    <label class="campo"><strong>RG</strong> </label>
+                    <input type="text" name="rg" id="rg" required>
+                </div>
+
+                <div class="campo left">
+                    <label for="telefone"><strong>Telefone de Contato</strong></label>
+                    <input type="text" name="telefone" id="telefone">
+                </div>
+
+                <div class="campo right">
+                    <label for="celular"><strong>Celular de contato</strong></label>
+                    <input type="text" name="celular" id="celular" required>
+                </div>
+
+                <div class="campo left">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="campo right"><br><br><br><br></div>
+                <div class="campo inline">
+                    <label>
+                        <input type="radio" name="voluntario" value="geral" checked>Voluntário Geral
+                    </label>
+                    <label>
+                        <input type="radio" name="voluntario" value="especifico">Voluntário Específico
+                    </label>
+                </div>
+            </fieldset>
+            <button class="botao" type="submit">Enviar</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
