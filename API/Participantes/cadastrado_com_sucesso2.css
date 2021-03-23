@@ -1,0 +1,29 @@
+.corpo{
+    width: 800px;
+    margin:auto;
+}
+.conteudo{
+    display: table;
+}
+.titulo{
+    color: #47525E;
+    font-family: Lato;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 65px;
+    text-align: center; 
+}
+.texto{
+    font-family: Lato;
+    font-size: 35px;
+    line-height: 52px;
+    text-align: center;
+    color: #47525E;
+}
+.imagem_check{
+    margin-top: 5%;
+    margin-left:auto ;
+    margin-right:auto;  
+    width: 239px;
+    height: 239px;
+}
