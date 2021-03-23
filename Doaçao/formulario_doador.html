@@ -37,34 +37,37 @@
                 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
                 <p><b>QUERO SER UM DOADOR</b></p>
             </div> 
-        <form class="formulario" action="cadastrado_com_sucesso.html"> <!--action usado para que após clicar no botão de enviar vá para a página de sucesso-->
+        <form class="formulario" method = "post"  action = "doaçao_concluida.php" ><!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
           <div class="campo">
               <br>
             <label for="nome"><strong>Nome:</strong></label>
-            <input type="text" name="nomecompleto" id="cNomeCompleto" placeholder="Nome Completo" required>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+
             <label for="cpf"><strong>CPF:</strong></label>
-            <input type="text" name="cpf" id="cCPF" placeholder="CPF xxx.xxx.xxx-xx" required>
+            <input type="text" name="cpf" id="cpf" placeholder="CPF xxx.xxx.xxx-xx" required>
             <br>
           </div>  
         <br>
         <div class="campo">
-            <label for="telefone"><strong>Tel:</strong></label>
-            <input type="tel" name="Telefone de Contato" id="cTelefone" placeholder="(00) 0000-0000">
+            <label for="tel_number"><strong>Tel:</strong></label>
+            <input type="tel" name="tel_number" id="tel_number" placeholder="(00) 0000-0000" >
+
             <label for="celular"><strong>Cel:</strong></label>
-            <input type="tel" name="celular" id="cCelular" placeholder="(00) 0000-000" required>            
+            <input type="tel" name="celular" id="celular" placeholder="(00) 0000-000" required>            
         </div>
         <br>
         <div class="campo">
             <label for="endereco"><strong>End:</strong></label>
-            <input type="text" name="endereço" id="cEndereço" placeholder="endereço com número" required>
+            <input type="text" name="endereco" id="cendereco" placeholder="endereço com número" required>
         </div>  
         <br>
         <div class="campo">
+        <div class="campo inline left">
             <label>
-                <input type="radio" name="recorrente" value="geral">Quero ser um doador recorrente
+                <input type="radio" name="anonimo" value="Recorrente">Quero ser um doador recorrente<!--ao escolher vai mostrar valor Recorrente-->
             </label>
             <label>
-                <input type="radio" name="anonimo" value="especifico">Quero ser um doador específico
+                <input type="radio" name="anonimo" value="Anonimo">Quero ser um doador anonimo<!--ao escolher vai mostrar valor Anonimo-->
             </label>
     
         </div>
@@ -72,7 +75,7 @@
         <div>
             <button class="botao" type="submit">Enviar</button>
         </div>
-        </form>    
+        </form>  
         </fieldset>
         </div>
         <br>
