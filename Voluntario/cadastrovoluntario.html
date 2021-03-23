@@ -45,7 +45,7 @@
             
         </div>
         <br>
-        <form class="formulario" action="cadastro_concluido.html"> <!--action usado para que após clicar no botão de enviar vá para a página de sucesso-->
+        <form class="formulario" method = "post" action="voluntario_concluido.php"> <!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
             <h2 id="subtitulo">Cadastro de Voluntário</h2>
             <br><br>
             <fieldset class="grupo">
@@ -55,8 +55,8 @@
                 </div>
     
                 <div class="campo right">
-                    <label for="datanascimento"><strong>Data de nascimento</strong></label>
-                    <input type="date" name="datanasc" id="datanascimento" required>
+                    <label for="nascimento"><strong>Data de nascimento</strong></label>
+                    <input type="date" name="nascimento" id="nascimento" required>
                 </div>
     
                 <div class="campo left">
@@ -70,13 +70,13 @@
                 </div>
     
                 <div class="campo left">
-                    <label for="telefone"><strong>Telefone de Contato</strong></label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(00) 0000-0000" maxlength="14" pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}">
+                    <label for="tel_number"><strong>Telefone de Contato</strong></label>
+                    <input type="tel" name="tel_number" id="tel_number" placeholder="(00) 0000-0000" maxlength="14">
                 </div>
     
                 <div class="campo right">
                     <label for="celular"><strong>Celular de contato</strong></label>
-                    <input type="tel" name="celular" id="celular" placeholder="(00) 00000-0000"required maxlength="15" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+                    <input type="tel" name="celular" id="celular" placeholder="(00) 00000-0000"required maxlength="15">
                 </div>
     
                 <div class="campo left">
@@ -86,21 +86,22 @@
                 <div class="campo right"><br><br><br><br></div>
                 <div class="campo inline left">
                     <label>
-                        <input type="radio" name="voluntario" value="geral" checked>Voluntário Geral
+                        <input type="radio" name="voluntario" value="Geral" checked>Voluntário Geral
                     </label>
                     <label>
-                        <input type="radio" name="voluntario" value="especifico">Voluntário Específico
+                        <input type="radio" name="voluntario" value="Especifico">Voluntário Específico
                     </label>
                 </div>
                 <div class="campo right"><br><br><br><br></div>
                 <div class="campo left">
-                    <input type="text" name="especialidadade" id="especialidade" placeholder="Especialidade*" maxlength="20">
+                    <input type="text" name="especialidade" id="especialidade" placeholder="Especialidade*" maxlength="20">
                 </div>
             </fieldset>
-
-            <button  class="botao" type="submit">Enviar</button>
-
+            
+            <button  class="botao" type="submit" >Enviar</button>
+            
         </form>
+        
     </div>
 </body>
 
