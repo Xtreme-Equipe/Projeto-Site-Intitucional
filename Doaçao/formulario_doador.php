@@ -37,7 +37,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
                 <p><b>QUERO SER UM DOADOR</b></p>
             </div> 
-        <form class="formulario" method = "post"  action = "doaçao_concluida.php" ><!--action usado para que após clicar no botão de enviar vá para a página de sucesso-->
+        <form class="formulario" method = "post"  action = "cadastrado_doador.php" ><!--action usado para que após clicar no botão de enviar vá para a página de sucesso-->
           <div class="campo">
               <br>
             <label for="nome"><strong>Nome:</strong></label>
