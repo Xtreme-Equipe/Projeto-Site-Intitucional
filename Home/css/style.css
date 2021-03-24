@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Graphik", sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    position: relative;
+}
+
+.center {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    text-indent: -9999px;
+    background: url(../imagem/fundo-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    margin: 0px 90px;
+    height: 590px;
+    top: -240px;
+    position: absolute;
+    opacity: 30%;
+    border-radius: 0 0 10% 10%;
+}
+
+.logo h2 {
+    text-indent: -9999px;
+    top: 900px;
+    display: block;
+    padding: -2px;
+}
+
+.logo img {
+    height: 170px;
+    position: relative;
+    left: 140px;
+    top: 0;
+    border-radius: 50%;
+}
+
+.menu {
+    position: relative;
+    font-size: 17px;
+    height: 100%;
+    top: 230px;
+    left: 200px;
+    padding: 0;
+}
+
+.menu ul{
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu li{
+    display: inline;
+    padding: 11px;
+}
+
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+    /*transition: 0.4s;*/
+}
+
+.menu ul li a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.menu .btn-menu {
+    background-color: #d3d3d3;
+    display: inline-block;
+    padding: 8px 20px;
+    color:#000000;
+}
+
+.menu .btn-menu:hover {
+    background-color: #000000;
+    color: white;
+}
+
+section.main {
+    background-image: url(../imagem/Vó-marca.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    margin: 30px 320px;
+    height: 300px;
+    top: 140px;
+    position: relative;
+}
+
+.main_cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main_cta h2{
+    text-indent: -9999px;
+    display: block;
+}
+
+.main_cta p{
+    text-indent: -9999px;
+    display: block;
+}
+
+/*
+Section Sobre empreendedor
+*/
+section.vó{
+    padding: 20px 50px;
+    position: relative;
+    top: 100px;
+}
+
+.vó-img{
+    position: relative;
+    max-width: 80%;
+    height: 380px;
+    left: 50px;
+    top: 50px;
+}
+
+.vó-content{
+    width: 50%;
+    padding: 0 50px;
+}
+
+.vó-content p{
+    font-size: 24px;
+    font-weight: bold;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*
+Section Você Pode
+*/
+
+section.você-pode {
+    position: relative;
+    height: 605px;
+    top: 180px;
+}
+
+.você-pode-content{
+    padding: 0 50px;
+    width: 50%;
+    position: relative;
+}
+
+.você-pode-content p{
+    position: relative;
+    top:90px;
+    left: -30px;
+    width: 650px;
+    height: 450px;
+    font-size: 90px;
+    font-style: normal;
+    font-variant: normal;
+    flex-direction: column;
+    text-align: center;
+}
+
+.você-pode-content span{
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.azul{
+    color: #004aad;
+}
+
+.laranja{
+    color: #ff9052;
+}
+
+.botões{
+    position: relative;
+    width: 50%;
+}
+
+.botões button{
+    background-color: #0e7af0;
+    color:white;
+    margin: 15px;
+    width: 570px;
+    height: 170px;
+    left: 10px;
+    font-size: 40px;
+    display: inline;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px #94a3b2;
+    border-radius: 20px;
+}
+
+.botões button p{
+    position: relative;
+    left: -30px;
+}
+
+.botões button img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left:30px;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 20px 0 20px 0;
+    background: #ff9052;
+    font-weight: bold;
+    position: relative;
+    top: 320px;
+}
+
+.footer-left{
+    padding: 0 10px;
+    width: 40%;
+    position: relative;
+    font-size: 20px;
+}
+
+.footer-right{
+    width: 55%;
+    position: relative;
+    float: right;
+    top:-50px;
+    font-size: 18px;
+}
+
+.footer-center{
+    position: relative;
+    margin:20px;
+    width: 38%;
+    left: 400px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.vó-icons{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+    top: -40px;
+    left: 450px;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+     header{
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        top:-420px;
+        left:-90px;
+    }
+
+    .logo img{
+        width: 40%;
+    }
+
+    .menu-mobile{
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+
+    section.main {
+        position: relative;
+        width: 90%;
+        height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        top:20px;
+    }
+
+    .vó-content{
+        width: 100%;
+    }
+
+    .vó-content p{
+        font-size: 100%;
+    }
+
+    .vó-img{
+    position: relative;
+    width: 190%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left:10px;
+    top:10px;
+    } 
+
+    footer{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .footer-left{
+        position: relative;
+        font-size: 16px;
+    }
+
+    .footer-right{
+        position: relative;
+        font-size: 16px;
+    }
+
+    .footer-center{
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    left: 200px;
+    }
+
+    .vó-icons{
+        left: 50px;
+        top: -25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .footer-left{
+        position: relative;
+        font-size: 100%;
+
+    }
+
+     .footer-right{
+        position: relative;
+        font-size: 100%;
+    }
+
+     .footer-center{
+        position: relative;
+        font-size: 100%;
+    }
+}
