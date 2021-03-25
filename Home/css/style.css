@@ -78,7 +78,6 @@ header {
     text-decoration: none;
     font-weight: bold;
     margin: 0 auto;
-    /*transition: 0.4s;*/
 }
 
 .menu ul li a:hover {
@@ -133,8 +132,9 @@ section.main {
 Section Sobre empreendedor
 */
 section.vó{
-    padding: 20px 50px;
+    padding: 20px 20px;
     position: relative;
+    height: 500px;
     top: 100px;
 }
 
@@ -142,17 +142,20 @@ section.vó{
     position: relative;
     max-width: 80%;
     height: 380px;
-    left: 50px;
-    top: 50px;
+    left: 450px;
+    top: -410px;
 }
 
 .vó-content{
+    position: relative;
     width: 50%;
-    padding: 0 50px;
 }
 
 .vó-content p{
     font-size: 24px;
+    position: relative;
+    width: 550px;
+    left:-160px;
     font-weight: bold;
     flex-direction: column;
     text-align: center;
@@ -169,15 +172,15 @@ section.você-pode {
 }
 
 .você-pode-content{
-    padding: 0 50px;
-    width: 50%;
     position: relative;
+    width: 50%;
+    left: -20px;
 }
 
 .você-pode-content p{
     position: relative;
     top:90px;
-    left: -30px;
+    left: -200px;
     width: 650px;
     height: 450px;
     font-size: 90px;
