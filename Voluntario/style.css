@@ -6,7 +6,7 @@
     font-family: 'Cabin Sketch', cursive;
     color: #545454;   
     text-align: center;
-    font-size: 4em;
+    font-size: 7em;
 }
 /*altera o subtítulo*/
 #subtitulo{
@@ -21,13 +21,13 @@
 
 .conteudo{
     display: table;
+    padding-top: 31px;
 }
 
 .imagem img{
     display: table-cell;
     float: right;
     width: 48%;
-    margin-top: 12px;
 }
 
 .texto{
@@ -37,7 +37,7 @@
     margin-top: -3px;
     margin-right: 20px  ;
     text-align: justify;
-    font-size: 1em;
+    font-size: 1.2em;
     text-justify: auto;
 }
 
@@ -52,7 +52,7 @@ fieldset{
     color: black;
     margin-left: 18%;
     margin-right: 18%;
-    margin-top: 2%; /*margem do cabeçalho*/
+    margin-top: 227px; /*margem do cabeçalho*/
     justify-content: center;
     text-align: justify;    
 }
