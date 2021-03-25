@@ -17,12 +17,15 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 .logo {
-    margin-left: 18%;
+   /* margin-left: 18%;*/
     padding-left: 30px;
     padding-top: 30px;
+    width: 100%;
 }
 
 header {
@@ -54,9 +57,10 @@ header {
     position: relative;
     font-size: 17px;
     height: 100%;
-    top: 230px;
-    left: 200px;
+    /*top: 230px;
+    left: 200px;*/
     padding: 0;
+    margin: auto;
 }
 
 .menu ul{
