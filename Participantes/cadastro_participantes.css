@@ -2,14 +2,14 @@
     font-family: 'Cabin Sketch', cursive;
     color: #545454;   
     text-align: center;
-    font-size: 4em;
+    font-size: 7em;
 }
-.subtitulo{
-    font-family: Lato;
-    font-size: 35px;
+#subtitulo{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 4em;
     line-height: 52px;
     text-align: center;
-    color: #47525E;   
+    color: #545454;   
 }
 .texto{
     display: table-cell;
@@ -61,14 +61,14 @@ input, select, textarea, button{
     color: black;
     margin-left: 18%;
     margin-right: 18%;
-    margin-top: 2%; /*margem do cabeçalho*/
+    margin-top: 227px; /*margem do cabeçalho*/
     justify-content: center;
-    text-align: justify;    
+    text-align: justify;   
 }
 fieldset{
     border: 0;
 }
-.campo input[type="text"],.campo input[type="email"], .campo input[type="tel"]{
+.campo input[type="text"],.campo input[type="email"], .campo input[type="tel"], .campo input[type="date"]{
     padding: 0.5em;
     border: 1px solid rgba(194, 190, 190, 0.452);
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
