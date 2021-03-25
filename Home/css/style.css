@@ -19,14 +19,23 @@
     flex-wrap: wrap;
 }
 
+.logo {
+    margin-left: 18%;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
 header {
     text-indent: -9999px;
     background: url(../imagem/fundo-2.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1200px;
-    margin: 0px 90px;
+    /*width: 1200px;*/
+    /*margin: 0px 90px;*/
+    margin-left: 18%;
+    margin-right: 18%;
+    width: 64%;
     height: 590px;
     top: -240px;
     position: absolute;
@@ -34,17 +43,9 @@ header {
     border-radius: 0 0 10% 10%;
 }
 
-.logo h2 {
-    text-indent: -9999px;
-    top: 900px;
-    display: block;
-    padding: -2px;
-}
-
 .logo img {
     height: 170px;
     position: relative;
-    left: 140px;
     top: 0;
     border-radius: 50%;
 }
@@ -84,10 +85,11 @@ header {
 }
 
 .menu .btn-menu {
-    background-color: #d3d3d3;
+    background-color:rgba(88, 82, 82, 0.411);
     display: inline-block;
     padding: 8px 20px;
     color:#000000;
+    
 }
 
 .menu .btn-menu:hover {
