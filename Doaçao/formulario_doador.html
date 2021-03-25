@@ -7,12 +7,36 @@
         <link rel="stylesheet" href="formulario_doador.css" media="all"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
         <title>Doações</title>
     </head>
     <body>
+        <header>
+            <div class="center">
+                <div class="vó-fundo">
+                </div><!--vó-fundo-->
+            </div><!--center-->
+        </header>
+        <nav>
+            <div class="center">
+                <div class="logo">
+                    <a href="../Home/index.html">
+                    <img src="../Home/imagem/Vó-logo.jpeg">
+                    </a>
+                </div><!--logo-->
+                <ul class="menu">
+                    <li><a  href="..//Home/index.html">Home</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="cadastrovoluntario.html">Seja um voluntário</a></li>
+                    <li><a href="contato">Contato</a></li>
+                    <li><a class="btn-menu" href="../Doaçao/formulario_doador.html">Doações</a></li>
+                </ul><!--menu-->
+            </div><!--center-->
+        </nav>
         <section class="corpo">
-            <div class="titulo">
-                <h1>Doações</h1>
+            <div>
+                <h1 id="titulo">Doações</h1>
             </div>
              <div class="conteudo">
 
@@ -35,7 +59,7 @@
             <div class="subtitulo">
                 <link rel="preconnect" href="https://fonts.gstatic.com">
                 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
-                <p><b>QUERO SER UM DOADOR</b></p>
+                <h2 id="subtitulo">QUERO SER UM DOADOR</h2>
             </div> 
         <form class="formulario" method = "post"  action = "doaçao_concluida.php" ><!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
           <div class="campo">
