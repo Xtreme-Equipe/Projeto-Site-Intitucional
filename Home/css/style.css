@@ -6,8 +6,8 @@
 }
 
 #container {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     background: #ffffff;
     position: relative;
 }
@@ -33,6 +33,9 @@ header {
     background: url(../imagem/fundo-2.jpeg);
     background-position: center;
     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
     background-repeat: no-repeat;
     /*width: 1200px;*/
     /*margin: 0px 90px;*/
@@ -104,9 +107,13 @@ section.main {
     background-image: url(../imagem/Vó-marca.jpeg);
     background-position: center;
     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
-    margin: 30px 320px;
+    margin-left: 25%;
+    margin-right: 25%;
     height: 100%;
     top: 150px;
     position: relative;
@@ -135,7 +142,7 @@ section.vó{
     padding: 20px 20px;
     position: relative;
     height: 500px;
-    top: 170px;
+    top: 190px;
 }
 
 .vó-img{
@@ -168,7 +175,7 @@ Section Você Pode
 section.você-pode {
     position: relative;
     height: 605px;
-    top: 200px;
+    top: 220px;
 }
 
 .você-pode-content{
@@ -244,7 +251,7 @@ section.você-pode {
     position: relative;
     margin-left: 18%;
     margin-right: 18%;
-    top:100px;
+    top:120px;
     padding-top: 220px;
 }
 
