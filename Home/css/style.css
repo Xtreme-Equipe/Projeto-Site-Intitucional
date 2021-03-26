@@ -240,27 +240,41 @@ section.você-pode {
     border-radius: 20px;
 }
 
-footer {
-    padding: 20px 0 20px 0;
+.footer-home{
+    margin-left: 18%;
+    margin-right: 18%;
+    padding-top: 220px;
+}
+
+.footer {
+    padding: 20px 20px 20px 20px;
     background: #ff9052;
     font-weight: bold;
     position: relative;
-    top: 320px;
+}
+
+.footer-inline {
+    width: 100%;
+    display: inline-block;
 }
 
 .footer-left{
     padding: 0 10px;
-    width: 40%;
+    width: 45%;
     position: relative;
     font-size: 20px;
+    float: left;
 }
 
 .footer-right{
-    width: 55%;
+    width: 45%;
     position: relative;
     float: right;
-    top:-50px;
     font-size: 18px;
+}
+
+.footer-right span{
+    display: inline-flex;
 }
 
 .footer-center{
@@ -279,6 +293,17 @@ footer {
     position: relative;
     top: -40px;
     left: 450px;
+}
+
+.vó-icons-share { /*Icones de compartilhamento*/
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+}
+
+.footer-right a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px){
