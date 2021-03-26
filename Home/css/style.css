@@ -286,6 +286,12 @@ section.você-pode {
     font-size: 16px;
 }
 
+.footer-center a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .vó-icons{
     width: 30px;
     height: 30px;
