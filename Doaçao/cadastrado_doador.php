@@ -9,7 +9,7 @@
     <title>Cadastro Concluído</title>
 </head>
 <body class="corpo">
-    <a href="formulario_doador.html"> <!-- Substituir pelo link para a home-->
+    <a href="..//Home/index.php"> <!-- Substituir pelo link para a home-->
         <div class="imagem_check">
         <img src="accept-icon.png" alt="Imagem check">
         </div>

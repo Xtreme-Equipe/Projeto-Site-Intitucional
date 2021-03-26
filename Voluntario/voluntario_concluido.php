@@ -9,7 +9,7 @@
     <title>Cadastro Concluído</title>
 </head>
 <body>
-    <a href="cadastrovoluntario.html"> <!-- Substituir pelo link para a home-->
+    <a href="..//Home/index.php"> <!-- Substituir pelo link para a home-->
         <div class="imagem_check">
         <img src="imagens/Accept-icon (1).png" alt="Imagem check">
         </div>

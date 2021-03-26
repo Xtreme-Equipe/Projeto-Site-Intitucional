@@ -7,12 +7,36 @@
         <link rel="stylesheet" href="formulario_doador.css" media="all"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
         <title>Doações</title>
     </head>
     <body>
+        <header>
+            <div class="center">
+                <div class="vó-fundo">
+                </div><!--vó-fundo-->
+            </div><!--center-->
+        </header>
+        <nav>
+            <div class="center">
+                <div class="logo">
+                    <a href="../Home/index.php">
+                    <img src="../Home/imagem/Vó-logo.jpeg">
+                    </a>
+                </div><!--logo-->
+                <ul class="menu">
+                    <li><a  href="..//Home/index.php">Home</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
+                    <li><a href="contato">Contato</a></li>
+                    <li><a class="btn-menu" href="../Doaçao/formulario_doador.php">Doações</a></li>
+                </ul><!--menu-->
+            </div><!--center-->
+        </nav>
         <section class="corpo">
-            <div class="titulo">
-                <h1>Doações</h1>
+            <div>
+                <h1 id="titulo">Doações</h1>
             </div>
              <div class="conteudo">
 
@@ -35,9 +59,9 @@
             <div class="subtitulo">
                 <link rel="preconnect" href="https://fonts.gstatic.com">
                 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
-                <p><b>QUERO SER UM DOADOR</b></p>
+                <h2 id="subtitulo">QUERO SER UM DOADOR</h2>
             </div> 
-        <form class="formulario" method = "post"  action = "cadastrado_doador.php" ><!--action usado para que após clicar no botão de enviar vá para a página de sucesso-->
+        <form class="formulario" method = "post"  action = "cadastrado_doador.php" ><!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
           <div class="campo">
               <br>
             <label for="nome"><strong>Nome:</strong></label>
@@ -64,10 +88,10 @@
         <div class="campo">
         <div class="campo inline left">
             <label>
-                <input type="radio" name="anonimo" value="Recorrente">Quero ser um doador recorrente<!--ao escolher vai mostrar valor g-->
+                <input type="radio" name="anonimo" value="Recorrente">Quero ser um doador recorrente<!--ao escolher vai mostrar valor Recorrente-->
             </label>
             <label>
-                <input type="radio" name="anonimo" value="Anonimo">Quero ser um doador anonimo<!--ao escolher vai mostrar valor e-->
+                <input type="radio" name="anonimo" value="Anonimo">Quero ser um doador anonimo<!--ao escolher vai mostrar valor Anonimo-->
             </label>
     
         </div>
@@ -76,9 +100,6 @@
             <button class="botao" type="submit">Enviar</button>
         </div>
         </form>  
-        
-        
-        
         </fieldset>
         </div>
         <br>
@@ -119,10 +140,59 @@
                 R. Dom João VI, 151 - Jardim Colonial, São José dos Campos - SP: 12232-100</b>
             </p>
         </div>
-
-        </section>
-
+        <div class="footer">
+            <div class="footer-inline">
+                <div class="footer-left">
+                    <p>Telefone:(12)3966-2833</p>
+                    <p>Email:administracao@aamu.org.br</p>
+                    <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
+                </div>
+        
+                <div class="footer-right">
+                    <span>Você pode nos ajudar compartilhando nossa causa</span>
+                    <span>
+                        <span>
+                            <a target="_blank" href="javascript:void(0)" onclick="share()">
+                                <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
+                            </a>
+                
+                            <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
+                
+                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/fatecjessenvidal/">
+                                <img class="vó-icons-share vó-icons-share-face" src="../Home/imagem/logo-facebook.png" >
+                            </a>
+                
+                            <a target="_blank" href="https://api.whatsapp.com/send?text=https://www.facebook.com/fatecjessenvidal/">
+                                <img class="vó-icons-share vó-icons-share-whats" src="../Home/imagem/logo-whatsapp.png" />
+                            </a>
+                        </span>
+                    </span>
+                    
     
+                </div>
+            </div>
+            
+    
+            <div class="footer-center">
+                <p>2021 <a href="">Vó Maria Félix</a> - Todos os direitos reservados.</p>
+            </div>
+    
+            <script>
+                function share(){
+                    if (navigator.share !== undefined) {
+                        navigator.share({
+                            title: 'Maria Vó Félix',
+                            text: 'Um texto de resumo',
+                            url: 'https://www.facebook.com/fatecjessenvidal/',
+                        })
+                        .then(() => console.log('Successful share'))
+                        .catch((error) => console.log('Error sharing', error));
+                    }
+                }
+            </script>
+            
+        </div>
+        </section>
 
     </body>
 

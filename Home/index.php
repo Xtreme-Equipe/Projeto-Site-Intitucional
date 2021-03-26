@@ -30,12 +30,12 @@
                 </div><!--logo-->
 
                 <ul class="menu">
-                    <li><a class="btn-menu" href="..//Home/index.html">Home</a></li>
+                    <li><a class="btn-menu" href="..//Home/index.php">Home</a></li>
                     <li><a href="sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                    <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                     <li><a href="contato">Contato</a></li>
-                    <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
+                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul><!--menu-->
 
             </div><!--center-->
@@ -82,7 +82,6 @@
                 </div>
             </div><!--center-->
         </section><!--você-pode-->
-        
         <div class="footer-home">
             <div class="footer">
                 <div class="footer-inline">
