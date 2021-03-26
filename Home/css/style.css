@@ -241,8 +241,10 @@ section.você-pode {
 }
 
 .footer-home{
+    position: relative;
     margin-left: 18%;
     margin-right: 18%;
+    top:100px;
     padding-top: 220px;
 }
 
