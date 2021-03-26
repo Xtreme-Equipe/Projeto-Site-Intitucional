@@ -147,9 +147,15 @@ section.vó{
 
 .vó-img{
     position: relative;
+     background-position: center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
     width: 60%;
     height: 60%;
-    left:430px;
+    left:490px;
     top:-390px;
 }
 
