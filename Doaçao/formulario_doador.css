@@ -13,8 +13,8 @@
     justify-content: center;
     text-align: justify; 
     padding-top: 152px;
-    width: 800px;
-    margin:auto;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 .conteudo{
     display: table;
