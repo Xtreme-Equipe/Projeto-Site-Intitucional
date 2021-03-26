@@ -9,36 +9,37 @@
     font-family: sans-serif;
     font-size: 1em; /* tamanho da letra*/
     color: black;
-    margin-top: 2%; /*margem do cabeçalho*/
+    margin-top: 227px; /*margem do cabeçalho*/
     justify-content: center;
     text-align: justify; 
-    padding-top: 152px;
     margin-left: 18%;
     margin-right: 18%;
 }
 .conteudo{
     display: table;
+    padding-top: 31px;
+    
 }
 .conteudoDois{
     display: table;
 }
-.imagem{
+.imagem img{
     display:table-cell;
     float: right;
+    width: 48%;
 }
 .texto{
     display: table-cell;
     float: left;
     width: 50%;
     margin-top: -3px;
-    margin-right: 20px  ;
+    margin-right: 2%  ;
     text-align: justify;
-    font-size: 20px;
+    font-size: 1.2em;
     text-justify: auto;
 }
-
-
-.formulario{
+.grupo{
+    margin: 24.3438px 0px 0px;
     border: 0;
     background-color: #f1f1f1;
     font-family: sans-serif;
@@ -46,17 +47,21 @@
     color: black;
     margin-top: 2%; /*margem do cabeçalho*/
     text-align: justify;
-
 }
 .botao{
-    margin-left: 40%;
     font-size: 1.2em;
-    background: #4169e1;
-    border: 0;
+    background: #0E7AF0;
+    border:0;
     margin-bottom: 1em;
-    color:#ffffff;
-    box-shadow:#e0e0f8;
-    text-shadow:#e0e0f8;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 18px;
 }
 .botao:hover{
     color: black;
@@ -69,24 +74,26 @@
     float: right;
 }
 .textoDois{
-    text-align: justify;
-    font-size: 20px;
+    text-align: center;
+    font-size: 30px;
     display:table-cell;
     float: right;
-    width: 500px;
+    width: 600px;
 }
 #subtitulo{
     font-size: 4em;
     font-family: 'Cabin Sketch', cursive;
     color: #545454 ;
     text-align: center;
-
+    padding-top: 60px;
+    background-color: #f1f1f1;
+    margin-bottom: 0px;
 }
 input, button{
     border-radius: 5px;
 }
 .campo label{ /*nome dos campos a serem preenchidos*/
-    margin-bottom: 0.1em;
+    margin-bottom: 0.2em;
     color: black;
     display: block;
 }
@@ -96,4 +103,30 @@ input, button{
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
     width: 90%;
+}
+fieldset.grupo .campo{
+    float:left;
+    margin-right: 10em;
+}
+.formulario fieldset.grupo div.campo.right{
+    float:right;
+}
+.formulario fieldset.grupo div.campo{
+    float: left;
+    margin-right: 0%;
+    width: 49%;
+}
+div.campo.inline{
+    display: flex ;
+
+}
+.formulario{
+    background-color: #f1f1f1;
+}
+
+.DadosBanco{
+    display: table;
+    padding-top: 80px;
+    justify-content: center;
+    border: 0%;
 }
