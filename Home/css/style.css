@@ -138,10 +138,10 @@ section.main {
 Section Sobre empreendedor
 */
 section.vó{
-    padding: 20px 20px;
+/*     padding: 20px 20px; */
     position: relative;
-    height: 500px;
-    top: 190px;
+/*     height: 500px;  */
+    top: 190px; 
 }
 
 .vó-img{
@@ -152,25 +152,31 @@ section.vó{
      -moz-background-size: cover;
      -o-background-size: cover;
     background-repeat: no-repeat;
-    width: 60%;
-    height: 60%;
-    left:490px;
-    top:-390px;
+    width: 100%;
+}
+
+.vó-content.left {
+    float: left;
+    margin-right: 2%;
+}
+.vó-content.right {
+    float: right;
+    margin-left: 2%;
 }
 
 .vó-content{
     position: relative;
-    width: 50%;
+    width: 48%;
 }
 
 .vó-content p{
     font-size: 24px;
     position: relative;
-    width: 550px;
-    left:-160px;
-    font-weight: bold;
+    /* width: 550px;
+    left:-160px; */
+/*     font-weight: bold; */
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
 }
 
 /*
@@ -185,16 +191,10 @@ section.você-pode {
 
 .você-pode-content{
     position: relative;
-    width: 50%;
-    left: -20px;
 }
 
 .você-pode-content p{
     position: relative;
-    top:90px;
-    left: -200px;
-    width: 650px;
-    height: 450px;
     font-size: 90px;
     font-style: normal;
     font-variant: normal;
@@ -206,6 +206,8 @@ section.você-pode {
     font-family: 'Cabin Sketch', cursive;
 }
 
+
+
 .azul{
     color: #004aad;
 }
@@ -216,7 +218,7 @@ section.você-pode {
 
 .botões{
     position: relative;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .botões button{
