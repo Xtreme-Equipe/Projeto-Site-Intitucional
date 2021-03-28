@@ -28,7 +28,7 @@
 ---
 
 ## Product Backlog
-Acessar em: [Product Backlog] [/readme/ProductBacklog.pdf]
+Acessar em: [Product Backlog](/readme/ProductBacklog.pdf)
 
 ---
 
@@ -45,7 +45,7 @@ Acessar em: [Product Backlog] [/readme/ProductBacklog.pdf]
 ## Diagrama do site
  ![Equipe Xtreme](/readme/diagrama_site.png "Diagrama do site")
 
-Para ter uma visão completa acesse: [Mapa do site] [/readme/mapa_site.pdf]
+Para ter uma visão completa acesse: [Mapa do site](/readme/mapa_do_site.pdf)
 
 ---
 
