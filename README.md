@@ -56,6 +56,6 @@ Após o cliente aprovar o protótipo apresentado, o desenvolvimento do produto f
 
 **Demonstração**
 
-![Equipe Xtreme](/readme/funcionalidade_site.gif "Apresentação Equipe Xtreme")
+![Equipe Xtreme](/readme/funcionalidade_site.gif "Demonstração da funcionalidade do site")
 
 
