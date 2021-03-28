@@ -20,7 +20,7 @@
 <nav>
     <div class="center">
         <div class="logo">
-            <a href="../Home/index..php">
+            <a href="../Home/index.php">
             <img src="../Home/imagem/Vó-logo.jpeg">
             </a>
         </div><!--logo-->
