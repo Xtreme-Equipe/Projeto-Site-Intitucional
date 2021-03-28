@@ -1,0 +1,95 @@
+.titulo{
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;   
+    text-align: center;
+    font-size: 7em;
+}
+#subtitulo{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 4em;
+    line-height: 52px;
+    text-align: center;
+    color: #545454;   
+}
+.texto{
+    display: table-cell;
+    text-align: center;
+    font-size: 1.5em;
+    text-justify: auto;
+}
+.botao{
+    font-size: 1.2em;
+    background: #0E7AF0;
+    border:0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    color: black;
+    background: #bedaf8;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: rgba(156, 193, 241, 0.356);
+}
+.formulario fieldset.grupo div.campo {
+    float: left;
+    margin-right: 0;
+    width: 50%;
+}
+
+.formulario fieldset.grupo div.campo.right {
+    float: right;
+    width: 50%;
+}
+input, select, textarea, button{
+    border-radius: 5px;
+}
+.cadastro_alunos{
+    background-color: rgba(241, 237, 237, 0.151);
+    font-family: sans-serif;
+    font-size: 1em; /* tamanho da letra*/
+    color: black;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 227px; /*margem do cabeçalho*/
+    justify-content: center;
+    text-align: justify;   
+}
+fieldset{
+    border: 0;
+}
+.campo input[type="text"],.campo input[type="email"], .campo input[type="tel"], .campo input[type="date"]{
+    padding: 0.5em;
+    border: 1px solid rgba(194, 190, 190, 0.452);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    width: 70%;
+}
+.campo label{ /*nome dos campos a serem preenchidos*/
+    margin-bottom: 0.1em;
+    color: black;
+    display: block;
+}
+.formulario{
+    border: 0;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 1em; /* tamanho da letra*/
+    color: black;
+    margin-top: 2%; /*margem do cabeçalho*/
+    text-align: justify;
+}
+.corpo{
+    width: 1500px;
+    margin:auto;
+}

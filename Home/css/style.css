@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Graphik", sans-serif;
+}
+
+#container {
+    max-width: 100%;
+    max-height: 100%;
+    background: #ffffff;
+    position: relative;
+}
+
+.center {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.logo {
+    padding-left: 30px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+header {
+    text-indent: -9999px;
+    background: url(../imagem/fundo-2.jpeg);
+    background-position: center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 18%;
+    margin-right: 18%;
+    width: 64%;
+    height: 590px;
+    top: -240px;
+    position: absolute;
+    opacity: 30%;
+    border-radius: 0 0 10% 10%;
+}
+
+.logo img {
+    height: 170px;
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+}
+
+.menu {
+    position: relative;
+    font-size: 17px;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+.menu ul{
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu li{
+    display: inline;
+    padding: 11px;
+}
+
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.menu ul li a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.menu .btn-menu {
+    background-color:rgba(88, 82, 82, 0.411);
+    display: inline-block;
+    padding: 8px 20px;
+    color:#000000;
+    
+}
+
+.menu .btn-menu:hover {
+    background-color: #000000;
+    color: white;
+}
+
+section.main {
+    background-image: url(../imagem/Vó-marca.jpeg);
+    background-position: center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 100%;
+    top: 150px;
+    position: relative;
+}
+
+.main_cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main_cta h2{
+    text-indent: -9999px;
+    display: block;
+}
+
+.main_cta p{
+    text-indent: -9999px;
+    display: block;
+}
+
+/*
+Section Sobre empreendedor
+*/
+section.vó{
+    position: relative;
+    padding-top: 190px;
+}
+
+.vó-img{
+    position: relative;
+     background-position: center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.vó-content.left {
+    float: left;
+    margin-right: 2%;
+}
+.vó-content.right {
+    float: right;
+    margin-left: 2%;
+}
+
+.vó-content{
+    position: relative;
+    width: 48%;
+}
+
+.vó-content p{
+    font-size: 24px;
+    position: relative;
+    flex-direction: column;
+    text-align: justify;
+}
+
+/*
+Section Você Pode
+*/
+
+section.você-pode {
+    position: relative;
+    padding-top: 75px;
+}
+
+.você-pode-content{
+    position: relative;
+}
+
+.você-pode-content p{
+    position: relative;
+    font-size: 75px;
+    font-style: normal;
+    font-variant: normal;
+    flex-direction: column;
+    text-align: center;
+}
+
+.você-pode-content span{
+    font-family: 'Cabin Sketch', cursive;
+}
+
+
+
+.azul{
+    color: #004aad;
+}
+
+.laranja{
+    color: #ff9052;
+}
+
+.botões{
+    position: relative;
+}
+
+.botões button{
+    background-color: #0e7af0;
+    color:white;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 26px;
+    display: inline;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px #94a3b2;
+    border-radius: 20px;
+}
+
+.botões button p{
+    position: relative;
+    left: -30px;
+}
+
+.botões button img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.footer-home{
+    position: relative;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding-top: 90px;
+}
+
+.footer {
+    padding: 20px 20px 20px 20px;
+    background: #ff9052;
+    font-weight: bold;
+    position: relative;
+}
+
+.footer-inline {
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-left{
+    padding: 0 10px;
+    width: 45%;
+    position: relative;
+    font-size: 20px;
+    float: left;
+}
+
+.footer-right{
+    width: 45%;
+    position: relative;
+    float: right;
+    font-size: 18px;
+}
+
+.footer-right span{
+    display: inline-flex;
+}
+
+.footer-center{
+    position: relative;
+    margin:20px;
+    width: 38%;
+    left: 400px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-center a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.vó-icons{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+    top: -40px;
+    left: 450px;
+}
+
+.vó-icons-share { /*Icones de compartilhamento*/
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+}
+
+.footer-right a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+     header{
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        top:-420px;
+        left:-90px;
+    }
+
+    .logo img{
+        width: 40%;
+    }
+
+    .menu-mobile{
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+
+    section.main {
+        position: relative;
+        width: 90%;
+        height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        top:20px;
+    }
+
+    .vó-content{
+        width: 100%;
+    }
+
+    .vó-content p{
+        font-size: 100%;
+    }
+
+    .vó-img{
+    position: relative;
+    width: 190%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left:10px;
+    top:10px;
+    } 
+
+    footer{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .footer-left{
+        position: relative;
+        font-size: 16px;
+    }
+
+    .footer-right{
+        position: relative;
+        font-size: 16px;
+    }
+
+    .footer-center{
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    left: 200px;
+    }
+
+    .vó-icons{
+        left: 50px;
+        top: -25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .footer-left{
+        position: relative;
+        font-size: 100%;
+
+    }
+
+     .footer-right{
+        position: relative;
+        font-size: 100%;
+    }
+
+     .footer-center{
+        position: relative;
+        font-size: 100%;
+    }
+}

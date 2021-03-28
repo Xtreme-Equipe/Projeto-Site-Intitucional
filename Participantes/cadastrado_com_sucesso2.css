@@ -1,0 +1,94 @@
+
+/*Estilos da pÃ¡gina de concluÃ­do*/
+.imagem_check{
+    padding: 200px 0px 0px;
+    margin-right:auto; 
+    margin-left: auto; 
+    width: 239px;
+    padding-right: auto;
+    padding-left: 55px;
+    
+}
+
+.imagem_check img{
+    width: 128px;
+    height: 128px;
+}
+.h1{
+    color: #47525E;
+    font-family: Lato;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 65px;
+    text-align: center; 
+    padding-top: 70px;  
+}
+.h2_h3{
+  font-family: Lato;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  color: #47525E;
+}
+.imagem_maos{
+    width: 814px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagem_maos img{
+    width: 814px;
+    height: 698px;
+}
+.sucesso{
+    position: relative;
+    margin-left: 18%;
+    margin-right: 18%;
+    top:120px;
+    padding-top: 220px;
+}
+.footer {
+    padding: 20px 20px 20px 20px;
+    background: #ff9052;
+    font-weight: bold;
+    position: relative;
+}
+
+.footer-inline {
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-left{
+    padding: 0 10px;
+    width: 45%;
+    position: relative;
+    font-size: 20px;
+    float: left;
+}
+
+.footer-right{
+    width: 45%;
+    position: relative;
+    float: right;
+    font-size: 18px;
+}
+
+.footer-right span{
+    display: inline-flex;
+}
+
+.footer-center{
+    position: relative;
+    margin:20px;
+    width: 38%;
+    left: 400px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-center a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
