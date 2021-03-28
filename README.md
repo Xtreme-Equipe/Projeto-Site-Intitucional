@@ -14,9 +14,9 @@
 ## Sprint Backlog
 <table>
   <tr>
-    <td><img src="https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/blob/main/readme/backlog.png" width=460 height=280></td>
-    <td><img src="https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/blob/main/readme/backog_2.png" width=460 height=280></td>
-        <td><img src="https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/blob/main/readme/backog_3.png" width=460 height=280></td>
+    <td><img src="https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/blob/main/readme/backlog.png" width=460></td>
+    <td><img src="https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/blob/main/readme/backlog_2.png" width=460></td>
+    <td><img src="https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/blob/main/readme/backlog_3.png" width=460></td>
   </tr>
  </table>
 
