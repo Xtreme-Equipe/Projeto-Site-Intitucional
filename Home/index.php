@@ -1,3 +1,14 @@
+<?php
+$admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
+$texto_esquerdo = isset($_POST['texto_esquerdo']) ? $_POST['texto_esquerdo'] : "";
+if ($texto_esquerdo != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_home");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'home' and localizacao = 'esquerda'");
+    mysqli_stmt_bind_param($preparado, "s", $texto_esquerdo);
+    mysqli_stmt_execute($preparado);
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="../ckeditor_4.16.0_basic/ckeditor/ckeditor.js"></script>
 
 </head>
 <body>
@@ -50,13 +62,31 @@
             </div><!--center-->
         </section><!--main--> 
 
-
         <section class="vó center">
             <div class="center1">
                 <div class="vó-content left">
-                    <p>O Centro comunitário "VÓ MARIA FÉLIX" recebe crianças desde os 0 até aos 5 anos de idade.</p><br />
-                    <p>Cerca de quarenta alunos fizeram parte do ano pioneiro. Ao longo do tempo este número foi aumentando significativamente, sendo que hoje a escola conta com cerca de duzentos e cinquenta alunos. No entanto, temos a ânsia de crescer ainda mais</p><br />
-                    <p>Os nossos principais fins são: contribuir para o bem-estar, a valorização pessoal e a plena intregação social das crianças e dos jovens que, por razões de natureza diversa, passam por dificuldades no seu cotidiano.</p>
+                    <?php
+                    if ($admin == "1") {
+                        echo "<form action=\"index.php\" method=\"POST\"> 
+                            <textarea id=\"editor\" name=\"texto_esquerdo\">";
+                    }
+                    $conexao = mysqli_connect("localhost","root","","bd_home");
+                    $consulta = "select conteudo from tb_conteudo where pagina = 'home' and localizacao = 'esquerda'";
+                    $resultado = mysqli_query($conexao, $consulta);
+                    if (!$resultado) {
+                        die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                    }
+                    while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                        echo $item_da_lista_resultado["conteudo"];
+                    }
+                    ?>
+                           
+                    <?php
+                    if ($admin == "1") {
+                        echo "</textarea> <button type=\"submit\">Salvar</button>
+                    </form>";
+                    }
+                    ?>
                 </div>
                 <div class="vó-content right">
                     <img class="vó-img" src="imagem/img-vó-1.jpeg" />
@@ -159,6 +189,14 @@
                 menuItens.classList.remove('hide'); 
             }       
         });
+    </script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", 
+            function() {
+                CKEDITOR.replace("editor", false);
+            }
+        );
 
     </script>
 
