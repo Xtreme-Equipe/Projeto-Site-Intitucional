@@ -1,11 +1,21 @@
+
 <?php
+/*Admin indica se a pág está ou não em modo de edição*/
 $admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
+/*Texto_esquerdo faz atualização do lado esquerdo da home e salva no banco de dados */
 $texto_esquerdo = isset($_POST['texto_esquerdo']) ? $_POST['texto_esquerdo'] : "";
 if ($texto_esquerdo != "") {
     $conexao = mysqli_connect ("localhost", "root", "", "bd_home");
     $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'home' and localizacao = 'esquerda'");
     mysqli_stmt_bind_param($preparado, "s", $texto_esquerdo);
     mysqli_stmt_execute($preparado);
+}
+/*Imagem_direita faz atualização da imagem direita da home(ao lado do texto equerdo) e salva a imagem no hd*/
+$imagem_direita = isset($_FILES['imagem_direita']) ? $_FILES['imagem_direita'] : "";
+if ($imagem_direita) {
+    $temp_filename = $imagem_direita["tmp_name"];
+    $newfile = 'imagem/uploaded.img';
+    copy($temp_filename, $newfile);
 }
 ?>
 
@@ -20,7 +30,8 @@ if ($texto_esquerdo != "") {
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="../ckeditor_4.16.0_basic/ckeditor/ckeditor.js"></script>
+<script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
+
 
 </head>
 <body>
@@ -38,6 +49,8 @@ if ($texto_esquerdo != "") {
         <nav>
             <div class="center">
                 <div class="logo">
+                    
+            
                     <img src="imagem/Vó-logo.jpeg">
                 </div><!--logo-->
 
@@ -66,6 +79,7 @@ if ($texto_esquerdo != "") {
             <div class="center1">
                 <div class="vó-content left">
                     <?php
+                    /*Formulário de edição de texto */
                     if ($admin == "1") {
                         echo "<form action=\"index.php\" method=\"POST\"> 
                             <textarea id=\"editor\" name=\"texto_esquerdo\">";
@@ -89,7 +103,19 @@ if ($texto_esquerdo != "") {
                     ?>
                 </div>
                 <div class="vó-content right">
-                    <img class="vó-img" src="imagem/img-vó-1.jpeg" />
+                <?php
+                /*Adiciona o formulário de edição de imagem*/
+                    if ($admin == "1") {
+                        echo "<form action=\"index.php\" method=\"POST\"enctype=\"multipart/form-data\">";
+                    }
+                    echo '<img class="vó-img" src="imagem/uploaded.img" />';
+                    if ($admin == "1") {
+                        echo "<label for=\"conteudo\">Enviar imagem:</label>
+                        <input type=\"file\" name=\"imagem_direita\" accept=\"image/*\"> <button type=\"submit\">Salvar</button>
+                    </form>";
+                    }
+                    ?>
+                    <!--<img class="vó-img" src="imagem/img-vó-1.jpeg" /> -->
                 </div>
                 
             </div><!--center-->
@@ -194,9 +220,9 @@ if ($texto_esquerdo != "") {
         document.addEventListener(
             "DOMContentLoaded", 
             function() {
-                CKEDITOR.replace("editor", false);
+                CKEDITOR.replace("editor", false) /*inicializa o editor de texto após o carregamento da página */
             }
-        );
+        )
 
     </script>
 
