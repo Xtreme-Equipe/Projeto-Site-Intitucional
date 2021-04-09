@@ -1,0 +1,138 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+.titulo{
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;   
+    text-align: center;
+    font-size: 7em;
+	margin-top: 150px;
+	margin-bottom: 90px;
+}
+
+h1{
+	padding-left: 0px;
+	padding-top: 35px;
+}
+
+.faleconosco{
+	padding-left: 0px;
+	padding-top: 35px;
+}
+
+.info{
+	border-radius: 10px;
+	border: 5px solid;
+	border-color: black;
+	font-size: 10mm;
+	background: rgb(255, 255, 255);
+	max-width: 1000px;
+	display: table-cell;
+	text-align: center;
+    margin-bottom: 100px;
+	width: 500px;
+	float: left;
+	margin-left: 350px;
+	margin-right: 180px;
+	font-size: 30px;
+}
+
+.google{
+	display: table-cell;
+	float: left;
+	margin: auto;
+	size: 2000px;
+}
+
+.tel{
+	padding-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+	
+}
+
+.email{
+	padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.face{
+	padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.horario{
+	padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form{
+	font-size: 21px;
+	background: rgb(255, 255, 255);
+	max-width: 800px;
+	margin: auto;
+	padding: 0 15px 15px 15px;
+	border-radius: 5px;
+    margin-bottom: 100px;
+	border: solid #000;
+	margin-top: 650px;
+	text-align: center;
+}
+
+input, textarea{
+    box-sizing: border-box;
+	padding: 15px;
+    border: 1px;
+    border-color: rgb(100, 100, 100);
+    border-bottom-style: groove;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+	width: 700px;
+    height: 85px;
+    line-height: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
+	font-size: 5mm;
+}
+
+.enviar input{
+	background: #4343ff;
+	height: 77px;
+    width: 182px;
+    border-top-width: 1px;
+    padding-top: 25px;
+	margin:  0 auto;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 1px solid;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 20px;
+	padding-bottom: 40px;
+    padding-right: 15px;
+    margin-left: 300px;
+    margin-right: 300px;
+	font-size: 6mm;
+}
+
+.enviar input:hover{
+	background: #008800;
+}
+
+textarea{
+	width: 632px;
+    height: 166px;
+    line-height: 30px;
+	margin: 10px 0px 30px;
+	margin-top: 30px;
+	margin-left: 80px;
+}
+
