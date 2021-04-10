@@ -74,10 +74,10 @@
 
 <h1 align="center"> <img src = "./readme/tecnologias_utilizadas.png"/></h1>
 
-* **Banco de Dados:** MySQL, phpMyAdmin;
+* **Banco de Dados:** MySQL;
 * **Back-end:** PhP;
 * **Front-end:** HTML, CSS, JavaScript;
-* **Ferramentas:** Visual Studio Code, Miro, Canva, Trello,Marvel, Git e Github;
+* **Ferramentas:** Visual Studio Code, phpMyAdmin, Miro, Canva, Trello,Marvel, Git e Github;
 
 <br>
 
