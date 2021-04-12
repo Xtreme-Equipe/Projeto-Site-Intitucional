@@ -21,6 +21,7 @@ h1{
 .faleconosco{
 	padding-left: 0px;
 	padding-top: 35px;
+	width: 100%;
 }
 
 .info{
@@ -33,7 +34,7 @@ h1{
 	display: table-cell;
 	text-align: center;
     margin-bottom: 100px;
-	width: 500px;
+	width: 30%;
 	float: left;
 	margin-left: 350px;
 	margin-right: 180px;
@@ -41,10 +42,11 @@ h1{
 }
 
 .google{
-	display: table-cell;
-	float: left;
+	display: flex;
+	position: relative;
+	float: right;
 	margin: auto;
-	size: 2000px;
+	width: 40%;
 }
 
 .tel{
