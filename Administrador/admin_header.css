@@ -1,0 +1,26 @@
+.barra_admin{
+    background-image: linear-gradient(to right, #319cb7, #76c4d7);
+    padding: 30px;
+    color: white;
+    border: 0px;
+    outline: 0;
+    opacity: 1;
+    font-size: larger;
+}
+.welcome{
+    float: left;
+}
+.sair{
+    float: right;
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    border: 0px;
+    background: #088eaf;
+    width: 90px;
+    height: 25px;
+}
+
+.btn button:hover{
+    background-image: linear-gradient(to right, #0492bd, #15768f);
+}

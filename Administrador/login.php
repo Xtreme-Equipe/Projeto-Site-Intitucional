@@ -20,6 +20,7 @@
             mysqli_stmt_bind_result($prepared, $result_email, $result_name); //associa as variáveis com os campos do select
             mysqli_stmt_fetch($prepared); //traz o resultado para as variáveis acima
             $validated = TRUE;
+            session_start();
             $_SESSION['name'] = $result_name; 
             $_SESSION['email'] = $result_email; //As sessions verifica se o usuário está logado.
 
@@ -30,6 +31,12 @@
             $message = "Email e/ou senha inválido(s)!";
         }
 
+    }
+    $logout = isset($_POST['logout']) ? $_POST['logout'] : "False";
+
+    if ($logout == 'True'){
+        session_start();
+        session_destroy();
     }
 ?>
 

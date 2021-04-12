@@ -30,12 +30,15 @@ if ($imagem_direita) {
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
 <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
 
 
 </head>
 <body>
-
+    <?php
+        include('../Administrador/admin_header.php'); //não remover, faz parte do admin!
+    ?>
     <div id="container"><!-- Início container -->
 
         <header>
