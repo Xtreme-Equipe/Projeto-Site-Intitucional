@@ -13,48 +13,46 @@ body{
 	margin-bottom: 90px;
 }
 
-h1{
-	padding-left: 0px;
-	padding-top: 35px;
+.faleconosco{
+	width: 100%;
 }
 
-.faleconosco{
-	padding-left: 0px;
-	padding-top: 35px;
-	width: 100%;
+.faleconosco2{
+	padding-top:  7%;
+	padding-bottom: 5%;
+	font-size: 12mm;
 }
 
 .info{
 	border-radius: 10px;
-	border: 5px solid;
-	border-color: black;
-	font-size: 10mm;
-	background: rgb(255, 255, 255);
+	border: black solid;
 	max-width: 1000px;
-	display: table-cell;
+	display: inline;
 	text-align: center;
-    margin-bottom: 100px;
-	width: 30%;
+	font-size: 10mm;
 	float: left;
-	margin-left: 350px;
-	margin-right: 180px;
-	font-size: 30px;
+	margin-left: 15%;
+	margin-right: 10%;
+	width: 30%;
+	flex-wrap: wrap;
+}
+
+.info p{
+	display: flex;
+
 }
 
 .google{
 	display: flex;
 	position: relative;
-	float: right;
 	margin: auto;
-	width: 40%;
 }
 
 .tel{
 	padding-bottom: 20px;
     padding-top: 30px;
     padding-left: 10px;
-    padding-right: 10px;
-	
+    padding-right: 10px;	
 }
 
 .email{
@@ -77,14 +75,12 @@ h1{
 
 form{
 	font-size: 21px;
-	background: rgb(255, 255, 255);
 	max-width: 800px;
 	margin: auto;
 	padding: 0 15px 15px 15px;
-	border-radius: 5px;
     margin-bottom: 100px;
 	border: solid #000;
-	margin-top: 650px;
+	margin-top: 150px;
 	text-align: center;
 }
 
