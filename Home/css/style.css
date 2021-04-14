@@ -42,11 +42,13 @@ header {
     top: -240px;
     position: absolute;
     opacity: 30%;
+    display: flex;
     border-radius: 0 0 10% 10%;
 }
 
 .logo img {
     height: 170px;
+    display: flex;
     position: relative;
     top: 0;
     border-radius: 50%;
@@ -58,6 +60,70 @@ header {
     height: 100%;
     padding: 0;
     margin: auto;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-itens{
+    position: absolute;
+    left: 0;
+    top: 27px;
+    width: 90%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+    border: 1px solid red;
+}
+
+.menu-itens.show{
+    opacity: 1;
+}
+
+.menu-itens.hidde{
+    opacity: 0;
+}
+
+.menu-itens ul{
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu-itens li{
+    display: block;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.menu-itens li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.menu-itens ul li a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.menu-itens .btn-menu {
+    background-color:rgba(88, 82, 82, 0.411);
+    display: inline-block;
+    padding: 8px 20px;
+    color:#000000;
+    
+}
+
+.menu-itens .btn-menu:hover {
+    background-color: #000000;
+    color: white;
 }
 
 .menu ul{
@@ -130,20 +196,27 @@ section.main {
 }
 
 /*
-Section Sobre empreendedor
+Section Vó Center
 */
-section.vó{
+section.vó.center{
     position: relative;
     padding-top: 190px;
+    display: flex;
+}
+
+.center1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .vó-img{
     position: relative;
-     background-position: center;
+    background-position: center;
     background-size: cover;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
@@ -152,6 +225,7 @@ section.vó{
     float: left;
     margin-right: 2%;
 }
+
 .vó-content.right {
     float: right;
     margin-left: 2%;
@@ -176,6 +250,13 @@ Section Você Pode
 section.você-pode {
     position: relative;
     padding-top: 75px;
+    display: flex;
+}
+
+.center2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .você-pode-content{
@@ -194,8 +275,6 @@ section.você-pode {
 .você-pode-content span{
     font-family: 'Cabin Sketch', cursive;
 }
-
-
 
 .azul{
     color: #004aad;
@@ -239,51 +318,74 @@ section.você-pode {
     border-radius: 20px;
 }
 
-.footer-home{
+/*
+Footer
+*/
+.footer-home {
     position: relative;
     margin-left: 18%;
     margin-right: 18%;
     padding-top: 90px;
 }
 
-.footer {
+.footer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px 20px 20px 20px;
     background: #ff9052;
     font-weight: bold;
-    position: relative;
 }
 
-.footer-inline {
+.footer-inline{
     width: 100%;
     display: inline-block;
 }
 
 .footer-left{
+    position: relative;
     padding: 0 10px;
     width: 45%;
-    position: relative;
     font-size: 20px;
     float: left;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.footer-left p{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-right{
-    width: 45%;
     position: relative;
+    width: 45%;
     float: right;
+    margin-left: 10%;
     font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-right span{
     display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-right a {
+    text-decoration: none;
 }
 
 .footer-center{
     position: relative;
     margin:20px;
-    width: 38%;
-    left: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
     font-size: 16px;
+    display: block;
+    flex-wrap: wrap;
 }
 
 .footer-center a{
@@ -293,32 +395,40 @@ section.você-pode {
 }
 
 .vó-icons{
+    position: relative;
     width: 30px;
     height: 30px;
     margin: 10px;
-    position: relative;
     top: -40px;
     left: 450px;
+    flex-wrap: wrap;
 }
 
 .vó-icons-share { /*Icones de compartilhamento*/
+    position: relative;
     width: 30px;
     height: 30px;
     margin: 10px;
-    position: relative;
+    display: inline;
+    flex-wrap: wrap;
 }
 
-.footer-right a {
-    text-decoration: none;
-}
-
-@media screen and (max-width: 768px){
-    .menu{
-        display: none;
+@media screen and (max-width: 900px){
+    header{
+        width: 90%;
+        height: 490px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    .logo img{
-        width: 40%;
+    .menu{
+        display: none;
     }
 
     .menu-mobile{
@@ -327,93 +437,97 @@ section.você-pode {
         display: block;
     }
 
-    .menu-mobile i{
+    .menu-mobile img{
+        position: absolute;
+        width: 30px;
         cursor: pointer;
-        font-size: 23px;
-        margin-top: 8px;
+        top: 0;
+        margin-left: 50px;
+        padding-top: 10px;
+        align-items: center;
     }
 
-    section.main {
+    .logo {
+        padding-left: 2%;
+        padding-top: 2%;
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    .logo img {
         position: relative;
+        height: 30%;
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        border: 1px solid red;
+    }
+
+      section.main {
         width: 90%;
         height: 90%;
         margin-left: auto;
         margin-right: auto;
-        top:150px;
+        margin-top: -100px;
     }
 
     .vó-content{
         width: 100%;
     }
 
-    .vó-content p{
+    .vó-content.left1 p{
         font-size: 100%;
+        text-align: center;
     }
 
-    .vó-img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    left:10px;
-    top:10px;
-    } 
-
-    .você-pode-content p{
-        font-size: 300%;
-    }
-
-    .footer{
-        padding: 20px 50px 50px 20px;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .footer-inline {
-        width: 100%;
-        display: block;
+    .vó-content.left p{
+        font-size: 200%;
     }
 
     .footer-left{
+        width: 100%;
         font-size: 100%;
-        float: left;
+        text-align: center;
+    }
+
+    .footer-left p{
+        padding: 5px 5px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer-right{
+        width: 100%;
         font-size: 100%;
-        float: right;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+
+    .footer-right p{
+        padding: 5px 5px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer-right span{
-        width: 100%;
-    }
-
-    .footer-center{
-        font-size: 100%;
-        left: 50px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    footer{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .footer-left{
-        position: relative;
-        font-size: 100%;
-
-    }
-
-     .footer-right{
-        position: relative;
-        font-size: 100%;
+        padding: 10px 1px;
+        margin-left: 25%;
     }
 
      .footer-center{
-        position: relative;
-        font-size: 100%;
+        text-align: center;
+    }
+
+    .vó-icons-share{
+        display: inline;
+        align-items: center;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 425px){
+     .vó-icons-share{
+        border: 1px solid red;
     }
 }
