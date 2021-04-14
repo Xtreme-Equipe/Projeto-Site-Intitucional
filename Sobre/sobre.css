@@ -43,7 +43,7 @@ Sobre Nós
     display: flex;
     flex-wrap: wrap;
     margin-top: 11%;
-    font-size: 700%;
+    font-size: 600%;
     margin-left: 34%;
     margin-right: 34%;
     text-align: center;
@@ -59,7 +59,6 @@ Sobre Nós
 
 .visao{
     color: goldenrod;
-    padding-right: 40px;
 }
 
 .paragrafo-missao{
@@ -83,14 +82,14 @@ Sobre Nós
 .center-sobre-nos p{
     width: 70%;
     padding-left: 50px;
-    font-size: 8mm;
+    font-size: 5mm;
     text-align: unset;
-    
+    flex-wrap: wrap;
 }
 
 .center-sobre-nos h2{
     width: 50%;
-    font-size: 40mm;
+    font-size: 30mm;
     text-align: left;
     font-family: 'Dancing Script', cursive;
     margin-left: 5%;
