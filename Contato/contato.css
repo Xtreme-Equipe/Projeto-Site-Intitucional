@@ -100,10 +100,6 @@ form{
 	font-weight: bold;
 }
 
-.placeholder {
-	font-weight: bold;
-}
-
 input, textarea{
     box-sizing: border-box;
 	padding: 10px;
@@ -118,6 +114,7 @@ input, textarea{
     margin-left: 25px;
     margin-top: 60px;
 	font-size: 5mm;
+	font-weight: bold;
 }
 
 .enviar input{
