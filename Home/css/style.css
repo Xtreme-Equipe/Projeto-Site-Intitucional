@@ -77,7 +77,6 @@ header {
     display: block;
     opacity: 0;
     transition: 1s;
-    border: 1px solid red;
 }
 
 .menu-itens.show{
@@ -451,7 +450,6 @@ Footer
         padding-left: 2%;
         padding-top: 2%;
         width: 100%;
-        border: 1px solid red;
     }
 
     .logo img {
