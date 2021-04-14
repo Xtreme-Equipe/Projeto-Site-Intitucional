@@ -1,5 +1,5 @@
 
-# Xtreme ![Equipe Xtreme](/sprint1/equipe_xtreme_pequeno.png)
+# Xtreme ![Equipe Xtreme](../sprint1/equipe_xtreme_pequeno.png)
 
 ## :ballot_box_with_check: SPRINT 1
 
