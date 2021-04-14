@@ -99,6 +99,10 @@ form{
 	display: flex;
 }
 
+.faleconosco p{
+	font-weight: bold;
+}
+
 input, textarea{
     box-sizing: border-box;
 	padding: 10px;
