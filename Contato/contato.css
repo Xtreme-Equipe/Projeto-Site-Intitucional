@@ -18,18 +18,21 @@ body{
 }
 
 .faleconosco2{
-	padding-top:  7%;
-	padding-bottom: 5%;
-	font-size: 12mm;
+	font-size: 10mm;
+	padding-left: 40%;
+	height: auto;
+	display: inline;
+	margin-top: 65%;
+	flex-wrap: wrap;
 }
 
 .info{
 	border-radius: 10px;
 	border: black solid;
-	max-width: 1000px;
-	display: inline;
+	max-width: auto;
+	display: inline flex;
 	text-align: center;
-	font-size: 10mm;
+	font-size: 6mm;
 	float: left;
 	margin-left: 15%;
 	margin-right: 10%;
@@ -39,13 +42,18 @@ body{
 
 .info p{
 	display: flex;
-
 }
 
 .google{
 	display: flex;
 	position: relative;
 	margin: auto;
+	height: 40%;
+	padding-bottom: 80px;
+}
+
+.assunto{
+	padding-bottom: 50px;
 }
 
 .tel{
@@ -58,6 +66,11 @@ body{
 .email{
 	padding-bottom: 20px;
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+.email1{
+	padding-bottom: 20px;
     padding-right: 10px;
 }
 
@@ -75,28 +88,30 @@ body{
 
 form{
 	font-size: 21px;
-	max-width: 800px;
+	max-width: 700px;
 	margin: auto;
 	padding: 0 15px 15px 15px;
     margin-bottom: 100px;
-	border: solid #000;
-	margin-top: 150px;
+	border: solid rgb(160, 158, 158);
+	margin-top: 50px;
 	text-align: center;
+	flex-wrap: wrap;
+	display: flex;
 }
 
 input, textarea{
     box-sizing: border-box;
-	padding: 15px;
+	padding: 10px;
     border: 1px;
     border-color: rgb(100, 100, 100);
     border-bottom-style: groove;
     color: rgb(0, 0, 0);
     margin: 0 auto;
-	width: 700px;
-    height: 85px;
-    line-height: 20px;
+	width: 600px;
+    height: 40px;
+    line-height: 1px;
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 60px;
 	font-size: 5mm;
 }
 
@@ -116,8 +131,8 @@ input, textarea{
     margin-bottom: 20px;
 	padding-bottom: 40px;
     padding-right: 15px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 130%;
+    margin-right: 25%;
 	font-size: 6mm;
 }
 
@@ -126,11 +141,11 @@ input, textarea{
 }
 
 textarea{
-	width: 632px;
-    height: 166px;
+	width: 500px;
+    height: 130px;
     line-height: 30px;
 	margin: 10px 0px 30px;
 	margin-top: 30px;
-	margin-left: 80px;
+	margin-left: 50px;
 }
 
