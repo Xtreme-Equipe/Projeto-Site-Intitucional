@@ -15,6 +15,7 @@ body{
 
 .faleconosco{
 	width: 100%;
+	font-weight: bold;
 }
 
 .faleconosco2{
@@ -48,7 +49,6 @@ body{
 	display: flex;
 	position: relative;
 	margin: auto;
-
 	padding-bottom: 80px;
 }
 
@@ -91,12 +91,13 @@ form{
 	max-width: 600px;
 	margin: auto;
 	padding: 0 15px 15px 15px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 	border: solid rgb(160, 158, 158);
 	margin-top: 50px;
 	text-align: center;
 	flex-wrap: wrap;
 	display: flex;
+	font-weight: bold;
 }
 
 input, textarea{
@@ -129,7 +130,7 @@ input, textarea{
 	cursor: pointer;
     margin-top: 0px;
     margin-bottom: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
     padding-right: 15px;
     margin-left: 120%;
     margin-right: 25%;
