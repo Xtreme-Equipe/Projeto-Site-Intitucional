@@ -21,10 +21,10 @@ Sobre Nós
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: 80%;
+    width: 65%;
     margin-top: 5%;
     margin-bottom: 10%;
-    margin-left: 11%;
+    margin-left: 18%;
     margin-right: 18%;
     background-position: 100%;
     background-image: url(../Sobre/sobrenos.jpg);
@@ -59,6 +59,7 @@ Sobre Nós
 
 .visao{
     color: goldenrod;
+    padding-right: 40px;
 }
 
 .paragrafo-missao{
@@ -81,19 +82,21 @@ Sobre Nós
 
 .center-sobre-nos p{
     width: 70%;
+    padding-left: 50px;
     font-size: 8mm;
     text-align: unset;
     
 }
 
 .center-sobre-nos h2{
-    width: 70%;
+    width: 50%;
     font-size: 40mm;
     text-align: left;
     font-family: 'Dancing Script', cursive;
-    margin-left: 15%;
+    margin-left: 5%;
 }
 
 p{
     margin-right: 10%;
+    font-size: 6mm;
 }
