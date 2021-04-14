@@ -49,11 +49,13 @@ body{
 	display: flex;
 	position: relative;
 	margin: auto;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 }
 
 .assunto{
 	padding-bottom: 50px;
+	margin-left: 25px;
+	
 }
 
 .tel{
@@ -72,6 +74,13 @@ body{
 .email1{
 	padding-bottom: 20px;
     padding-right: 10px;
+	margin-left: 25px;
+}
+
+.nome{
+	margin-left: 25px;
+	padding-bottom: 20px;
+	margin-top: 30px;
 }
 
 .face{
@@ -89,6 +98,7 @@ body{
 form{
 	font-size: 21px;
 	max-width: 400px;
+	height: auto;
 	margin: auto;
 	padding: 0 15px 15px 15px;
     margin-bottom: 10px;
@@ -102,7 +112,7 @@ form{
 
 input, textarea{
     box-sizing: border-box;
-	padding: 10px;
+	padding: 20px;
     border: 1px;
     border-color: rgb(100, 100, 100);
     border-bottom-style: groove;
@@ -111,9 +121,7 @@ input, textarea{
 	width: 300px;
     height: 10px;
     line-height: 1px;
-    margin-left: 25px;
-    margin-top: 60px;
-	font-size: 5mm;
+	font-size: 4mm;
 }
 
 .enviar input{
