@@ -37,10 +37,10 @@
 
                 <ul class="menu">
                     <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
                     <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                    <li><a href="contato">Contato</a></li>
+                    <li><a href="../Contato/contato.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul>
                 <!--menu-->
@@ -48,7 +48,7 @@
             </div>
             <!--center-->
         </nav>
-        <a href="..//Home/index.html">
+        <a href="..//Home/index.php">
             <div class="imagem_check">
                 <img src="imagens/Accept-icon.png" alt="Imagem check">
             </div>
@@ -137,8 +137,8 @@
             $voluntario   = isset($_POST['voluntario'])?$_POST['voluntario']:"";
             $especialidade= isset($_POST['especialidade'])?$_POST['especialidade']:"";
                     
-            $sql1 = "insert into tb_voluntario (nome,nascimento,cpf,rg,tel_number,celular,email,voluntario,especialidade) values ('$nome','$nascimento','$cpf','$rg','$tel_number','$celular','$email','$voluntario','$especialidade')";
-            $salvar = mysqli_query($conexao,$sql1);
+            $sql_voluntario = "insert into tb_voluntario (nome,nascimento,cpf,rg,tel_number,celular,email,voluntario,especialidade) values ('$nome','$nascimento','$cpf','$rg','$tel_number','$celular','$email','$voluntario','$especialidade')";
+            $salvar = mysqli_query($conexao,$sql_voluntario);
 
             
             
