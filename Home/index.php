@@ -111,7 +111,8 @@ if ($imagem_direita) {
                     if ($admin == "1") {
                         echo "<form action=\"index.php\" method=\"POST\"enctype=\"multipart/form-data\">";
                     }
-                    echo '<img class="vó-img" src="imagem/uploaded.img" />';
+                    $date = date("Y-m-d-h:i:sa");
+                    echo "<img class=\"vó-img\" src=\"imagem/uploaded.img?date=$date\" />";
                     if ($admin == "1") {
                         echo "<label for=\"conteudo\">Enviar imagem:</label>
                         <input type=\"file\" name=\"imagem_direita\" accept=\"image/*\"> <button type=\"submit\">Salvar</button>

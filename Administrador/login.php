@@ -24,7 +24,7 @@
             $_SESSION['name'] = $result_name; 
             $_SESSION['email'] = $result_email; //As sessions verifica se o usuário está logado.
 
-            header('Location: /Projeto-Site-Intitucional/Home/?admin=1'); //redireciona para a página home editável
+            header('Location: /Projeto-Site-Intitucional/Home'); //redireciona para a página home
         }
 
         if (!$validated) {

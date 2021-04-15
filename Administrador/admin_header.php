@@ -20,18 +20,22 @@
         $class_editar = 'hidden';
         $class_descartar = '';
     }
+
+    if (!$islogado && $admin == '1'){
+        header('Location: /Projeto-Site-Intitucional/Administrador/login.php');
+    }
 ?>
 
 <div class="barra_admin btn">
     <div>
         <form class="<?=$class_editar?>" action="" method="GET">
             <input type="hidden" name="admin" value="1">
-            <button class="editar">Editar página</button>
+            <button class="editar" title="Habilita edição do texto sobre a ONG e altera a imagem ao lado do texto">Editar página</button>
         </form>
 
         <form class="<?=$class_descartar?>" action="" method="GET"> 
             <input type="hidden" name="admin" value="0">
-            <button class="descartar">Descartar</button>
+            <button class="descartar" title="Descarta a edição do texto sobre a ONG e também as alterações da imagem ao lado do texto">Descartar</button>
         </form>
 
     </div>
