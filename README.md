@@ -89,7 +89,13 @@
 
 <br>
 
-## <img src = "./readme/back_log.png"/> Backlog do Produto
+## <img src = "./readme/back_log.png"/> Product Backlog
+
+<h1 align="center"> <img src = "./readme/product_backlog.png" /></h1> 
+
+<br>
+
+## <img src = "./readme/back_log.png"/> Sprints Backlog 
 
 <h1 align="center"> <img src = "./readme/sprintbacklog.png" /></h1> 
 
@@ -97,6 +103,6 @@
 
 ## <img src = "./readme/equipe_icon.png"/> Equipe 
 
-![Equipe Xtreme](/readme/equipe.png "Apresentação Equipe Xtreme")
+![Equipe Xtreme](/readme/equipe.gif "Apresentação Equipe Xtreme")
 
 <br>

@@ -7,7 +7,7 @@ Após o cliente aprovar o protótipo apresentado, o desenvolvimento do projeto s
 
 <br>
 
-## Product Backlog
+## <img src = "../sprint1/back_log.png"/> Product Backlog
 
 Para ter uma visão completa acesse: [Procuct Backlog completo](../sprint1/ProductBacklog.pdf)
 
@@ -20,15 +20,11 @@ Para ter uma visão completa acesse: [Procuct Backlog completo](../sprint1/Produ
 
 ## Burndown da Sprint
 
-<h1 align="center"> <img src = "../sprint1/burndown.jpg"/></h1>
+<h1 align="center"> <img src = "../sprint1/burndown.png"/></h1>
 
-## Gráfico do Backlog
+## <img src = "../sprint1/grafico.png"/> Gráfico do Backlog
 
 <h1 align="center"> <img src = "../sprint1/grafico_backlog.png"/></h1>
-
-<br>
-
-> Para ter uma visão completa acesse: [Mapa do site](../sprint0/mapa_do_site.pdf)
 
 <br>
 
