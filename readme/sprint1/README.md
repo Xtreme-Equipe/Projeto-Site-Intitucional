@@ -7,12 +7,6 @@ Após o cliente aprovar o protótipo apresentado, o desenvolvimento do projeto s
 
 <br>
 
-## <img src = "../sprint1/back_log.png"/> Product Backlog
-
-Para ter uma visão completa acesse: [Procuct Backlog completo](../sprint1/ProductBacklog.pdf)
-
-<br>
-
 ## Sprint Backlog 
 
 <h1 align="center"> <img src = "../sprint1/sprint_bl_sprint1.png"/></h1>
