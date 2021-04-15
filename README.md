@@ -29,17 +29,17 @@
 
  > **Requisitos**
 
- - [x] Cadastro de voluntários;
- - [x] Cadastro de projetos;
- - [x] Cadastro de doadores;
- - [x] Cadastro de participantes;
- - [x] Painel adminitrativo para alterações no site.<br><br>
+ - <img src = "./readme/feito.jpeg" /> Cadastro de voluntários;
+ - <img src = "./readme/feito.jpeg" /> Cadastro de projetos;
+ - <img src = "./readme/feito.jpeg" /> Cadastro de doadores;
+ - <img src = "./readme/feito.jpeg" /> Cadastro de participantes;
+ - <img src = "./readme/feito.jpeg" /> Painel adminitrativo para alterações no site.<br><br>
 
  > **Funcionalidades extras**
 
- - [x]  Link de compartilhamento do site nas redes sociais do visitante;
- - [x]  Adaptação do site para versão mobile;
- - [x]  Pesquisa de origem de tráfego.<br><br>
+ - <img src = "./readme/feito.jpeg" />  Link de compartilhamento do site nas redes sociais do visitante;
+ - <img src = "./readme/feito.jpeg" />  Adaptação do site para versão mobile;
+ - <img src = "./readme/feito.jpeg" />  Pesquisa de origem de tráfego.<br><br>
 
   
 **:link: Clique no link abaixo para visualizar o modelo do site no Marvel.**  
@@ -49,19 +49,19 @@
 
 ## :calendar: Cronograma das Sprints
 
-- [x] [SPRINT 0](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint0) - 28/02/2021 a 06/03/2021 :heavy_check_mark:
+- <img src = "./readme/feito.jpeg" /> [SPRINT 0](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint0) - 28/02/2021 a 06/03/2021 
 
-- [x] [SPRINT 1](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint1) - 08/03/2021 a 28/03/2021 :heavy_check_mark:
+- <img src = "./readme/feito.jpeg" /> [SPRINT 1](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint1) - 08/03/2021 a 28/03/2021 
 
-- [x] [SPRINT 2](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint2) - 29/03/2021 a 18/04/2021
+- <img src = "./readme/a_fazer.jpeg" /> [SPRINT 2](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint2) - 29/03/2021 a 18/04/2021
 
-- [x] [SPRINT 3](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint3) - 26/04/2021 a 16/05/2021
+- <img src = "./readme/a_fazer.jpeg" /> [SPRINT 3](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint3) - 26/04/2021 a 16/05/2021
 
-- [x] [SPRINT 4](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint4) - 17/05/2021 a 05/06/2021
+- <img src = "./readme/a_fazer.jpeg" /> [SPRINT 4](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint4) - 17/05/2021 a 05/06/2021
 
-- [x] Apresentação Final - 06/06/2021 a 11/06/2021
+- <img src = "./readme/a_fazer.jpeg" /> Apresentação Final - 06/06/2021 a 11/06/2021
 
-- [x] Feira de Soluções - 14/06/2021 a 18/06/2021
+- <img src = "./readme/a_fazer.jpeg" /> Feira de Soluções - 14/06/2021 a 18/06/2021
 
 
 <h1 align="center"> <img src = "./readme/cronograma_sprints.png"/></h1>
@@ -72,7 +72,7 @@
 
 ## :computer: Tecnologias Utilizadas
 
-<h1 align="center"> <img src = "./readme/tecnologias_utilizadas.png"/></h1>
+<h1 align="center"> <img src = "./readme/tecnologias.png"/></h1>
 
 * **Banco de Dados:** MySQL;
 * **Back-end:** PhP;
@@ -83,18 +83,20 @@
 
 ## :bulb: Metodologia Utilizada
 
-* **Metodologia Ágil:** 
+* **Metodologia Ágil: SCRUM** 
+ <img src = "./readme/metodologia.png" /></h1> 
+
 
 <br>
 
-## Backlog do Produto
+## <img src = "./readme/back_log.png"/> Backlog do Produto
 
 <h1 align="center"> <img src = "./readme/sprintbacklog.png" /></h1> 
 
 <br>
 
-## Equipe 
+## <img src = "./readme/equipe_icon.png"/> Equipe 
 
-![Equipe Xtreme](/readme/apresentacao_equipe.gif "Apresentação Equipe Xtreme")
+![Equipe Xtreme](/readme/equipe.png "Apresentação Equipe Xtreme")
 
 <br>
