@@ -22,7 +22,7 @@ if ($imagem_direita) {
 <!DOCTYPE html>
 <html>
 <head>
-<title>Maria Vó Félix</title>
+<title>Vó Maria Félix</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -187,7 +187,7 @@ if ($imagem_direita) {
                     function share(){
                         if (navigator.share !== undefined) {
                             navigator.share({
-                                title: 'Maria Vó Félix',
+                                title: 'Vó Maria Félix',
                                 text: 'Um texto de resumo',
                                 url: 'https://www.facebook.com/fatecjessenvidal/',
                             })
