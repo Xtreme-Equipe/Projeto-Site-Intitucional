@@ -25,12 +25,12 @@
             </a>
         </div><!--logo-->
         <ul class="menu">
-            <li><a  href="..//Home/index.php">Home</a></li>
-            <li><a href="sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-            <li><a href="contato">Contato</a></li>
-            <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
+                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
+                    <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
+                    <li><a href="../Contato/Contato2.php">Contato</a></li>
+                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
         </ul><!--menu-->
     </div><!--center-->
 </nav>

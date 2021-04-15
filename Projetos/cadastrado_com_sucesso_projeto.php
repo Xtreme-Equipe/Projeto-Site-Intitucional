@@ -1,11 +1,11 @@
+<!-- Para cada pagina de cadastro tera que ter um cadastro concluido a parte pra conter a conexao com mysql-->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Doaçao/cadastrado_com_sucesso.css" media="screen">
+    <link rel="stylesheet" href="cadastrado_com_sucesso_projeto.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css">
     <title>Cadastro Concluído</title>
 </head>
@@ -36,12 +36,12 @@
                 <!--logo-->
 
                 <ul class="menu">
-                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
                     <li><a href="../Sobre/sobre.php">Sobre</a></li>
                     <li><a href="../Projetos/projetos.php">Projetos</a></li>
                     <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                     <li><a href="../Contato/Contato2.php">Contato</a></li>
-                    <li><a class="btn-menu" href="../Doaçao/formulario_doador.php">Doações</a></li>
+                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul>
                 <!--menu-->
 
@@ -50,7 +50,7 @@
         </nav>
         <a href="..//Home/index.php">
             <div class="imagem_check">
-                <img src="accept-icon.png" alt="Imagem check">
+                <img src="imagens/Accept-icon.png" alt="Imagem check">
             </div>
         </a>
         <h1 class="h1">SUCESSO!</h1>
@@ -122,20 +122,25 @@
         </div>
 
 </body>
-   
+ 
 <?php
-            $conexao = mysqli_connect("localhost","root","","bd_doacao");
-
-            $nome         = isset($_POST['nome'])?$_POST['nome']:"";
-            $cpf          = isset($_POST['cpf'])?$_POST['cpf']:"";
-            $tel_number   = isset($_POST['tel_number'])?$_POST['tel_number']:"";
-            $celular      = isset($_POST['celular'])?$_POST['celular']:"";
-            $endereco     = isset($_POST['endereco'])?$_POST['endereco']:"";
-            $anonimo      = isset($_POST['anonimo'])?$_POST['anonimo']:"";
-                    
-            $sql_doacao = "insert into tb_doacao (nome,cpf,tel_number,celular,endereco,anonimo) values ('$nome','$cpf','$tel_number','$celular','$endereco','$anonimo')";
-            $salvar = mysqli_query($conexao,$sql_doacao);
+            $conexao = mysqli_connect("localhost","root","","bd_projetos");
             
-        ?>
 
+            $nome_empreendedor = isset($_POST['nome_empreendedor'])?$_POST['nome_empreendedor']:"";
+            $nome_empresa      = isset($_POST['nome_empresa'])?$_POST['nome_empresa']:"";
+            $cpf               = isset($_POST['cpf'])?$_POST['cpf']:"";
+            $email             = isset($_POST['email'])?$_POST['email']:"";
+            $tel_number        = isset($_POST['tel_number'])?$_POST['tel_number']:"";
+            $celular           = isset($_POST['celular'])?$_POST['celular']:"";
+            $cidade            = isset($_POST['cidade'])?$_POST['cidade']:"";
+            $estado            = isset($_POST['estado'])?$_POST['estado']:"";
+            $fisica_juridica   = isset($_POST['fisica_juridica'])?$_POST['fisica_juridica']:"";
+            $descriçao         = isset($_POST['descriçao'])?$_POST['descriçao']:"";
+
+                    
+            $sql_projeto = "insert into tb_projetos (nome_empreendedor,nome_empresa,cpf,email,tel_number,celular,cidade,estado,fisica_juridica,descriçao) values ('$nome_empreendedor','$nome_empresa','$cpf','$email','$tel_number','$celular','$cidade','$estado','$fisica_juridica','$descriçao')";
+            $salvar = mysqli_query($conexao, $sql_projeto);
+        ?>
+        
 </html>

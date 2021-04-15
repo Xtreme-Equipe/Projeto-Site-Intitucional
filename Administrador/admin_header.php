@@ -24,12 +24,12 @@
 
 <div class="barra_admin btn">
     <div>
-        <form class="<?=$class_editar?>" action="" method="GET"><!--habilita a edição da página-->
+        <form class="<?=$class_editar?>" action="" method="GET">
             <input type="hidden" name="admin" value="1">
             <button class="editar">Editar página</button>
         </form>
 
-        <form class="<?=$class_descartar?>" action="" method="GET"> <!--habilita o descarte de alterações-->
+        <form class="<?=$class_descartar?>" action="" method="GET"> 
             <input type="hidden" name="admin" value="0">
             <button class="descartar">Descartar</button>
         </form>
