@@ -6,9 +6,14 @@
     outline: 0;
     opacity: 1;
     font-size: larger;
+    text-align: center;
 }
 .welcome{
-    float: left;
+    text-align: center;
+    color:white;
+
+    font-size: xx-large;
+
 }
 .sair{
     float: right;
@@ -22,5 +27,20 @@
 }
 
 .btn button:hover{
-    background-image: linear-gradient(to right, #0492bd, #15768f);
+    background-image: linear-gradient(to right, #3cb9df, #1393b3);
+}
+
+.editar, .descartar{
+    float: left;
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    border: 0px;
+    background: #088eaf;
+    width: 137px;
+    height: 25px;
+
+}
+.hidden{
+    display: none;
 }
