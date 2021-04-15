@@ -28,7 +28,7 @@
 
 header {
     text-indent: -9999px;
-    background: url(../imagem/fundo-2.jpeg);
+    background: url(../imagem/fundo-3.jpeg);
     background-position: center;
     background-size: cover;
      -webkit-background-size: cover;
@@ -38,8 +38,7 @@ header {
     margin-left: 18%;
     margin-right: 18%;
     width: 64%;
-    height: 590px;
-    top: -240px;
+    height: 350px;
     position: absolute;
     opacity: 30%;
     display: flex;
