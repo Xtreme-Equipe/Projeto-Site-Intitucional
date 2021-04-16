@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
     <title>Projetos</title>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : ' 6Lesd6caAAAAAOMb_uTxoAGkr7TS8bmKGJ31tc8S '
+          });
+        };
+      </script>
 </head>
 
 <body>
@@ -105,16 +112,21 @@
                     <label>
                         <input type="radio" name="fisica_juridica" value="jurídica">Pessoa Jurídica
                     </label>
-                </div>
+                    </div>
                 <div class="campo center">
                     <label for="projeto"><strong>Descrição do projeto</strong></label>
-                    <input type="text" name="descriçao" id="projeto" placeholder="Descreva seu projeto aqui" required>  
+                    <input type="text" name="projeto" id="projeto" placeholder="Descreva seu projeto aqui" required>  
                 </div>
-                <div class="campo right"><br><br><br><br></div>
-            </fieldset>
-            
-            <button  class="botao" type="submit" >Enviar</button>
-            
+                <div class="campo center">
+                <div id="html_element"></div>
+                <br>
+              </form>
+              <div class="campo center">
+              <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                  async defer>
+              </script> 
+              </fieldset>
+              <button class="botao" type="submit">Enviar</button> 
         </form>
         <div class="footer">
             <div class="footer-inline">
