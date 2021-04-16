@@ -8,7 +8,8 @@
   <a href ="#calendar-cronograma-das-sprints"> Sprints </a>  • 
   <a href ="#computer-tecnologias-utilizadas"> Tecnologias </a>  • 
   <a href ="#bulb-metodologia-utilizada"> Metodologia </a>  • 
-  <a href ="#backlog-do-produto">Backlog </a>  •
+  <a href ="#backlog-do-produto">Product Backlog </a>  •
+    <a href ="#sprint-backlog">Sprints Backlog </a>  •
   <a href ="#equipe"> Equipe </a> 
 </p>
 
