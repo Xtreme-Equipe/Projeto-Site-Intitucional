@@ -83,4 +83,4 @@ Nesta Sprint decidimos finalizar o site, adicionando as páginas que faltavam (p
 <br>
 <h3 align="center">Comprovação da responsividade pelo Google</h3>
 
-![Comprovação da responsividade pelo Google](comprovacao_google.png)
+![](comprovacao_google.PNG)
