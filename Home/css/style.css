@@ -632,3 +632,41 @@ Site Responsivo Celular (Com resoluções de 325px a 375 px)
         align-items: center;        
     }
 }
+
+/*
+Site Responsivo Celular (Com resoluções de até 320px)
+*/
+@media screen and (max-width: 320px){
+    /*
+    Nav(Menu mobile)
+    */
+    .menu-itens{
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+
+/*
+Site Responsivo Celular (Com resoluções de até 280px - celulares antigos e Galaxy Fold)
+*/
+@media screen and (max-width: 280px){
+    /*
+    Nav(Menu mobile)
+    */
+    .menu-itens{
+        width: 60%;
+        margin-left: 32%;
+    }
+
+    /*
+    Section Você Pode
+    */
+    .você-pode-content p{
+        margin-right: 20%;
+    }
+
+    .botões button{
+        position: relative;
+        margin-left: -10%;
+    }
+}
