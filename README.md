@@ -90,13 +90,13 @@
 
 <br>
 
-## <img src = "./readme/back_log.png"/> Product Backlog
+## <img src = "./readme/back_log.png"/>Product Backlog
 
 <h1 align="center"> <img src = "./readme/product_backlog.png" /></h1> 
 
 <br>
 
-## <img src = "./readme/back_log.png"/> Sprints Backlog 
+## <img src = "./readme/back_log.png"/>Sprints Backlog 
 
 <h1 align="center"> <img src = "./readme/sprintbacklog.png" /></h1> 
 
