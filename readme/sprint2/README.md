@@ -16,11 +16,11 @@ Nesta Sprint decidimos finalizar o site, adicionando as páginas que faltavam (p
 
 ## Burndown da Sprint
 
-<h1 align="center"> <img src = "../sprint2/burndown.jpg"/></h1>
+<h1 align="center"> <img src = "../sprint2/burndown.png"/></h1>
 
 ## Gráfico do Backlog
 
-<h1 align="center"> <img src = "../sprint2/grafico_backlog.png"/></h1>
+<h1 align="center"> <img src = "../sprint2/grafico.png"/></h1>
 
 <br>
 
@@ -44,21 +44,35 @@ Nesta Sprint decidimos finalizar o site, adicionando as páginas que faltavam (p
 
 <br>
 
-<h3 align="center">Painel Administrativo - Login</h3>
+<h3 align="center">Painel Administrativo - Login/Logout</h3>
 
-<h1 align="center"> <img src = "../sprint2/admin.gif"/></h1>
+<h1 align="center"> <img src = "../sprint2/login_e_logout.gif"/></h1>
+
+<br>
+<h3 align="center">Painel Administrativo - Descrição dos botões</h3>
+
+<h1 align="center"> <img src = "../sprint2/mensagem.gif"/></h1>
 
 <br>
 
-<h3 align="center">Home Editável</h3>
+<h3 align="center">Painel Administrativo - Trocando a imagem</h3>
 
-<h1 align="center"> <img src = "../sprint2/home_editavel.gif"/></h1>
+<h1 align="center"> <img src = "../sprint2/imagem.gif"/></h1>
 
 <br>
+<h3 align="center">Painel Administrativo - Trocando o texto</h3>
 
+<h1 align="center"> <img src = "../sprint2/texto.gif"/></h1>
+
+<br>
+<h3 align="center">Painel Administrativo - Descartando alterações</h3>
+
+<h1 align="center"> <img src = "../sprint2/desfaz.gif"/></h1>
+
+<br>
 <h3 align="center">Botão Captcha</h3>
 
-<h1 align="center"> <img src = "../sprint2/banco_de_dados.gif"/></h1>
+<h1 align="center"> <img src = "../sprint2/captcha.gif"/></h1>
 
 <br>
 
@@ -69,6 +83,6 @@ Nesta Sprint decidimos finalizar o site, adicionando as páginas que faltavam (p
 <br>
 <h3 align="center">Comprovação da responsividade pelo Google</h3>
 
-<h1 align="center"> <img src = "../sprint2/comprovacao_google.png"/></h1>
+<h1 align="center"> <img src = "comprovacao_google.png"/></h1>
 
 <br>
