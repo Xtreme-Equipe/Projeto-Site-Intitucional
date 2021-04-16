@@ -81,7 +81,6 @@ Nesta Sprint decidimos finalizar o site, adicionando as páginas que faltavam (p
 <h1 align="center"> <img src = "../sprint2/mobile_home.gif"/></h1>
 
 <br>
-
 <h3 align="center">Comprovação da responsividade pelo Google</h3>
 
-<h1 align="center"> <img src = "../sprint2/comprovacao_google.png"/></h1>
+![](comprovacao_google.png)
