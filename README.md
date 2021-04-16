@@ -54,7 +54,7 @@
 
 - <img src = "./readme/feito.jpeg" /> [SPRINT 1](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint1) - 08/03/2021 a 28/03/2021 
 
-- <img src = "./readme/a_fazer.jpeg" /> [SPRINT 2](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint2) - 29/03/2021 a 18/04/2021
+- <img src = "./readme/feito.jpeg" /> [SPRINT 2](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint2) - 29/03/2021 a 18/04/2021
 
 - <img src = "./readme/a_fazer.jpeg" /> [SPRINT 3](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint3) - 26/04/2021 a 16/05/2021
 
