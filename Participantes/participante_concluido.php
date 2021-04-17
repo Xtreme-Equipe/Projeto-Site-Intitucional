@@ -37,10 +37,10 @@
 
                 <ul class="menu">
                     <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
                     <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                    <li><a href="contato">Contato</a></li>
+                    <li><a href="../Contato/Contato2.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul>
                 <!--menu-->
@@ -139,8 +139,8 @@
             $outros       = isset($_POST['outros'])?$_POST['outros']:"";
             $especifique  = isset($_POST['especifique'])?$_POST['especifique']:"";
     
-            $sqll = "insert into tb_participantes (nome,nome_pai,nascimento,nome_mae,cpf,tel_number,celular,email,redesocial,youtube,outros,especifique) values ('$nome','$nome_pai','$nascimento','$nome_mae','$cpf','$tel_number','$celular','$email','$redesocial','$youtube','$outros','$especifique')";
-            $salvar = mysqli_query($conexao,$sqll);
+            $sql_participantes = "insert into tb_participantes (nome,nome_pai,nascimento,nome_mae,cpf,tel_number,celular,email,redesocial,youtube,outros,especifique) values ('$nome','$nome_pai','$nascimento','$nome_mae','$cpf','$tel_number','$celular','$email','$redesocial','$youtube','$outros','$especifique')";
+            $salvar = mysqli_query($conexao,$sql_participantes);
             
         ?>
     

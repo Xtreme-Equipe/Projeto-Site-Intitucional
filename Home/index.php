@@ -1,7 +1,28 @@
+
+<?php
+/*Admin indica se a pág está ou não em modo de edição*/
+$admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
+/*Texto_esquerdo faz atualização do lado esquerdo da home e salva no banco de dados */
+$texto_esquerdo = isset($_POST['texto_esquerdo']) ? $_POST['texto_esquerdo'] : "";
+if ($texto_esquerdo != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_home");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'home' and localizacao = 'esquerda'");
+    mysqli_stmt_bind_param($preparado, "s", $texto_esquerdo);
+    mysqli_stmt_execute($preparado);
+}
+/*Imagem_direita faz atualização da imagem direita da home(ao lado do texto equerdo) e salva a imagem no hd*/
+$imagem_direita = isset($_FILES['imagem_direita']) ? $_FILES['imagem_direita'] : "";
+if ($imagem_direita) {
+    $temp_filename = $imagem_direita["tmp_name"];
+    $newfile = 'imagem/uploaded.img';
+    copy($temp_filename, $newfile);
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Maria Vó Félix</title>
+<title>Vó Maria Félix</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,10 +30,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+<script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
+
 
 </head>
 <body>
-
+    <?php
+        include('../Administrador/admin_header.php'); //não remover, faz parte do admin!
+    ?>
     <div id="container"><!-- Início container -->
 
         <header>
@@ -26,15 +52,17 @@
         <nav>
             <div class="center">
                 <div class="logo">
+                    
+            
                     <img src="imagem/Vó-logo.jpeg">
                 </div><!--logo-->
 
                 <ul class="menu">
                     <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
                     <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                    <li><a href="contato">Contato</a></li>
+                    <li><a href="../Contato/Contato2.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul><!--menu-->
 
@@ -50,16 +78,48 @@
             </div><!--center-->
         </section><!--main--> 
 
-
         <section class="vó center">
             <div class="center1">
                 <div class="vó-content left">
-                    <p>O Centro comunitário "VÓ MARIA FÉLIX" recebe crianças desde os 0 até aos 5 anos de idade.</p><br />
-                    <p>Cerca de quarenta alunos fizeram parte do ano pioneiro. Ao longo do tempo este número foi aumentando significativamente, sendo que hoje a escola conta com cerca de duzentos e cinquenta alunos. No entanto, temos a ânsia de crescer ainda mais</p><br />
-                    <p>Os nossos principais fins são: contribuir para o bem-estar, a valorização pessoal e a plena intregação social das crianças e dos jovens que, por razões de natureza diversa, passam por dificuldades no seu cotidiano.</p>
+                    <?php
+                    /*Formulário de edição de texto */
+                    if ($admin == "1") {
+                        echo "<form action=\"index.php\" method=\"POST\"> 
+                            <textarea id=\"editor\" name=\"texto_esquerdo\">";
+                    }
+                    $conexao = mysqli_connect("localhost","root","","bd_home");
+                    $consulta = "select conteudo from tb_conteudo where pagina = 'home' and localizacao = 'esquerda'";
+                    $resultado = mysqli_query($conexao, $consulta);
+                    if (!$resultado) {
+                        die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                    }
+                    while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                        echo $item_da_lista_resultado["conteudo"];
+                    }
+                    ?>
+                           
+                    <?php
+                    if ($admin == "1") {
+                        echo "</textarea> <button type=\"submit\">Salvar</button>
+                    </form>";
+                    }
+                    ?>
                 </div>
                 <div class="vó-content right">
-                    <img class="vó-img" src="imagem/img-vó-1.jpeg" />
+                <?php
+                /*Adiciona o formulário de edição de imagem*/
+                    if ($admin == "1") {
+                        echo "<form action=\"index.php\" method=\"POST\"enctype=\"multipart/form-data\">";
+                    }
+                    $date = date("Y-m-d-h:i:sa");
+                    echo "<img class=\"vó-img\" src=\"imagem/uploaded.img?date=$date\" />";
+                    if ($admin == "1") {
+                        echo "<label for=\"conteudo\">Enviar imagem:</label>
+                        <input type=\"file\" name=\"imagem_direita\" accept=\"image/*\"> <button type=\"submit\">Salvar</button>
+                    </form>";
+                    }
+                    ?>
+                    <!--<img class="vó-img" src="imagem/img-vó-1.jpeg" /> -->
                 </div>
                 
             </div><!--center-->
@@ -79,9 +139,9 @@
                 </div>
 
                 <div class="botões vó-content right">
-                    <a href="../Doaçao/formulario_doador.html"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
-                    <a href="../Voluntario/cadastrovoluntario.html"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
-                    <a href="../Participantes/cadastro_participantes.html"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
+                    <a href="../Doaçao/formulario_doador.php"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
+                    <a href="../Voluntario/cadastro_voluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
+                    <a href="../Participantes/cadastro_participantes.php"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
                 </div>
             </div><!--center-->
         </section><!--você-pode-->
@@ -128,7 +188,7 @@
                     function share(){
                         if (navigator.share !== undefined) {
                             navigator.share({
-                                title: 'Maria Vó Félix',
+                                title: 'Vó Maria Félix',
                                 text: 'Um texto de resumo',
                                 url: 'https://www.facebook.com/fatecjessenvidal/',
                             })
@@ -159,6 +219,14 @@
                 menuItens.classList.remove('hide'); 
             }       
         });
+    </script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", 
+            function() {
+                CKEDITOR.replace("editor", false) /*inicializa o editor de texto após o carregamento da página */
+            }
+        )
 
     </script>
 

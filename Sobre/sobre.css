@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Graphik", sans-serif;
+}
+
+#container {
+    max-width: 80%;
+    max-height: 80%;
+    background: #ffffff;
+    position: relative;
+}
+
+/*
+Sobre Nós
+*/
+
+.sobre-nos{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 65%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-position: 100%;
+    background-image: url(../Sobre/sobrenos.jpg);
+}
+
+.center-sobre-nos{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre{
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;   
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 11%;
+    font-size: 600%;
+    margin-left: 40%;
+    margin-right: 34%;
+    text-align: center;
+}
+
+.missao{
+    color: fuchsia;
+}
+
+.valores{
+    color: cornflowerblue;
+}
+
+.visao{
+    color: goldenrod;
+}
+
+.paragrafo-missao{
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+}
+
+.paragrafo-visao{
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+}
+
+.paragrafo-valores{
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+}
+
+.center-sobre-nos p{
+    width: 70%;
+    padding-left: 50px;
+    font-size: 5mm;
+    text-align: unset;
+    flex-wrap: wrap;
+}
+
+.center-sobre-nos h2{
+    width: 50%;
+    font-size: 30mm;
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 5%;
+}
+
+p{
+    margin-right: 10%;
+    font-size: 6mm;
+}

@@ -28,7 +28,7 @@
 
 header {
     text-indent: -9999px;
-    background: url(../imagem/fundo-2.jpeg);
+    background: url(../imagem/fundo-3.jpeg);
     background-position: center;
     background-size: cover;
      -webkit-background-size: cover;
@@ -38,15 +38,16 @@ header {
     margin-left: 18%;
     margin-right: 18%;
     width: 64%;
-    height: 590px;
-    top: -240px;
+    height: 350px;
     position: absolute;
     opacity: 30%;
+    display: flex;
     border-radius: 0 0 10% 10%;
 }
 
 .logo img {
     height: 170px;
+    display: flex;
     position: relative;
     top: 0;
     border-radius: 50%;
@@ -58,6 +59,69 @@ header {
     height: 100%;
     padding: 0;
     margin: auto;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-itens{
+    position: absolute;
+    left: 0;
+    top: 27px;
+    width: 90%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-itens.show{
+    opacity: 1;
+}
+
+.menu-itens.hidde{
+    opacity: 0;
+}
+
+.menu-itens ul{
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu-itens li{
+    display: block;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.menu-itens li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.menu-itens ul li a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.menu-itens .btn-menu {
+    background-color:rgba(88, 82, 82, 0.411);
+    display: inline-block;
+    padding: 8px 20px;
+    color:#000000;
+    
+}
+
+.menu-itens .btn-menu:hover {
+    background-color: #000000;
+    color: white;
 }
 
 .menu ul{
@@ -130,20 +194,27 @@ section.main {
 }
 
 /*
-Section Sobre empreendedor
+Section Vó Center
 */
-section.vó{
+section.vó.center{
     position: relative;
     padding-top: 190px;
+    display: flex;
+}
+
+.center1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .vó-img{
     position: relative;
-     background-position: center;
+    background-position: center;
     background-size: cover;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
@@ -152,6 +223,7 @@ section.vó{
     float: left;
     margin-right: 2%;
 }
+
 .vó-content.right {
     float: right;
     margin-left: 2%;
@@ -176,6 +248,13 @@ Section Você Pode
 section.você-pode {
     position: relative;
     padding-top: 75px;
+    display: flex;
+}
+
+.center2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .você-pode-content{
@@ -194,8 +273,6 @@ section.você-pode {
 .você-pode-content span{
     font-family: 'Cabin Sketch', cursive;
 }
-
-
 
 .azul{
     color: #004aad;
@@ -239,51 +316,74 @@ section.você-pode {
     border-radius: 20px;
 }
 
-.footer-home{
+/*
+Footer
+*/
+.footer-home {
     position: relative;
     margin-left: 18%;
     margin-right: 18%;
     padding-top: 90px;
 }
 
-.footer {
+.footer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px 20px 20px 20px;
     background: #ff9052;
     font-weight: bold;
-    position: relative;
 }
 
-.footer-inline {
+.footer-inline{
     width: 100%;
     display: inline-block;
 }
 
 .footer-left{
+    position: relative;
     padding: 0 10px;
     width: 45%;
-    position: relative;
     font-size: 20px;
     float: left;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.footer-left p{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-right{
-    width: 45%;
     position: relative;
+    width: 45%;
     float: right;
+    margin-left: 10%;
     font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-right span{
     display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-right a {
+    text-decoration: none;
 }
 
 .footer-center{
     position: relative;
     margin:20px;
-    width: 38%;
-    left: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
     font-size: 16px;
+    display: block;
+    flex-wrap: wrap;
 }
 
 .footer-center a{
@@ -293,40 +393,50 @@ section.você-pode {
 }
 
 .vó-icons{
+    position: relative;
     width: 30px;
     height: 30px;
     margin: 10px;
-    position: relative;
     top: -40px;
     left: 450px;
+    flex-wrap: wrap;
 }
 
 .vó-icons-share { /*Icones de compartilhamento*/
+    position: relative;
     width: 30px;
     height: 30px;
     margin: 10px;
-    position: relative;
+    display: inline;
+    flex-wrap: wrap;
 }
 
-.footer-right a {
-    text-decoration: none;
-}
+/*
+Site Responsivo Tablet (Com resoluções de 768px a 900px)
+*/
+@media screen and (max-width: 900px){
+    /*
+    Header
+    */
+    header{
+        position: absolute;
+        width: 90%;
+        height: 240px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-position: right;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-@media screen and (max-width: 768px){
+    /*
+    Nav
+    */
     .menu{
         display: none;
-    }
-
-     header{
-        position: absolute;
-        max-width: 100%;
-        max-height: 100%;
-        top:-420px;
-        left:-90px;
-    }
-
-    .logo img{
-        width: 40%;
     }
 
     .menu-mobile{
@@ -335,86 +445,228 @@ section.você-pode {
         display: block;
     }
 
-    .menu-mobile i{
+    .menu-mobile img{
+        position: absolute;
+        width: 30px;
         cursor: pointer;
-        font-size: 23px;
-        margin-top: 8px;
+        top: 0;
+        margin-left: 40px;
+        padding-top: 10px;
+        align-items: center;
     }
 
-    section.main {
+    /*
+    Logo
+    */
+    .logo {
         position: relative;
+        padding-left: 2%;
+        padding-top: 2%;
+        margin-top: 2%;
+        width: 50%;
+        margin-right: -20%;
+        margin-left: -20%;
+    }
+
+    .logo img {
+        position: relative;
+        height: 35%;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /*
+    Logomarca
+    */
+      section.main {
         width: 90%;
         height: 90%;
         margin-left: auto;
         margin-right: auto;
-        top:20px;
+        margin-top: -150px;
     }
 
+    /*
+    Section Vó Content
+    */
     .vó-content{
         width: 100%;
     }
 
-    .vó-content p{
+    /*
+    Section Vó Center
+    */
+    .vó-content.left1 p{
         font-size: 100%;
+        text-align: center;
     }
 
-    .vó-img{
-    position: relative;
-    width: 190%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    left:10px;
-    top:10px;
-    } 
-
-    footer{
-        max-width: 100%;
-        max-height: 100%;
+     /*
+    Section Você Pode
+    */
+    .vó-content.left p{
+        font-size: 200%;
     }
 
+    /*
+    Footer
+    */
     .footer-left{
-        position: relative;
-        font-size: 16px;
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .footer-left p{
+        padding: 5px 5px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer-right{
-        position: relative;
-        font-size: 16px;
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+
+    .footer-right p{
+        padding: 5px 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right span{
+        padding: 10px 1px;
+        margin-left: 25%;
     }
 
     .footer-center{
-    position: relative;
-    text-align: center;
-    font-size: 16px;
-    left: 200px;
+        text-align: center;
     }
 
-    .vó-icons{
-        left: 50px;
-        top: -25px;
+    .footer-right span{
+        margin-left: 27%;
+        
+    }
+
+    .vó-icons-share{
+        display: inline;
+        align-items: center;
+        margin-left: 25%;
     }
 }
 
+/*
+Site Responsivo Celular (Com resoluções de 425px a 600 px)
+*/
 @media screen and (max-width: 600px){
-    footer{
-        max-width: 100%;
-        max-height: 100%;
+    /*
+    Header
+    */
+    header{
+        width: 90%;
+        background-position: right;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
-    .footer-left{
-        position: relative;
-        font-size: 100%;
+    /*
+    Footer
+    */
+    .footer-right span{
+        margin-right: 10%;
+        margin-left: 10%; 
+        padding: 5px;
+    }
+}
 
+/*
+Site Responsivo Celular (Com resoluções de 325px a 375 px)
+*/
+@media screen and (max-width: 480px){
+    /*
+    Header
+    */
+    header{
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
-     .footer-right{
-        position: relative;
-        font-size: 100%;
+    /*
+    Nav(Menu mobile)
+    */
+    .menu-mobile img{
+        margin-left: 5%;
     }
 
-     .footer-center{
+    /*
+    Logo
+    */
+    .logo img {
+        margin-top: 5%;
+    }
+
+     /*
+    Section Você Pode
+    */
+    .botões button{
         position: relative;
-        font-size: 100%;
+        margin-left: -5%;
+    }
+
+    /*
+    Footer
+    */
+    .footer-right span{
+        margin-right: 10%;
+        margin-left: 10%; 
+        padding: 30px;
+        align-items: center;        
+    }
+}
+
+/*
+Site Responsivo Celular (Com resoluções de até 320px)
+*/
+@media screen and (max-width: 320px){
+    /*
+    Nav(Menu mobile)
+    */
+    .menu-itens{
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+
+/*
+Site Responsivo Celular (Com resoluções de até 280px - celulares antigos e Galaxy Fold)
+*/
+@media screen and (max-width: 280px){
+    /*
+    Nav(Menu mobile)
+    */
+    .menu-itens{
+        width: 60%;
+        margin-left: 32%;
+    }
+
+    /*
+    Section Você Pode
+    */
+    .você-pode-content p{
+        margin-right: 20%;
+    }
+
+    .botões button{
+        position: relative;
+        margin-left: -10%;
     }
 }

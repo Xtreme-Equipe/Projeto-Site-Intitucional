@@ -1,0 +1,46 @@
+.barra_admin{
+    background-image: linear-gradient(to right, #319cb7, #76c4d7);
+    padding: 30px;
+    color: white;
+    border: 0px;
+    outline: 0;
+    opacity: 1;
+    font-size: larger;
+    text-align: center;
+}
+.welcome{
+    text-align: center;
+    color:white;
+
+    font-size: xx-large;
+
+}
+.sair{
+    float: right;
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    border: 0px;
+    background: #088eaf;
+    width: 90px;
+    height: 25px;
+}
+
+.btn button:hover{
+    background-image: linear-gradient(to right, #3cb9df, #1393b3);
+}
+
+.editar, .descartar{
+    float: left;
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    border: 0px;
+    background: #088eaf;
+    width: 137px;
+    height: 25px;
+
+}
+.hidden{
+    display: none;
+}
