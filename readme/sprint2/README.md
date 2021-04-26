@@ -3,7 +3,7 @@
 
 ## :ballot_box_with_check: SPRINT 2
 
-Nesta Sprint decidimos finalizar o site, adicionando as páginas que faltavam (projetos, contato e sobre). Inicializamos o painel administrivo, começando pela página home, incluimos restrições aos formulários de cadastro, captcha para evitar cadastros automatizados e incializamos também (a partir da página home) a responsividade mobile do site.
+Nesta Sprint decidimos finalizar o site, adicionando as páginas que faltavam (projetos, contato e sobre). Inicializamos o painel administrativo, começando pela página home, incluímos restrições aos formulários de cadastro, captcha para evitar cadastros automatizados e inicializamos também (a partir da página home) a responsividade mobile do site.
 
 <br>
 
