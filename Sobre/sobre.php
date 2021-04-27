@@ -1,7 +1,7 @@
 <?php
 /*Admin indica se a pág está ou não em modo de edição*/
 $admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
-/*Texto_direito faz atualização do lado esquerdo da home e salva no banco de dados */
+/*Texto_direito(missao, visao valores) fazem atualização dos textos informativos do lado direito sobre missão visão e valores da instituição */
 $texto_direito_missao = isset($_POST['texto_direito_missao']) ? $_POST['texto_direito_missao'] : "";
 if ($texto_direito_missao != "") {
     $conexao = mysqli_connect ("localhost", "root", "", "bd_sobre");
