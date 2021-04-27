@@ -1,3 +1,31 @@
+<?php
+/*Admin indica se a pág está ou não em modo de edição*/
+$admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
+/*Texto_direito faz atualização do lado esquerdo da home e salva no banco de dados */
+$texto_direito_missao = isset($_POST['texto_direito_missao']) ? $_POST['texto_direito_missao'] : "";
+if ($texto_direito_missao != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_sobre");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'sobre' and localizacao = 'direita_missao'");
+    mysqli_stmt_bind_param($preparado, "s", $texto_direito_missao);
+    mysqli_stmt_execute($preparado);
+}
+
+$texto_direito_visao = isset($_POST['texto_direito_visao']) ? $_POST['texto_direito_visao'] : "";
+if ($texto_direito_visao != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_sobre");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'sobre' and localizacao = 'direita_visao'");
+    mysqli_stmt_bind_param($preparado, "s", $texto_direito_visao);
+    mysqli_stmt_execute($preparado);
+}
+
+$texto_direito_valores = isset($_POST['texto_direito_valores']) ? $_POST['texto_direito_valores'] : "";
+if ($texto_direito_valores != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_sobre");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'sobre' and localizacao = 'direita_valores'");
+    mysqli_stmt_bind_param($preparado, "s", $texto_direito_valores);
+    mysqli_stmt_execute($preparado);
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,9 +39,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
 </head>
 
 <body>
+<?php
+        include('../Administrador/admin_header.php'); //não remover, faz parte do admin!
+    ?>
     <header>
         <div class="center">
             <div class="vó-fundo">
@@ -52,20 +85,81 @@
     
             <section class="sobre-nos">
                 <div class="center-sobre-nos">
+
     
                     <div class="paragrafo-missao">
                         <h2 class="missao">Missão</h2> 
-                        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum praesentium est. Ab tempore reiciendis ducimus illum minima ipsa consequatur laborum quod, nihil aliquam deserunt nisi atque, veniam esse enim.</p><br />   
+                        <?php
+                        /*Formulário de edição de texto */
+                        if ($admin == "1") {
+                            echo "<form action=\"sobre.php\" method=\"POST\"> 
+                                <textarea id=\"editor_missao\" name=\"texto_direito_missao\">";
+                        }
+                        $conexao = mysqli_connect("localhost","root","","bd_sobre");
+                        $consulta = "select conteudo from tb_conteudo where pagina = 'sobre' and localizacao = 'direita_missao'";
+                        $resultado = mysqli_query($conexao, $consulta);
+                        if (!$resultado) {
+                            die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                        }
+                        while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                            echo $item_da_lista_resultado["conteudo"];
+                        }
+                        
+                        if ($admin == "1") {
+                            echo "</textarea> <button type=\"submit\">Salvar</button>
+                        </form>";
+                        }
+                        ?>
                     </div>
                     
                     <div class="paragrafo-visao">
                         <h2 class="visao">Visão</h2> 
-                        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum praesentium est. Ab tempore reiciendis ducimus illum minima ipsa consequatur laborum quod, nihil aliquam deserunt nisi atque, veniam esse enim.</p><br />   
+                        <?php
+                        /*Formulário de edição de texto */
+                        if ($admin == "1") {
+                            echo "<form action=\"sobre.php\" method=\"POST\"> 
+                                <textarea id=\"editor_visao\" name=\"texto_direito_visao\">";
+                        }
+                        $conexao = mysqli_connect("localhost","root","","bd_sobre");
+                        $consulta = "select conteudo from tb_conteudo where pagina = 'sobre' and localizacao = 'direita_visao'";
+                        $resultado = mysqli_query($conexao, $consulta);
+                        if (!$resultado) {
+                            die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                        }
+                        while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                            echo $item_da_lista_resultado["conteudo"];
+                        }
+                        
+                        if ($admin == "1") {
+                            echo "</textarea> <button type=\"submit\">Salvar</button>
+                        </form>";
+                        }
+                        ?>  
                     </div>
     
                     <div class="paragrafo-valores">
                         <h2 class="valores">Valores</h2> 
-                        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum praesentium est. Ab tempore reiciendis ducimus illum minima ipsa consequatur laborum quod, nihil aliquam deserunt nisi atque, veniam esse enim.</p><br />   
+                        <?php
+                        /*Formulário de edição de texto */
+                        if ($admin == "1") {
+                            echo "<form action=\"sobre.php\" method=\"POST\"> 
+                                <textarea id=\"editor_valores\" name=\"texto_direito_valores\">";
+                        }
+                        $conexao = mysqli_connect("localhost","root","","bd_sobre");
+                        $consulta = "select conteudo from tb_conteudo where pagina = 'sobre' and localizacao = 'direita_valores'";
+                        $resultado = mysqli_query($conexao, $consulta);
+                        if (!$resultado) {
+                            die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                        }
+                        while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                            echo $item_da_lista_resultado["conteudo"];
+                        }
+                        
+                        if ($admin == "1") {
+                            echo "</textarea> <button type=\"submit\">Salvar</button>
+                        </form>";
+                        }
+                        ?>     
                     </div>
                     
                 </div><!--center-->
@@ -111,6 +205,18 @@
             </div>
     
         </div><!--/fim container -->
+
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", 
+            function() {
+                CKEDITOR.replace("editor_missao", false) /*inicializa o editor de texto após o carregamento da página */
+                CKEDITOR.replace("editor_visao", false)
+                CKEDITOR.replace("editor_valores", false)
+            }
+        )
+
+    </script>
 </body>
 
 </html>
