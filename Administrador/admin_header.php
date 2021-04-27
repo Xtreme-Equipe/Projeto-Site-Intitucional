@@ -13,16 +13,16 @@
         echo '<!--';
     }
     $admin = isset($_GET['admin']) ? $_GET['admin'] : "0";
-    $class_editar = '';
-    $class_descartar = 'hidden';
+    $class_editar = '';//habilita edição
+    $class_descartar = 'hidden'; 
 
     if($admin=='1'){
         $class_editar = 'hidden';
-        $class_descartar = '';
+        $class_descartar = ''; //habilita descarte
     }
 
     if (!$islogado && $admin == '1'){
-        header('Location: /Projeto-Site-Intitucional/Administrador/login.php');
+        header('Location: /Projeto-Site-Intitucional/Administrador/login.php'); //redirect
     }
 ?>
 
