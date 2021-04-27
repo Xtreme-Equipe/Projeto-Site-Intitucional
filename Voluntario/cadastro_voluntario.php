@@ -130,9 +130,7 @@
                 </div>
             </fieldset>
             <div id="html_element"></div>
-            <br>
-          </form>
-          <div class="campo center"><br><br><br><br></div> 
+          <div class="campo center"></div> 
           <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
               async defer>
           </script>
