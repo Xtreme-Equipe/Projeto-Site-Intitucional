@@ -1,3 +1,24 @@
+<?php
+/*Admin indica se a pág está ou não em modo de edição*/
+$admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
+/*Texto_esquerdo faz atualização do lado esquerdo da home e salva no banco de dados */
+$texto_esquerdo = isset($_POST['texto_esquerdo']) ? $_POST['texto_esquerdo'] : "";
+if ($texto_esquerdo != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_projetos");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'projetos' and localizacao = 'esquerda'");
+    mysqli_stmt_bind_param($preparado, "s", $texto_esquerdo);
+    mysqli_stmt_execute($preparado);
+}
+
+/*Imagem_direita faz atualização da imagem direita da home(ao lado do texto equerdo) e salva a imagem no hd*/
+$imagem_direita = isset($_FILES['imagem_direita']) ? $_FILES['imagem_direita'] : "";
+if ($imagem_direita) {
+    $temp_filename = $imagem_direita["tmp_name"];
+    $newfile = 'imagens/uploaded.img';
+    copy($temp_filename, $newfile);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,9 +38,15 @@
           });
         };
       </script>
+    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
 </head>
 
 <body>
+    <?php
+        include('../Administrador/admin_header.php'); //não remover, faz parte do admin!
+    ?>
+
     <header>
         <div class="center">
             <div class="vó-fundo">
@@ -51,11 +78,42 @@
 
             <section class="conteudo">
                 <div class="imagem">
-                    <img src="imagens/imagem_de_futebol.JPG" title="Jogo Futebol" alt="Imagem do Jogo">
+                    <?php
+                    /*Adiciona o formulário de edição de imagem*/
+                        if ($admin == "1") {
+                            echo "<form action=\"projetos.php\" method=\"POST\"enctype=\"multipart/form-data\">";
+                        }
+                        $date = date("Y-m-d-h:i:sa");
+                        echo "<img class=\"vó-img\" src=\"imagens/uploaded.img?date=$date\" />";
+                        if ($admin == "1") {
+                            echo "<label for=\"conteudo\">Enviar imagem:</label>
+                            <input type=\"file\" name=\"imagem_direita\" accept=\"image/*\"> <button type=\"submit\">Salvar</button>
+                        </form>";
+                        }
+                    ?>
                 </div>
 
                 <div class="texto">
-                    <p>orem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p><br>
+                    <?php
+                        /*Formulário de edição de texto */
+                        if ($admin == "1") {
+                            echo "<form action=\"index.php\" method=\"POST\"> 
+                                <textarea id=\"editor\" name=\"texto_esquerdo\">";
+                        }
+                        $conexao = mysqli_connect("localhost","root","","bd_projetos");
+                        $consulta = "select conteudo from tb_conteudo where pagina = 'projetos' and localizacao = 'esquerda'";
+                        $resultado = mysqli_query($conexao, $consulta);
+                        if (!$resultado) {
+                            die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                        }
+                        while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                            echo $item_da_lista_resultado["conteudo"];
+                        }
+                        if ($admin == "1") {
+                            echo "</textarea> <button type=\"submit\">Salvar</button>
+                        </form>";
+                        }
+                    ?>
                 </div>   
             </section>
             
@@ -180,7 +238,15 @@
             
         </div>
     </div>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", 
+            function() {
+                CKEDITOR.replace("editor", false) /*inicializa o editor de texto após o carregamento da página */
+            }
+        )
 
+    </script>
 </body>
 
 </html>

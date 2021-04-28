@@ -24,10 +24,21 @@
     padding-top: 31px;
 }
 
-.imagem img{
+.imagem img {
     display: table-cell;
     float: right;
     width: 48%;
+}
+
+.imagem form {
+    display: table-cell;
+    float: right;
+    width: 48%;
+}
+
+.imagem form img {
+    display: block;
+    width: 100%;
 }
 
 .texto{
