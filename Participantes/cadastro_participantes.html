@@ -9,6 +9,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
         <title>Cadastro de alunos</title>
+        <script type="text/javascript">
+            var onloadCallback = function() {
+              grecaptcha.render('html_element', {
+                'sitekey' : ' 6Lesd6caAAAAAOMb_uTxoAGkr7TS8bmKGJ31tc8S '
+              });
+            };
+          </script>
     </head>
 <body>
     <header>
@@ -100,8 +107,15 @@
                 </div>
                 <div class="checkbox">
                     <label>Especifique</label>
-                    <textarea row="3" id="especifique" name="especifique"></textarea>
+                    <textarea row="3" id="especifique" name="especifique"></textarea>                    
                 </div>
+                <div id="html_element"></div>
+            <br>
+          </form>
+          <div class="campo center"><br><br><br><br></div> 
+          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+              async defer> 
+          </script>
                 <br>
                 <br>
                 <br>

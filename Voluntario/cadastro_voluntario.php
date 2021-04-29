@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
     <title>Seja um Voluntário</title>
+    <script type="text/javascript">
+            var onloadCallback = function() {
+              grecaptcha.render('html_element', {
+                'sitekey' : ' 6Lesd6caAAAAAOMb_uTxoAGkr7TS8bmKGJ31tc8S '
+              });
+            };
+          </script>
 </head>
 
 <body>
@@ -28,12 +35,12 @@
             </div><!--logo-->
 
             <ul class="menu">
-                <li><a  href="..//Home/index.php">Home</a></li>
-                <li><a href="sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a class="btn-menu" href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                <li><a href="contato">Contato</a></li>
-                <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
+                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
+                    <li><a class="btn-menu" href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
+                    <li><a href="../Contato/Contato2.php">Contato</a></li>
+                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
             </ul><!--menu-->
 
         </div><!--center-->
@@ -116,15 +123,18 @@
                     <label>
                         <input type="radio" name="voluntario" value="Especifico">Voluntário Específico
                     </label>
-                </div>
+                    </div>
                 <div class="campo right"><br><br><br><br></div>
                 <div class="campo left">
                     <input type="text" name="especialidade" id="especialidade" placeholder="Especialidade*" maxlength="20">
                 </div>
             </fieldset>
-            
-            <button  class="botao" type="submit" >Enviar</button>
-            
+            <div id="html_element"></div>
+          <div class="campo center"></div> 
+          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+              async defer>
+          </script>
+            <button class="botao" type="submit">Enviar</button> 
         </form>
         <div class="footer">
             <div class="footer-inline">

@@ -36,12 +36,12 @@
                 <!--logo-->
 
                 <ul class="menu">
-                    <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
                     <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                    <li><a href="contato">Contato</a></li>
-                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
+                    <li><a href="../Contato/Contato2.php">Contato</a></li>
+                    <li><a class="btn-menu" href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul>
                 <!--menu-->
 
@@ -133,8 +133,8 @@
             $endereco     = isset($_POST['endereco'])?$_POST['endereco']:"";
             $anonimo      = isset($_POST['anonimo'])?$_POST['anonimo']:"";
                     
-            $sql = "insert into tb_doacao (nome,cpf,tel_number,celular,endereco,anonimo) values ('$nome','$cpf','$tel_number','$celular','$endereco','$anonimo')";
-            $salvar = mysqli_query($conexao,$sql);
+            $sql_doacao = "insert into tb_doacao (nome,cpf,tel_number,celular,endereco,anonimo) values ('$nome','$cpf','$tel_number','$celular','$endereco','$anonimo')";
+            $salvar = mysqli_query($conexao,$sql_doacao);
             
         ?>
 

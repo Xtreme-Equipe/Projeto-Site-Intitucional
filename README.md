@@ -8,7 +8,8 @@
   <a href ="#calendar-cronograma-das-sprints"> Sprints </a>  • 
   <a href ="#computer-tecnologias-utilizadas"> Tecnologias </a>  • 
   <a href ="#bulb-metodologia-utilizada"> Metodologia </a>  • 
-  <a href ="#backlog-do-produto">Backlog </a>  •
+  <a href ="#product-backlog">Product Backlog </a>  •
+    <a href ="#sprints-backlog">Sprints Backlog </a>  •
   <a href ="#equipe"> Equipe </a> 
 </p>
 
@@ -53,7 +54,7 @@
 
 - <img src = "./readme/feito.jpeg" /> [SPRINT 1](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint1) - 08/03/2021 a 28/03/2021 
 
-- <img src = "./readme/a_fazer.jpeg" /> [SPRINT 2](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint2) - 29/03/2021 a 18/04/2021
+- <img src = "./readme/feito.jpeg" /> [SPRINT 2](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint2) - 29/03/2021 a 18/04/2021
 
 - <img src = "./readme/a_fazer.jpeg" /> [SPRINT 3](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint3) - 26/04/2021 a 16/05/2021
 
@@ -89,14 +90,20 @@
 
 <br>
 
-## <img src = "./readme/back_log.png"/> Backlog do Produto
+## <img src = "./readme/back_log.png"/>Product Backlog
+
+<h1 align="center"> <img src = "./readme/product_backlog.png" /></h1> 
+
+<br>
+
+## <img src = "./readme/back_log.png"/>Sprints Backlog 
 
 <h1 align="center"> <img src = "./readme/sprintbacklog.png" /></h1> 
 
 <br>
 
-## <img src = "./readme/equipe_icon.png"/> Equipe 
+## <img src = "./readme/equipe_icon.png"/>Equipe 
 
-![Equipe Xtreme](/readme/equipe.png "Apresentação Equipe Xtreme")
+![Equipe Xtreme](/readme/equipe.gif "Apresentação Equipe Xtreme")
 
 <br>

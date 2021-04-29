@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
     <title>Doações</title>
+    <title>reCAPTCHA demo: Explicit render after an onload callback</title>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : ' 6Lesd6caAAAAAOMb_uTxoAGkr7TS8bmKGJ31tc8S '
+        });
+      };
+    </script>
 </head>
 
 <body>
@@ -105,6 +113,12 @@
                     </label>
                 </div>
             </fieldset>
+            <div id="html_element"></div>
+            <br>
+          <div class="campo center"><br><br><br><br></div> 
+          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+              async defer>
+          </script>
             <button class="botao" type="submit">Enviar</button>
         </form>
         <section class="DadosBanco">

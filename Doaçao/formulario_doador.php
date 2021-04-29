@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
     <title>Doações</title>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : ' 6Lesd6caAAAAAOMb_uTxoAGkr7TS8bmKGJ31tc8S '
+        });
+      };
+    </script>
 </head>
 
 <body>
@@ -30,12 +37,12 @@
             </div>
             <!--logo-->
             <ul class="menu">
-                <li><a href="..//Home/index.php">Home</a></li>
-                <li><a href="sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                <li><a href="contato">Contato</a></li>
-                <li><a class="btn-menu" href="../Doaçao/formulario_doador.php">Doações</a></li>
+                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
+                    <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
+                    <li><a href="../Contato/Contato2.php">Contato</a></li>
+                    <li><a class="btn-menu" href="../Doaçao/formulario_doador.php">Doações</a></li>
             </ul>
             <!--menu-->
         </div>
@@ -105,6 +112,13 @@
                     </label>
                 </div>
             </fieldset>
+            <div id="html_element"></div>
+            <br>
+
+          <div class="campo center"><br><br><br><br></div> 
+          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+              async defer>
+          </script>
             <button class="botao" type="submit">Enviar</button>
         </form>
         <section class="DadosBanco">

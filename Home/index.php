@@ -59,10 +59,10 @@ if ($imagem_direita) {
 
                 <ul class="menu">
                     <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
                     <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                    <li><a href="contato">Contato</a></li>
+                    <li><a href="../Contato/Contato2.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul><!--menu-->
 
@@ -111,7 +111,8 @@ if ($imagem_direita) {
                     if ($admin == "1") {
                         echo "<form action=\"index.php\" method=\"POST\"enctype=\"multipart/form-data\">";
                     }
-                    echo '<img class="vó-img" src="imagem/uploaded.img" />';
+                    $date = date("Y-m-d-h:i:sa");
+                    echo "<img class=\"vó-img\" src=\"imagem/uploaded.img?date=$date\" />";
                     if ($admin == "1") {
                         echo "<label for=\"conteudo\">Enviar imagem:</label>
                         <input type=\"file\" name=\"imagem_direita\" accept=\"image/*\"> <button type=\"submit\">Salvar</button>
@@ -138,9 +139,9 @@ if ($imagem_direita) {
                 </div>
 
                 <div class="botões vó-content right">
-                    <a href="../Doaçao/formulario_doador.html"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
-                    <a href="../Voluntario/cadastrovoluntario.html"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
-                    <a href="../Participantes/cadastro_participantes.html"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
+                    <a href="../Doaçao/formulario_doador.php"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
+                    <a href="../Voluntario/cadastro_voluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
+                    <a href="../Participantes/cadastro_participantes.php"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
                 </div>
             </div><!--center-->
         </section><!--você-pode-->
