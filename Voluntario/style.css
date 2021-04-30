@@ -30,6 +30,18 @@
     width: 48%;
 }
 
+.imagem form{
+    display: table-cell;
+    float: right;
+    width: 48%;
+}
+
+.imagem form img{
+    display: table-cell;
+    float: unset;
+    width: 100%;
+}
+
 .texto{
     display: table-cell;
     float: left;

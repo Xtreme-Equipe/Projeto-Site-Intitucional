@@ -1,3 +1,23 @@
+<?php
+/*Admin indica se a pág está ou não em modo de edição*/
+$admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
+/*Texto_esquerdo faz atualização do lado esquerdo da home e salva no banco de dados */
+$texto_esquerdo = isset($_POST['texto_esquerdo']) ? $_POST['texto_esquerdo'] : "";
+if ($texto_esquerdo != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_voluntario");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'cadastro_voluntario' and localizacao = 'esquerda'");
+    mysqli_stmt_bind_param($preparado, "s", $texto_esquerdo);
+    mysqli_stmt_execute($preparado);
+}
+
+/*Imagem_direita faz atualização da imagem direita da home(ao lado do texto equerdo) e salva a imagem no hd*/
+$imagem_direita = isset($_FILES['imagem_direita']) ? $_FILES['imagem_direita'] : "";
+if ($imagem_direita) {
+    $temp_filename = $imagem_direita["tmp_name"];
+    $newfile = 'imagens/uploaded.img';
+    copy($temp_filename, $newfile);
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,9 +37,14 @@
               });
             };
           </script>
+    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
 </head>
 
 <body>
+    <?php
+        include('../Administrador/admin_header.php'); //não remover, faz parte do admin!
+    ?>
     <header>
         <div class="center">
             <div class="vó-fundo">
@@ -51,11 +76,45 @@
 
             <section class="conteudo">
                 <div class="imagem">
-                    <img src="imagens/imagem maos.png" title="Mãos" alt="Imagem de mãos">
+                <?php
+                    /*Adiciona o formulário de edição de imagem*/
+                        if ($admin == "1") {
+                            echo "<form action=\"cadastro_voluntario.php\" method=\"POST\"enctype=\"multipart/form-data\">";
+                        }
+                        $date = date("Y-m-d-h:i:sa");
+                        echo "<img class=\"vó-img\" src=\"imagens/uploaded.img?date=$date\" />";
+                        if ($admin == "1") {
+                            echo "<label for=\"conteudo\">Enviar imagem:</label>
+                            <input type=\"file\" name=\"imagem_direita\" accept=\"image/*\"> <button type=\"submit\">Salvar</button>
+                        </form>";
+                        }
+                ?>
+                   <!-- <img src="imagens/imagem maos.png" title="Mãos" alt="Imagem de mãos">-->
                 </div>
 
                 <div class="texto">
-                    <p>Seja um voluntário do nosso centro comunitário, qualquer ajuda é válida. Não é apenas quem é
+                <?php
+                    /*Formulário de edição de texto */
+                    if ($admin == "1") {
+                        echo "<form action=\"cadastro_voluntario.php\" method=\"POST\"> 
+                            <textarea id=\"editor\" name=\"texto_esquerdo\">";
+                    }
+                    $conexao = mysqli_connect("localhost","root","","bd_voluntario");
+                    $consulta = "select conteudo from tb_conteudo where pagina = 'cadastro_voluntario' and localizacao = 'esquerda'";
+                    $resultado = mysqli_query($conexao, $consulta);
+                    if (!$resultado) {
+                        die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                    }
+                    while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                        echo $item_da_lista_resultado["conteudo"];
+                    }
+                    
+                    if ($admin == "1") {
+                        echo "</textarea> <button type=\"submit\">Salvar</button>
+                    </form>";
+                    }
+                    ?>
+                   <!-- <p>Seja um voluntário do nosso centro comunitário, qualquer ajuda é válida. Não é apenas quem é
                     “especialista” em alguma atividade que pode ser voluntário. Todos podem participar e contribuir. O que
                     conta é a motivação solidária, o desejo de ajudar, o prazer de se sentir útil.</p><br>
         
@@ -71,7 +130,7 @@
                     vídeos da nossa escola e alunos.</p><br>
         
                     <p>– Se você é um especialista em qualquer área do desenvolvimento infantil e educação: médico, dançarino, músico, professor de línguas estrangeiras ou psicólogo venha colaborar conosco.</p><br>
-                    <p>– Se você tem suas próprias ideias teremos gosto em discuti-las.</p><br>
+                    <p>– Se você tem suas próprias ideias teremos gosto em discuti-las.</p><br>-->
                 </div>   
             </section>
             
@@ -189,7 +248,15 @@
             
         </div>
     </div>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", 
+            function() {
+                CKEDITOR.replace("editor", false) /*inicializa o editor de texto após o carregamento da página */
+            }
+        )
 
+    </script>
 </body>
 
 </html>
