@@ -225,6 +225,39 @@ if ($texto_direito_valores != "") {
         )
 
     </script>
+
+    <script>
+        function share(){
+            if (navigator.share !== undefined) {
+                navigator.share({
+                    title: 'Maria Vó Félix',
+                    text: 'Um texto de resumo',
+                    url: 'https://www.facebook.com/fatecjessenvidal/',
+                })
+                    .then(() => console.log('Successful share'))
+                    .catch((error) => console.log('Error sharing', error));
+                }
+            }
+    </script>
+
+    <script>
+
+        var el = document.querySelector('.menu-mobile-icon');
+
+        el.addEventListener('click',()=>{
+            //Queremos mostrar o menu.
+            var menuItens = document.querySelector('.menu-itens');
+            if(menuItens.classList.contains('show')){
+                menuItens.classList.add('hide'); 
+                menuItens.classList.remove('show'); 
+            }else{
+                menuItens.classList.add('show'); 
+                menuItens.classList.remove('hide'); 
+            }       
+        });
+
+    </script>
+
 </body>
 
 </html>
