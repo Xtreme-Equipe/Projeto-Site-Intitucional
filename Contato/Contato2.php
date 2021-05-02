@@ -18,25 +18,23 @@
     </header>
 
     <nav>
-        <div class="center">
+        <div class="center-nav">
             <div class="logo">
                 <a href="../Home/index.php">
-                    <img src="../Home/imagem/Vó-logo.jpeg">
-                </a>
-            </div>
-            <!--logo-->
+                <img src="../Home/imagem/Vó-logo.jpeg">
+            </div><!--logo-->
+
             <ul class="menu">
-                <li><a href="..//Home/index.php">Home</a></li>
+                <li><a href="../Home/index.php">Home</a></li>
                 <li><a href="../Sobre/sobre.php">Sobre</a></li>
                 <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
+                <li><a href="../Voluntario/cadastrovoluntario.php">Seja um voluntário</a></li>
                 <li><a class="btn-menu" href="../Contato/Contato2.php">Contato</a></li>
                 <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
-            </ul>
-            <!--menu-->
+            </ul><!--menu-->
 
             <ul class="menu-mobile">
-                <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
+            <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
                 <div class="menu-itens">
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Sobre/sobre.php">Sobre</a></li>
@@ -47,8 +45,7 @@
                 </div>
             </ul>
 
-        </div>
-        <!--center-->
+        </div><!--center-->
     </nav>
 
     <h1 class="titulo">Contato</h1>
