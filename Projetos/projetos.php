@@ -48,27 +48,39 @@ if ($imagem_direita) {
     ?>
 
     <header>
-        <div class="center">
+        <div class="center-header">
             <div class="vó-fundo">
+                <img src="../Home/imagem/fundo-3.jpeg">
             </div><!--vó-fundo-->
         </div><!--center-->
     </header>
+
     <nav>
-        <div class="center">
+        <div class="center-nav">
             <div class="logo">
-                <a href="../Home/index.php">
                 <img src="../Home/imagem/Vó-logo.jpeg">
-                </a>
             </div><!--logo-->
 
             <ul class="menu">
-                    <li><a href="../Home/index.php">Home</a></li>
-                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
-                    <li><a class="btn-menu" href="../Projetos/projetos.php">Projetos</a></li>
-                    <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                    <li><a href="../Contato/Contato2.php">Contato</a></li>
-                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
+                <li><a class="btn-menu" href="../Home/index.html">Home</a></li>
+                <li><a href="../Sobre/sobre.html">Sobre</a></li>
+                <li><a href="../Projetos/projetos.html">Projetos</a></li>
+                <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                <li><a href="../Contato/Contato2.html">Contato</a></li>
+                <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
             </ul><!--menu-->
+
+            <ul class="menu-mobile">
+            <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
+                <div class="menu-itens">
+                    <li><a class="btn-menu" href="../Home/index.html">Home</a></li>
+                    <li><a href="../Sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.html">Projetos</a></li>
+                    <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                    <li><a href="../Contato/Contato2.html">Contato</a></li>
+                    <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
+                </div>
+            </ul>
 
         </div><!--center-->
     </nav>
