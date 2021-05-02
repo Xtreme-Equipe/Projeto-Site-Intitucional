@@ -31,6 +31,7 @@
     <nav>
         <div class="center-nav">
             <div class="logo">
+                <a href="../Home/index.html">
                 <img src="../Home/imagem/Vó-logo.jpeg">
             </div><!--logo-->
 
@@ -237,7 +238,7 @@
         });
 
     </script>
-    
+
 </body>
 
 </html>

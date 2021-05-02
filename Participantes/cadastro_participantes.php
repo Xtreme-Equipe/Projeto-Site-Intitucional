@@ -18,29 +18,47 @@
           </script>
     </head>
 <body>
+    
     <header>
-    <div class="center">
-        <div class="vó-fundo">
-        </div><!--vó-fundo-->
-    </div><!--center-->
-</header>
-<nav>
-    <div class="center">
-        <div class="logo">
-            <a href="../Home/index.php">
-            <img src="../Home/imagem/Vó-logo.jpeg">
-            </a>
-        </div><!--logo-->
-        <ul class="menu">
-                    <li><a href="../Home/index.php">Home</a></li>
-                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
-                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                    <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                    <li><a href="../Contato/Contato2.php">Contato</a></li>
-                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
-        </ul><!--menu-->
-    </div><!--center-->
-</nav>
+        <div class="center-header">
+            <div class="vó-fundo">
+                <a href="../Home/index.html">
+                <img src="../Home/imagem/fundo-3.jpeg">
+            </div><!--vó-fundo-->
+        </div><!--center-->
+    </header>
+
+    <nav>
+        <div class="center-nav">
+            <div class="logo">
+                <a href="../Home/index.html">
+                <img src="../Home/imagem/Vó-logo.jpeg">
+            </div><!--logo-->
+
+            <ul class="menu">
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="../Sobre/sobre.html">Sobre</a></li>
+                <li><a href="../Projetos/projetos.html">Projetos</a></li>
+                <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                <li><a href="../Contato/Contato2.html">Contato</a></li>
+                <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
+            </ul><!--menu-->
+
+            <ul class="menu-mobile">
+            <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
+                <div class="menu-itens">
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.html">Projetos</a></li>
+                    <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                    <li><a href="../Contato/Contato2.html">Contato</a></li>
+                    <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
+                </div>
+            </ul>
+
+        </div><!--center-->
+    </nav>
+
     <div class="cadastro_alunos">
         <div>
             <h1 class="titulo">Inscrição Aluno</h1>           
@@ -121,57 +139,77 @@
                     <button class="botao" type="submit">Enviar</button>
             </fieldset>  
         </form>
-        <div class="footer">
-            <div class="footer-inline">
+
+        <footer class="footer-vó">
+            <div class="center-footer">
                 <div class="footer-left">
-                    <p>Telefone:(12)3966-2833</p>
-                    <p>Email:administracao@aamu.org.br</p>
-                    <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
+                        <p>Telefone : (12) 3966- 2833</p>
+                        <p>E-mail: administracao@aamu.org.br</p>
+                        <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
                 </div>
-        
+
                 <div class="footer-right">
-                    <span>Você pode nos ajudar compartilhando nossa causa</span>
+                    <p>Você pode nos ajudar compartilhando nossa causa</p>
                     <span>
-                        <span>
-                            <a target="_blank" href="javascript:void(0)" onclick="share()">
-                                <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
-                            </a>
-                
+                        <a target="_blank" href="javascript:void(0)" onclick="share()">
+                            <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
+                        </a>
+                                
+                        <a target="_blank" href="">
                             <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
-                
-                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/fatecjessenvidal/">
-                                <img class="vó-icons-share vó-icons-share-face" src="../Home/imagem/logo-facebook.png" >
-                            </a>
-                
-                            <a target="_blank" href="https://api.whatsapp.com/send?text=https://www.facebook.com/fatecjessenvidal/">
-                                <img class="vó-icons-share vó-icons-share-whats" src="../Home/imagem/logo-whatsapp.png" />
-                            </a>
-                        </span>
+                        </a>
+
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/fatecjessenvidal/">
+                            <img class="vó-icons-share vó-icons-share-face" src="../Home/imagem/logo-facebook.png" >
+                        </a>
+                                
+                        <a target="_blank" href="https://api.whatsapp.com/send?text=https://www.facebook.com/fatecjessenvidal/">
+                            <img class="vó-icons-share vó-icons-share-whats" src="../Home/imagem/logo-whatsapp.png" />
+                        </a>
                     </span>
-                    
-    
                 </div>
+
+                <div class="footer-center">
+                    <p>2021 
+                    <a href="">Vó Maria Félix</a> 
+                    - Todos os direitos reservados.</p>
+                </div>
+
             </div>
-            
-    
-            <div class="footer-center">
-                <p>2021 <a href="">Vó Maria Félix</a> - Todos os direitos reservados.</p>
-            </div>
-    
-            <script>
-                function share(){
-                    if (navigator.share !== undefined) {
-                        navigator.share({
-                            title: 'Maria Vó Félix',
-                            text: 'Um texto de resumo',
-                            url: 'https://www.facebook.com/fatecjessenvidal/',
-                        })
-                        .then(() => console.log('Successful share'))
-                        .catch((error) => console.log('Error sharing', error));
-                    }
-                }
-            </script>
-            
-        </div>
+        </footer>
+
     </body>
+
+<script>
+    function share(){
+        if (navigator.share !== undefined) {
+            navigator.share({
+                title: 'Maria Vó Félix',
+                text: 'Um texto de resumo',
+                url: 'https://www.facebook.com/fatecjessenvidal/',
+            })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing', error));
+            }
+        }
+</script>
+
+<script>
+
+    var el = document.querySelector('.menu-mobile-icon');
+
+    el.addEventListener('click',()=>{
+        //Queremos mostrar o menu.
+        var menuItens = document.querySelector('.menu-itens');
+        if(menuItens.classList.contains('show')){
+            menuItens.classList.add('hide'); 
+            menuItens.classList.remove('show'); 
+        }else{
+            menuItens.classList.add('show'); 
+            menuItens.classList.remove('hide'); 
+        }       
+    });
+
+</script>
+
 </html>
