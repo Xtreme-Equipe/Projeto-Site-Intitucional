@@ -10,12 +10,11 @@
 
 <body>
     <header>
-        <div class="center">
+        <div class="center-header">
             <div class="vó-fundo">
-            </div>
-            <!--vó-fundo-->
-        </div>
-        <!--center-->
+                <img src="../Home/imagem/fundo-3.jpeg">
+            </div><!--vó-fundo-->
+        </div><!--center-->
     </header>
 
     <nav>
@@ -35,6 +34,19 @@
                 <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
             </ul>
             <!--menu-->
+
+            <ul class="menu-mobile">
+                <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
+                <div class="menu-itens">
+                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a href="../Sobre/sobre.php">Sobre</a></li>
+                    <li><a href="../Projetos/projetos.php">Projetos</a></li>
+                    <li><a href="../Voluntario/cadastrovoluntario.php">Seja um voluntário</a></li>
+                    <li><a class="btn-menu" href="../Contato/Contato2.php">Contato</a></li>
+                    <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
+                </div>
+            </ul>
+
         </div>
         <!--center-->
     </nav>
@@ -97,33 +109,33 @@
         </p>
     </form>
 
-    <div class="footer-home">
-        <div class="footer">
+    <footer class="footer-vó">
+        <div class="center-footer">
             <div class="footer-left">
-                <p>Telefone : (12) 3966- 2833</p>
-                <p>E-mail: administracao@<span>aamu.org.br</span></p>
-                <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
+                    <p>Telefone : (12) 3966- 2833</p>
+                    <p>E-mail: administracao@aamu.org.br</p>
+                    <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
             </div>
 
             <div class="footer-right">
                 <p>Você pode nos ajudar compartilhando nossa causa</p>
-                    <span>
-                        <a target="_blank" href="javascript:void(0)" onclick="share()">
-                            <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
-                        </a>
-                    
-                         <a target="_blank" href="">
+                <span>
+                    <a target="_blank" href="javascript:void(0)" onclick="share()">
+                        <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
+                    </a>
+                            
+                    <a target="_blank" href="">
+                        <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
+                    </a>
 
-                            <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
-
-                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/fatecjessenvidal/">
-                            <img class="vó-icons-share vó-icons-share-face" src="../Home/imagem/logo-facebook.png" >
-                        </a>
-                    
-                        <a target="_blank" href="https://api.whatsapp.com/send?text=https://www.facebook.com/fatecjessenvidal/">
-                            <img class="vó-icons-share vó-icons-share-whats" src="../Home/imagem/logo-whatsapp.png" />
-                        </a>
-                    </span>
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/fatecjessenvidal/">
+                        <img class="vó-icons-share vó-icons-share-face" src="../Home/imagem/logo-facebook.png" >
+                    </a>
+                            
+                    <a target="_blank" href="https://api.whatsapp.com/send?text=https://www.facebook.com/fatecjessenvidal/">
+                        <img class="vó-icons-share vó-icons-share-whats" src="../Home/imagem/logo-whatsapp.png" />
+                    </a>
+                </span>
             </div>
 
             <div class="footer-center">
@@ -132,11 +144,12 @@
                 - Todos os direitos reservados.</p>
             </div>
 
-            </div>
         </div>
-    </div>
+    </footer>
 
 </div><!--/fim container -->
 </body>
+
+
 
 </html>
