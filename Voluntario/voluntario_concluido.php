@@ -34,7 +34,7 @@
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Sobre/sobre.php">Sobre</a></li>
                     <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                    <li><a class="btn-menu" href="../Voluntario/cadastrovoluntario.php">Seja um voluntário</a></li>
+                    <li><a class="btn-menu" href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                     <li><a href="../Contato/Contato2.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul><!--menu-->
@@ -45,7 +45,7 @@
                         <li><a href="../Home/index.php">Home</a></li>
                         <li><a href="../Sobre/sobre.php">Sobre</a></li>
                         <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                        <li><a class="btn-menu" href="../Voluntario/cadastrovoluntario.php">Seja um voluntário</a></li>
+                        <li><a class="btn-menu" href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                         <li><a href="../Contato/Contato2.php">Contato</a></li>
                         <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                     </div>

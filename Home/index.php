@@ -30,6 +30,8 @@ if ($imagem_direita) {
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css"><!--não remover, faz parte do admin!-->
+    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script><!--não remover, faz parte do admin!-->
 
 </head>
 <body>
@@ -57,7 +59,7 @@ if ($imagem_direita) {
                     <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
                     <li><a href="../Sobre/sobre.php">Sobre</a></li>
                     <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                    <li><a href="../Voluntario/cadastrovoluntario.php">Seja um voluntário</a></li>
+                    <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                     <li><a href="../Contato/Contato2.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul><!--menu-->
@@ -68,7 +70,7 @@ if ($imagem_direita) {
                         <li><a class="btn-menu" href="../Home/index.php">Home</a></li>
                         <li><a href="../Sobre/sobre.php">Sobre</a></li>
                         <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                        <li><a href="../Voluntario/cadastrovoluntario.php">Seja um voluntário</a></li>
+                        <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                         <li><a href="../Contato/Contato2.php">Contato</a></li>
                         <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                     </div>
@@ -147,9 +149,9 @@ if ($imagem_direita) {
                 </div>
 
                 <div class="você-pode-right">
-                    <a href="../Doaçao/formulario_doador.html"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
-                    <a href="../Voluntario/cadastrovoluntario.html"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
-                    <a href="../Participantes/cadastro_participantes.html"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
+                    <a href="../Doaçao/formulario_doador.php"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
+                    <a href="../Voluntario/cadastrovoluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
+                    <a href="../Participantes/cadastro_participantes.php"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
                 </div>
             </div><!--center-->
         </section><!--você-pode-->
