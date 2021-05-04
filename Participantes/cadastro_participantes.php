@@ -1,3 +1,15 @@
+<?php
+/*Admin indica se a pág está ou não em modo de edição*/
+$admin         = isset($_GET['admin']) ? $_GET['admin'] : "0";
+/*Texto_esquerdo faz atualização do lado esquerdo da home e salva no banco de dados */
+$texto = isset($_POST['texto']) ? $_POST['texto'] : "";
+if ($texto != "") {
+    $conexao = mysqli_connect ("localhost", "root", "", "bd_participantes");
+    $preparado = mysqli_prepare($conexao, "update tb_conteudo set conteudo = ? where pagina = 'cadastro_participantes' and localizacao = 'centro'");
+    mysqli_stmt_bind_param($preparado, "s", $texto);
+    mysqli_stmt_execute($preparado);
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -69,10 +81,31 @@
         </div>
 
         <div class="texto">
-            <p>-Bem-vindo, a pré-inscrição online possibilita ao futuro estudante solicitar uma vaga para o ano vigente. Primeiramente solicitamos que preencha os campos abaixo.
+        <?php
+            /*Formulário de edição de texto */
+            if ($admin == "1") {
+                    echo "<form action=\"cadastro_participantes.php\" method=\"POST\"> 
+                        <textarea id=\"editor\" name=\"texto\">";
+                }
+                $conexao = mysqli_connect("localhost","root","","bd_participantes");
+                 $consulta = "select conteudo from tb_conteudo where pagina = 'cadastro_participantes' and localizacao = 'centro'";
+                $resultado = mysqli_query($conexao, $consulta);
+                if (!$resultado) {
+                    die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                }
+                while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                    echo $item_da_lista_resultado["conteudo"];
+                }
+                    
+                if ($admin == "1") {
+                    echo "</textarea> <button type=\"submit\">Salvar</button>
+                    </form>";
+                }
+        ?>
+            <!--<p>-Bem-vindo, a pré-inscrição online possibilita ao futuro estudante solicitar uma vaga para o ano vigente. Primeiramente solicitamos que preencha os campos abaixo.
                    Esses dados serão usados para chegarmos até você. <p>
                 A sua pré-inscrição será realizada de modo on-line e será analisada, e entramemos em contato caso tenha vaga.</p>
-            </p>
+            </p>-->
         </div>
         <form class="formulario" method = "post" action="participante_concluido.php"> <!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
             <br><br>
@@ -182,7 +215,15 @@
 
         </div>
     </footer>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", 
+            function() {
+                CKEDITOR.replace("editor", false) /*inicializa o editor de texto após o carregamento da página */
+            }
+        )
 
+    </script>
 </body>
 
 <script>
@@ -216,5 +257,6 @@
     });
 
 </script>
+
 
 </html>
