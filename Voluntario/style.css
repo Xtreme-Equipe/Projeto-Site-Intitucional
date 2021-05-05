@@ -212,10 +212,6 @@ input, select, textarea, button{
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
-
-.v-geral{
-    padding-right: 50px;
-
     
 @media screen and (max-width: 768px){
     .mediaposition{ 
@@ -316,6 +312,3 @@ input, select, textarea, button{
     }
 }
 
-.checkbox{
-    padding-top: 10px;
-}
