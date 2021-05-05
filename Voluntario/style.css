@@ -218,9 +218,9 @@ input, select, textarea, button{
 
     
 @media screen and (max-width: 768px){
+    .mediaposition{ 
         position: relative;
         margin-top: 50px;
-
     }
 
     .center-conteudo{
@@ -314,3 +314,8 @@ input, select, textarea, button{
     .campo.center input[type="text"]{
         width: 105%;
     }
+}
+
+.checkbox{
+    padding-top: 10px;
+}
