@@ -213,12 +213,11 @@ input, select, textarea, button{
     text-shadow: none;
 }
 
-<<<<<<< HEAD
 .v-geral{
     padding-right: 50px;
-=======
+
+    
 @media screen and (max-width: 768px){
-    section.conteudo{
         position: relative;
         margin-top: 50px;
 
@@ -315,5 +314,3 @@ input, select, textarea, button{
     .campo.center input[type="text"]{
         width: 105%;
     }
->>>>>>> d6841ad1c435fec5a0a01d8d9611703e6293feba
-}
