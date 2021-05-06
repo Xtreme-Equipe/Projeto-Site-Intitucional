@@ -169,7 +169,7 @@ input[type="text"], input[type="tel"], input[type="email"], input[type="date"], 
 }
 
 .campo.center input[type="text"]{
-    width: 100%;
+    width: 49%;
 }
 
 input:focus, select:focus, textarea:focus{
@@ -314,4 +314,5 @@ input, select, textarea, button{
 
 .onde-conheceu{
     padding-left: 20px;
+    padding-bottom: 25px;
 }
