@@ -180,7 +180,7 @@ input:focus, select:focus, textarea:focus{
     position: relative;
     float: center;
     display: center;
-    text-align: center;
+    text-align: left;
     align-items: center;
 }
 

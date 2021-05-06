@@ -188,7 +188,7 @@ input[type="text"], input[type="tel"], input[type="email"], input[type="date"], 
 }
 
 .campo.center input[type="text"]{
-    width: 100%;
+    width: 49%;
 }
 
 input:focus, select:focus, textarea:focus{
@@ -199,7 +199,7 @@ input:focus, select:focus, textarea:focus{
     position: relative;
     float: center;
     display: center;
-    text-align: center;
+    text-align: left;
     align-items: center;
 }
 
