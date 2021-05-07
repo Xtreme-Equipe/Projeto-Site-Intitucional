@@ -101,7 +101,7 @@ if ($imagem_direita) {
                     <?php
                         /*Formulário de edição de texto */
                         if ($admin == "1") {
-                            echo "<form action=\"index.php\" method=\"POST\"> 
+                            echo "<form action=\"projetos.php\" method=\"POST\"> 
                                 <textarea id=\"editor\" name=\"texto_esquerdo\">";
                         }
                         $conexao = mysqli_connect("localhost","root","","bd_projetos");
