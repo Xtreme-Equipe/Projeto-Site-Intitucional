@@ -211,6 +211,18 @@ if ($imagem_direita) {
                     </div>
 
                     <div class="preenchimento-form">
+                        <div class="onde-conheceu">
+                            <label><b>Como você conheceu a ONG?</b></label><br>
+                            <input type="checkbox" id="redesocial" name="redesocial" value="Redes social">
+                            <label for="Redes Sociais">Redes sociais</label>
+                            <input type="checkbox" id="youtube" name="youtube" value="Youtube">
+                            <label for="Youtube">Youtube</label>
+                            <input type="checkbox" id="outros" name="outros" value="Outros">
+                            <label for="outros">Outros</label>
+                        </div>
+                    </div>
+
+                    <div class="preenchimento-form">
                         <div class="campo center">
                             <label for="projeto"><strong>Descrição do projeto</strong></label>
                             <input type="text" name="projeto" id="projeto" placeholder="Descreva seu projeto aqui" required>  

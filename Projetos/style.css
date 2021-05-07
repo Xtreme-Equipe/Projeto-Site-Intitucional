@@ -160,6 +160,17 @@ form.formulario{
 .campo.center{
     position: relative;
     width: 98%;
+    /*border: 1px solid red;*/
+}
+
+.onde-conheceu{
+    position: relative;
+    width: 96%;
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-bottom: 25px;
+    /*border: 1px solid red;*/
 }
 
 .campo label{ /*nome dos campos a serem preenchidos*/
@@ -193,14 +204,6 @@ input[type="text"], input[type="tel"], input[type="email"], input[type="date"], 
 
 input:focus, select:focus, textarea:focus{
     background: rgba(156, 193, 241, 0.356);
-}
-
-.campo.center{
-    position: relative;
-    float: center;
-    display: center;
-    text-align: left;
-    align-items: center;
 }
 
 input, select, textarea, button{
@@ -333,9 +336,4 @@ input, select, textarea, button{
     .campo.center input[type="text"]{
         width: 105%;
     }
-}
-
-.onde-conheceu{
-    padding-left: 20px;
-    padding-bottom: 25px;
 }
