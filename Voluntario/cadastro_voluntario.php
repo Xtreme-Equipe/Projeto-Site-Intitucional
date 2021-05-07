@@ -37,8 +37,8 @@ if ($imagem_direita) {
               });
             };
           </script>
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
-    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css"><!--não remover, faz parte do admin!-->
+    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script> <!--não remover, faz parte do admin!-->
 </head>
 
 <body>
@@ -218,11 +218,24 @@ if ($imagem_direita) {
                     </div>
 
                     <div class="preenchimento-form">
-                        <div class="campo center">
+                        <div class="onde-conheceu">
+                            <label><b>Como você conheceu a ONG?</b></label><br>
+                            <input type="checkbox" id="redesocial" name="redesocial" value="Redes social">
+                            <label for="Redes Sociais">Redes sociais</label>
+                            <input type="checkbox" id="youtube" name="youtube" value="Youtube">
+                            <label for="Youtube">Youtube</label>
+                            <input type="checkbox" id="outros" name="outros" value="Outros">
+                            <label for="outros">Outros</label>
+                        </div>
+                    </div>
+
+                    <div class="preenchimento-form">
+                        <div class="campo left">
                             <label for="projeto"><strong>Especialidade</strong></label>
                             <input type="text" name="especialidade" id="especialidade" placeholder="Especialidade*" maxlength="20">
                         </div>
                     </div>
+
 
                     <div class="preenchimento-form">
                         <div class="campo center">
