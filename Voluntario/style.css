@@ -141,10 +141,7 @@ form.formulario{
 .campo.center{
     position: relative;
     width: 98%;
-    float: center;
-    display: center;
     text-align: center;
-    align-items: center;
     /*border: 1px solid red;*/
 }
 
