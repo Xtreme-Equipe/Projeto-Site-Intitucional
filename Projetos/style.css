@@ -216,7 +216,7 @@ input, select, textarea, button{
     display: block;
 }
 
-.campo.center.botao{
+.botao{
     font-size: 1.2em;
     background: #0E7AF0;
     border:0;
@@ -229,7 +229,7 @@ input, select, textarea, button{
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
-.campo.center.botao:hover{
+.botao:hover{
     color: black;
     background: #bedaf8;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
