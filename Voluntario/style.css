@@ -101,6 +101,7 @@ form.formulario{
 
 .grupo{
     width: 100%;
+    padding-top: 50px;
     border: 0;
     /*border: 1px solid red;*/
 }
@@ -145,6 +146,7 @@ form.formulario{
     display: center;
     text-align: center;
     align-items: center;
+    /*border: 1px solid red;*/
 }
 
 .onde-conheceu{
@@ -217,71 +219,6 @@ input, select, textarea, button{
     background: #bedaf8;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
-}
-    
-@media screen and (max-width: 768px){
-    .mediaposition{ 
-        position: relative;
-        margin-top: 50px;
-    }
-
-    .center-conteudo{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .titulo{
-       font-size:300%;
-    }
-
-    .texto{
-        width: 100%;
-    }
-
-    .texto p{
-        font-size: 100%;
-    }
-
-    .imagem{
-        width: 100%;
-    }
-
-    form.formulario{
-        position: relative;
-        margin-top: 50px;
-    }
-
-    .center-form{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-     .subtitulo{
-       font-size:300%;
-    }
-
-    .preenchimento-form{
-        width: 97%;
-         /*border: 1px solid red;*/
-    }
-
-    .campo.left{
-        width: 100%;
-    }
-
-    .campo.right{
-        width: 100%;
-        padding-top: 20px;
-    }
-
-    .campo.inline.left{
-        width: 97%;
-        padding-top: 10px;
-    }
-
-    .campo.center input[type="text"]{
-        width: 98%;
-    }
 }
 
 @media screen and (max-width: 480px){
