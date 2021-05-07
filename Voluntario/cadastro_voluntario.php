@@ -218,6 +218,13 @@ if ($imagem_direita) {
                     </div>
 
                     <div class="preenchimento-form">
+                        <div class="campo left">
+                            <label for="projeto"><strong>Especialidade</strong></label>
+                            <input type="text" name="especialidade" id="especialidade" placeholder="Especialidade*" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="preenchimento-form">
                         <div class="onde-conheceu">
                             <label><b>Como você conheceu a ONG?</b></label><br>
                             <input type="checkbox" id="redesocial" name="redesocial" value="Redes social">
@@ -226,13 +233,6 @@ if ($imagem_direita) {
                             <label for="Youtube">Youtube</label>
                             <input type="checkbox" id="outros" name="outros" value="Outros">
                             <label for="outros">Outros</label>
-                        </div>
-                    </div>
-
-                    <div class="preenchimento-form">
-                        <div class="campo left">
-                            <label for="projeto"><strong>Especialidade</strong></label>
-                            <input type="text" name="especialidade" id="especialidade" placeholder="Especialidade*" maxlength="20">
                         </div>
                     </div>
 
