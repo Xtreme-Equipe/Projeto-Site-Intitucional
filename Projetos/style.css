@@ -160,6 +160,10 @@ form.formulario{
 .campo.center{
     position: relative;
     width: 98%;
+    float: center;
+    display: center;
+    text-align: center;
+    align-items: center;
     /*border: 1px solid red;*/
 }
 
@@ -304,8 +308,8 @@ input, select, textarea, button{
 
 @media screen and (max-width: 480px){
      .center-conteudo{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
      .texto p{
@@ -319,8 +323,6 @@ input, select, textarea, button{
 
     .preenchimento-form{
         width: 94%;
-        margin-left: 5px;
-        margin-right: 5px;  
         /*border: 1px solid red;*/
     }
 
