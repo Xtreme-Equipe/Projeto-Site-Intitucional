@@ -30,6 +30,7 @@ if ($imagem_direita) {
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
     <title>Doações</title>
     <script type="text/javascript">

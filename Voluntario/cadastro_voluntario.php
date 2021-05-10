@@ -29,6 +29,7 @@ if ($imagem_direita) {
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">
     <title>Seja um Voluntário</title>
     <script type="text/javascript">
             var onloadCallback = function() {
