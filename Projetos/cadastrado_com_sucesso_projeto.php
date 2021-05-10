@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastrado_com_sucesso_projeto.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">
     <title>Cadastro Concluído</title>
 </head>
 
