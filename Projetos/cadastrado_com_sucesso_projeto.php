@@ -27,7 +27,7 @@
             <div class="center-nav">
                 <div class="logo">
                     <a href="../Home/index.php">
-                    <img src="../Home/imagem/Vó-logo.jpeg">
+                    <img src="../Home/imagem/Vó-logo.png">
                 </div><!--logo-->
 
                 <ul class="menu">
