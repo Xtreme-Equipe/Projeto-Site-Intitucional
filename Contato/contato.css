@@ -94,8 +94,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
-
-.formulario{
+.formulario{ /* css upload de imagem admin*/
 	font-size: 21px;
 	max-width: 400px;
 	height: auto;
@@ -109,6 +108,21 @@ body{
 	display: flex;
 	font-weight: bold;
 }
+form{
+	font-size: 21px;
+	max-width: 400px;
+	height: auto;
+	margin: auto;
+	padding: 0 15px 15px 15px;
+	margin-bottom: 10px;
+	border: solid rgb(160, 158, 158);
+	margin-top: 30px;
+	text-align: center;
+	flex-wrap: wrap;
+	display: flex;
+	font-weight: bold;
+	}
+
 
 input, textarea{
     box-sizing: border-box;
