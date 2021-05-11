@@ -223,7 +223,7 @@ if ($imagem_direita) {
                     </div>
 
                     <div class="preenchimento-form">
-                        <div class="campo center">
+                        <div class="campo left">
                             <label for="projeto"><strong>Descrição do projeto</strong></label>
                             <input type="text" name="projeto" id="projeto" placeholder="Descreva seu projeto aqui" required>  
                         </div>
