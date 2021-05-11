@@ -1,11 +1,80 @@
 .cabecalho{
-    background-image: linear-gradient(to right, #319cb7, #76c4d7);
-    padding: 30px;
+    background-color:  #319cb7;
     color: white;
     border: 0px;
-    outline: 0;
-    opacity: 1;
     font-size: larger;
     text-align: center;
     font-family: "Graphik", sans-serif;
+    
+}
+.background, body{
+    background-color:#e5e5e52f;
+    margin: 0px;
+}
+
+#tabela{
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 3%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.coluna_acoes{ 
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+.botao_acoes{
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+}
+
+.newuser{
+    float: left;
+    padding-top: 10px;
+}
+
+/*CSS DA PÁGINA EDITAR_ADM*/
+h1{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.campo {
+    padding-top: 20px;
+    padding: 50px;
+    text-align: left;
+    font-size: large;
+
+}
+
+.input{
+    padding-right: 90px; /*altera o tamanho da caixa do input do adicionar novo usuário */
+
+}
+
+.save {
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    border: 0px;
+    background: #088eaf;
+    width: 90px;
+    height: 25px;
+    margin-left: 35%;
+    margin-right: 50%;
+
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-image: linear-gradient(to right, #319cb7, #76c4d7);
+    left: 0px;
+    height: 25px;
+    padding-bottom: 30px;
 }
