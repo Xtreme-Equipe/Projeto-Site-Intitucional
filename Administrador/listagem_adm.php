@@ -21,7 +21,7 @@ if ($id_adm != "") {
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
     <link rel="stylesheet" type="text/css" href="../Administrador/adm.css">
 
-    <title>Listagem de administradores do site</title>
+    <title>Administrador</title>
 </head>
 
 <body class="background">
