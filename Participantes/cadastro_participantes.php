@@ -121,7 +121,7 @@ if ($texto != "") {
             <div class="center-form">
 
                 <div class="titulo-form">
-                    <h2 class="subtitulo">Cadastro de Projetos</h2>                      
+                    <h2 class="subtitulo">Cadastro de Participantes</h2>                      
                 </div>
 
                 <fieldset class="grupo">
