@@ -150,7 +150,7 @@ if ($imagem_direita) {
 
                 <div class="você-pode-right">
                     <a href="../Doaçao/formulario_doador.php"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
-                    <a href="../Voluntario/cadastrovoluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
+                    <a href="../Voluntario/cadastro_voluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
                     <a href="../Participantes/cadastro_participantes.php"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
                 </div>
             </div><!--center-->
