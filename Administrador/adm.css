@@ -1,0 +1,11 @@
+.cabecalho{
+    background-image: linear-gradient(to right, #319cb7, #76c4d7);
+    padding: 30px;
+    color: white;
+    border: 0px;
+    outline: 0;
+    opacity: 1;
+    font-size: larger;
+    text-align: center;
+    font-family: "Graphik", sans-serif;
+}

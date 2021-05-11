@@ -97,7 +97,7 @@ Sobre Nós
     margin-left: 5%;
 }
 
-p{
+.paragrafo-missao p,.paragrafo-visao p,.paragrafo-valores p{
     margin-right: 10%;
     font-size: 6mm;
 }

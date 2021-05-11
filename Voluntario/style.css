@@ -141,6 +141,18 @@ form.formulario{
 .campo.center{
     position: relative;
     width: 98%;
+    text-align: center;
+    /*border: 1px solid red;*/
+}
+
+.onde-conheceu{
+    position: relative;
+    width: 96%;
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-bottom: 25px;
+    /*border: 1px solid red;*/
 }
 
 .campo label{ /*nome dos campos a serem preenchidos*/
@@ -176,14 +188,6 @@ input:focus, select:focus, textarea:focus{
     background: rgba(156, 193, 241, 0.356);
 }
 
-.campo.center{
-    position: relative;
-    float: center;
-    display: center;
-    text-align: left;
-    align-items: center;
-}
-
 input, select, textarea, button{
     border-radius: 5px;
 }
@@ -212,9 +216,9 @@ input, select, textarea, button{
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
-    
+ 
 @media screen and (max-width: 768px){
-    .mediaposition{ 
+    section.conteudo{ 
         position: relative;
         margin-top: 50px;
     }
@@ -310,9 +314,4 @@ input, select, textarea, button{
     .campo.center input[type="text"]{
         width: 105%;
     }
-}
-
-.onde-conheceu{
-    padding-left: 20px;
-    padding-bottom: 25px;
 }

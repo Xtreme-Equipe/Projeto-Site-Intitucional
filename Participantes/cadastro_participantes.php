@@ -20,6 +20,7 @@ if ($texto != "") {
         <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../Home/imagem/Vó-logo.png">
         <title>Cadastro de alunos</title>
         <script type="text/javascript">
             var onloadCallback = function() {
@@ -48,7 +49,7 @@ if ($texto != "") {
         <div class="center-nav">
             <div class="logo">
                 <a href="../Home/index.php">
-                <img src="../Home/imagem/Vó-logo.jpeg">
+                <img src="../Home/imagem/Vó-logo.png">
             </div><!--logo-->
 
             <ul class="menu">

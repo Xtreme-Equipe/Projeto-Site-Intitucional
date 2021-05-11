@@ -27,7 +27,7 @@ if ($imagem_direita) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <link rel="icon" href="../Home/imagem/Vó-logo.jpeg">  
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">  
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
@@ -62,7 +62,7 @@ if ($imagem_direita) {
             <div class="center-nav">
                 <div class="logo">
                     <a href="../Home/index.php">
-                    <img src="../Home/imagem/Vó-logo.jpeg">
+                    <img src="../Home/imagem/Vó-logo.png">
                 </div><!--logo-->
 
                 <ul class="menu">
@@ -101,7 +101,7 @@ if ($imagem_direita) {
                     <?php
                         /*Formulário de edição de texto */
                         if ($admin == "1") {
-                            echo "<form action=\"index.php\" method=\"POST\"> 
+                            echo "<form action=\"projetos.php\" method=\"POST\"> 
                                 <textarea id=\"editor\" name=\"texto_esquerdo\">";
                         }
                         $conexao = mysqli_connect("localhost","root","","bd_projetos");
@@ -207,6 +207,18 @@ if ($imagem_direita) {
                             <label>
                                 <input type="radio" name="pessoa" value="jurídica">Pessoa Jurídica
                             </label>
+                        </div>
+                    </div>
+
+                    <div class="preenchimento-form">
+                        <div class="onde-conheceu">
+                            <label><b>Como você conheceu a ONG?</b></label><br>
+                            <input type="checkbox" id="redesocial" name="redesocial" value="Redes social">
+                            <label for="Redes Sociais">Redes sociais</label>
+                            <input type="checkbox" id="youtube" name="youtube" value="Youtube">
+                            <label for="Youtube">Youtube</label>
+                            <input type="checkbox" id="outros" name="outros" value="Outros">
+                            <label for="outros">Outros</label>
                         </div>
                     </div>
 

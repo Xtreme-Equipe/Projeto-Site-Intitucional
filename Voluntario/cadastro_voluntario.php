@@ -29,6 +29,7 @@ if ($imagem_direita) {
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">
     <title>Seja um Voluntário</title>
     <script type="text/javascript">
             var onloadCallback = function() {
@@ -37,15 +38,15 @@ if ($imagem_direita) {
               });
             };
           </script>
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
-    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css"><!--não remover, faz parte do admin!-->
+    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script> <!--não remover, faz parte do admin!-->
 </head>
 
 <body>
     <?php
         include('../Administrador/admin_header.php'); //não remover, faz parte do admin!
     ?>
-        
+    
     <div id="container"><!-- Início container -->
 
         <header>
@@ -60,20 +61,20 @@ if ($imagem_direita) {
             <div class="center-nav">
                 <div class="logo">
                     <a href="../Home/index.php">
-                    <img src="../Home/imagem/Vó-logo.jpeg">
+                    <img src="../Home/imagem/Vó-logo.png">
                 </div><!--logo-->
 
                 <ul class="menu">
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Sobre/sobre.php">Sobre</a></li>
                     <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                    <li><a class="btn-menu" href="../Voluntario/cadastrovoluntario.php">Seja um voluntário</a></li>
+                    <li><a class="btn-menu" href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                     <li><a href="../Contato/Contato2.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                 </ul><!--menu-->
 
                 <ul class="menu-mobile">
-                <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
+                    <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
                     <div class="menu-itens">
                         <li><a href="../Home/index.php">Home</a></li>
                         <li><a href="../Sobre/sobre.php">Sobre</a></li>
@@ -96,25 +97,25 @@ if ($imagem_direita) {
 
                 <div class="texto">
                     <?php
-                    /*Formulário de edição de texto */
-                    if ($admin == "1") {
-                        echo "<form action=\"cadastro_voluntario.php\" method=\"POST\"> 
-                            <textarea id=\"editor\" name=\"texto_esquerdo\">";
-                    }
-                    $conexao = mysqli_connect("localhost","root","","bd_voluntario");
-                    $consulta = "select conteudo from tb_conteudo where pagina = 'cadastro_voluntario' and localizacao = 'esquerda'";
-                    $resultado = mysqli_query($conexao, $consulta);
-                    if (!$resultado) {
-                        die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
-                    }
-                    while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
-                        echo $item_da_lista_resultado["conteudo"];
-                    }
-                    
-                    if ($admin == "1") {
-                        echo "</textarea> <button type=\"submit\">Salvar</button>
-                    </form>";
-                    }
+                        /*Formulário de edição de texto */
+                        if ($admin == "1") {
+                            echo "<form action=\"cadastro_voluntario.php\" method=\"POST\"> 
+                                <textarea id=\"editor\" name=\"texto_esquerdo\">";
+                        }
+                        $conexao = mysqli_connect("localhost","root","","bd_voluntario");
+                        $consulta = "select conteudo from tb_conteudo where pagina = 'cadastro_voluntario' and localizacao = 'esquerda'";
+                        $resultado = mysqli_query($conexao, $consulta);
+                        if (!$resultado) {
+                            die ("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                        }
+                        while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                            echo $item_da_lista_resultado["conteudo"];
+                        }
+                        
+                        if ($admin == "1") {
+                            echo "</textarea> <button type=\"submit\">Salvar</button>
+                        </form>";
+                        }
                     ?>
                    <!-- <p>Seja um voluntário do nosso centro comunitário, qualquer ajuda é válida. Não é apenas quem é
                     “especialista” em alguma atividade que pode ser voluntário. Todos podem participar e contribuir. O que
@@ -149,12 +150,12 @@ if ($imagem_direita) {
                         </form>";
                         }
                     ?>
-                    <!-- <img src="imagens/imagem maos.png" title="Mãos" alt="Imagem de mãos">-->
+                   <!-- <img src="imagens/imagem maos.png" title="Mãos" alt="Imagem de mãos">-->
                 </div>
                 
             </div><!--center-conteúdo-->
         </section><!--conteúdo-->
-            
+
         <form class="formulario" method = "post" action="cadastrado_com_sucesso_volutario.html"> <!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
             <div class="center-form">
 
@@ -168,7 +169,7 @@ if ($imagem_direita) {
                             <label for="nome"><strong>Nome</strong></label>
                             <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
                         </div>
-
+            
                         <div class="campo right">
                             <label for="nascimento"><strong>Data de nascimento</strong></label>
                             <input type="date" name="nascimento" id="nascimento" required>
@@ -180,12 +181,13 @@ if ($imagem_direita) {
                             <label for="cpf"><strong>CPF</strong></label>
                             <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" required maxlength="11">
                         </div>
-        
+            
                         <div class="campo right">
                             <label class="campo"><strong>RG</strong> </label>
                             <input type="text" name="rg" id="rg" placeholder="xx.xxx.xxx-x" required maxlength="10">
                         </div>
                     </div>
+    
 
                     <div class="preenchimento-form">
                         <div class="campo left">
@@ -196,18 +198,18 @@ if ($imagem_direita) {
                         <div class="campo right">
                             <label for="celular"><strong>Celular de contato</strong></label>
                             <input type="tel" name="celular" id="celular" placeholder="(00) 00000-0000"required maxlength="15">
-                        </div> 
+                        </div>
                     </div>
-
+        
                     <div class="preenchimento-form">
-                       <div class="campo left">
+                        <div class="campo left">
                             <label for="email"><strong>Email</strong></label>
                             <input type="email" name="email" id="email" placeholder="name@name.com" required>
                         </div>
                     </div>
-
+         
                     <div class="preenchimento-form">
-                       <div class="campo inline left">
+                        <div class="campo inline left">
                             <label>
                                 <input type="radio" name="voluntario" value="Geral" checked>Voluntário Geral
                             </label>
@@ -218,9 +220,21 @@ if ($imagem_direita) {
                     </div>
 
                     <div class="preenchimento-form">
-                        <div class="campo center">
+                        <div class="campo left">
                             <label for="projeto"><strong>Especialidade</strong></label>
                             <input type="text" name="especialidade" id="especialidade" placeholder="Especialidade*" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="preenchimento-form">
+                        <div class="onde-conheceu">
+                            <label><b>Como você conheceu a ONG?</b></label><br>
+                            <input type="checkbox" id="redesocial" name="redesocial" value="Redes social">
+                            <label for="Redes Sociais">Redes sociais</label>
+                            <input type="checkbox" id="youtube" name="youtube" value="Youtube">
+                            <label for="Youtube">Youtube</label>
+                            <input type="checkbox" id="outros" name="outros" value="Outros">
+                            <label for="outros">Outros</label>
                         </div>
                     </div>
 
@@ -228,9 +242,8 @@ if ($imagem_direita) {
                         <div class="campo center">
                             <div id="html_element"></div>
                             <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-                                async defer>
+                            async defer>
                             </script>
-                            </div>
                         </div>
                     </div>
 
@@ -238,9 +251,10 @@ if ($imagem_direita) {
                         <div class="campo center">
                             <button class="botao" type="submit">Enviar</button>
                         </div> 
-                   </div>
+                    </div>
 
                 </fieldset>
+
             </div>
         </form>
 
@@ -276,23 +290,13 @@ if ($imagem_direita) {
                 <div class="footer-center">
                     <p>2021 
                     <a href="">Vó Maria Félix</a> 
-                        - Todos os direitos reservados.</p>
+                    - Todos os direitos reservados.</p>
                 </div>
 
             </div>
         </footer>
 
     </div><!--/fim container -->
-
-    <script>
-        document.addEventListener(
-            "DOMContentLoaded", 
-            function() {
-                CKEDITOR.replace("editor", false) /*inicializa o editor de texto após o carregamento da página */
-            }
-        )
-
-    </script>
 
     <script>
         function share(){
@@ -327,6 +331,17 @@ if ($imagem_direita) {
 
     </script>
 
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", 
+            function() {
+                CKEDITOR.replace("editor", false) /*inicializa o editor de texto após o carregamento da página */
+            }
+        )
+
+    </script>
+
 </body>
 
 </html>
+
