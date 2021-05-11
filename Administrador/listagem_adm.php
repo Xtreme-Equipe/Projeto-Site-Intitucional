@@ -1,3 +1,14 @@
+<?php
+$id_adm = isset($_POST['userid']) ? $_POST['userid'] : "";
+if ($id_adm != ""){
+    $conection = mysqli_connect ("localhost", "root", "", "bd_admin");
+    $preparado = mysqli_prepare($conection, "delete from tb_user where id = ?"); //deleta usuário
+    mysqli_stmt_bind_param($preparado, "i", $id_adm);
+    mysqli_stmt_execute($preparado);
+    header('Location: /Projeto-Site-Intitucional/Administrador/listagem_adm.php?');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +54,7 @@
             echo "         <img class=\"\" src=\"imagens/Edit-icon.png\" alt=\"Imagem de edição\">";
             echo "      </button>";
             echo "  </form>";
-            echo "  <form action=\"listagem_adm.php\" method=\"GET\">";
+            echo "  <form action=\"listagem_adm.php\" method=\"POST\">";
             echo "      <button>";
             echo "          <input type=\"hidden\" name=\"userid\" value=\"" . $item_da_lista_resultado["id"] . "\">";
             echo "          <img class=\"\" src=\"imagens/Trash-icon.png\" alt=\"Imagem de remoção\">";

@@ -2,14 +2,50 @@
 $name_adm       = isset($_POST['name']) ? $_POST['name'] : "";
 $email_adm       = isset($_POST['email']) ? $_POST['email'] : "";
 $password_adm       = isset($_POST['password']) ? $_POST['password'] : "";
+$id_adm = isset($_GET['userid']) ? $_GET['userid'] : "";
+
+if ($id_adm == ""){
+    $id_adm = isset($_POST['userid']) ? $_POST['userid'] : "";
+}
 
 if ($name_adm != "" || $email_adm != "" || $password_adm != "") {
-    $conexao = mysqli_connect ("localhost", "root", "", "bd_admin");
-    $preparado = mysqli_prepare($conexao, "insert into tb_user (name, email, password) values (?, ?, ?)");
-    mysqli_stmt_bind_param($preparado, "sss", $name_adm, $email_adm, $password_adm);
+    $conection = mysqli_connect ("localhost", "root", "", "bd_admin");
+    if ($id_adm == "") {
+        $preparado = mysqli_prepare($conection, "insert into tb_user (name, email, password) values (?, ?, ?)");
+        mysqli_stmt_bind_param($preparado, "sss", $name_adm, $email_adm, $password_adm); //cria um novo usuário
+    }
+    else {
+        $preparado = mysqli_prepare($conection, "update tb_user set name = ?, email = ?, password = ? where id =?");
+        mysqli_stmt_bind_param($preparado, "sssi", $name_adm, $email_adm, $password_adm, $id_adm); //edita usuário já existente
+    }
     mysqli_stmt_execute($preparado);
     header('Location: /Projeto-Site-Intitucional/Administrador/listagem_adm.php?'); //redireciona para listagem de adm
 }
+
+$result_email = "";
+$result_name = "";
+$result_password = "";
+
+if ($id_adm != "") {
+    $conection = mysqli_connect ("localhost", "root", "", "bd_admin");
+    $prepared = mysqli_prepare($conection, "select email, name, password from tb_user where id = ?");
+    mysqli_stmt_bind_param($prepared, "i", $id_adm); // envia os dados dos 'filtros'
+    $result = mysqli_stmt_execute($prepared); // aplica o 'filtro'  
+
+    mysqli_stmt_store_result($prepared); //traz os metadados da consulta
+
+    $result_count = mysqli_stmt_num_rows($prepared); //quantas linhas a consulta retornou
+
+    if (!$result || $result_count == '0') { 
+            $validated = FALSE;
+    }
+    else {
+        mysqli_stmt_bind_result($prepared, $result_email, $result_name, $result_password); //associa as variáveis com os campos do select
+        mysqli_stmt_fetch($prepared); //traz o resultado para as variáveis acima
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -32,10 +68,11 @@ if ($name_adm != "" || $email_adm != "" || $password_adm != "") {
     include('../Administrador/admin_header.php');
     ?>
     <form action="editar_adm.php" method="POST">
-       <label for="name">Nome</label> <input type="text" name="name">
-      <label for="email">Email</label> <input type="email" name="email">
-      <label for="password">Senha</label> <input type="password" name="password">
-    
+       <label for="name">Nome</label> <input type="text" name="name" value="<?=$result_name?>">
+      <label for="email">Email</label> <input type="email" name="email"value="<?=$result_email?>">
+      <label for="password">Senha</label> <input type="password" name="password" value="<?=$result_password?>">
+      <input type="hidden" name="userid" value="<?=$id_adm?>">
+          
     <div class="salve">
         <button class="salve">Salvar</button>
     </div>
