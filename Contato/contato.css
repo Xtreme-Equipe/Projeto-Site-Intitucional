@@ -10,7 +10,7 @@ body{
     text-align: center;
     font-size: 7em;
 	margin-top: 150px;
-	margin-bottom: 90px;
+	margin-bottom: 30px;
 }
 
 .faleconosco{
@@ -19,7 +19,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
-	padding-top: 45%;
+	padding-top: 40%;
 }
 
 .left{
