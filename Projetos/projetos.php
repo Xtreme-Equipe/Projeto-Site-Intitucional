@@ -231,6 +231,15 @@ if ($imagem_direita) {
 
                     <div class="preenchimento-form">
                         <div class="campo center">
+                            <div id="html_element"></div>
+                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                            async defer>
+                            </script>   
+                        </div> 
+                   </div>
+
+                    <div class="preenchimento-form">
+                        <div class="campo center">
                             <button class="botao" type="submit">Enviar</button>
                         </div> 
                    </div>
@@ -248,7 +257,8 @@ if ($imagem_direita) {
                         <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
                 </div>
 
-                <div class="footer-right">
+                <div class="footer-right" style="justify-content: center;
+                flex-wrap: wrap;">
                     <p>Você pode nos ajudar compartilhando nossa causa</p>
                     <span>
                         <a target="_blank" href="javascript:void(0)" onclick="share()">

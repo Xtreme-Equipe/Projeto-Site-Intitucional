@@ -73,33 +73,12 @@ if ($texto != "") {
         <!--center-->
     </nav>
 
-    <h1 class="titulo">Contato</h1>
+    <section class="tudão">
 
-    <div>
+        <h1 class="titulo">Contato</h1>
+
         <div class="info">
-            <div class="paragrafos">
-                <?php
-                /*Formulário de edição de texto */
-                if ($admin == "1") {
-                    echo "<form action=\"Contato2.php\" method=\"POST\"> 
-                            <textarea id=\"editor\" name=\"texto_esquerdo\">";
-                }
-                $conexao = mysqli_connect("localhost", "root", "", "bd_contato");
-                $consulta = "select conteudo from tb_conteudo where pagina = 'Contato2' and localizacao = 'esquerda'";
-                $resultado = mysqli_query($conexao, $consulta);
-                if (!$resultado) {
-                    die("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
-                }
-                while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
-                    echo $item_da_lista_resultado["conteudo"];
-                }
-
-                if ($admin == "1") {
-                    echo "</textarea> <button type=\"submit\">Salvar</button>
-                    </form>";
-                }
-                ?>
-                <!--
+            <div class="left">
                 <p class="tel">
                     TELEFONE: (12) 3966-2823
                 </p>
@@ -113,25 +92,20 @@ if ($texto != "") {
                 </p>
 
                 <p class="horario">
-                    Horário de Segunda a Sexta das 07:00h ás 17:00h
+                    Horário de Segunda á Sexta das 07:00h ás 17:00h
                 </p>
-                 -->
             </div>
         </div>
 
-        <div class="google">
+        <div class="right">
             <p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14660.29387667944!2d-45.8999728!3d-23.27678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd429ce060f725c70!2sCECOI%20V%C3%B3%20Maria%20F%C3%A9lix!5e0!3m2!1sen!2sbr!4v1617325066947!5m2!1sen!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </p>
         </div>
 
-    </div>
+        <h2 class="faleconosco">FALE CONOSCO</h2>
 
-    <h2 class="faleconosco2">FALE CONOSCO</h2>
-
-    <div class="faleconosco">
-
-        <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.php">
+        <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.html">
 
             <p class="nome">
                 <input type="texte" name="nome" placeholder="Nome:" required="required">
@@ -142,17 +116,20 @@ if ($texto != "") {
             </p>
 
             <p class="assunto">
-                <input type="number" name="celular" placeholder="Telefone:" required="required">
+                <input type="number" name="assunto" placeholder="Telefone:" required="required">
             </p>
 
             <p class="mensagem">
-                <textarea type="textarea" maxlength="120" name="descriçao" placeholder="Descreva o motivo do contato:" required="required"></textarea>
+                <textarea type="textarea" maxlength="120" name="mensagem" placeholder="Descreva o motivo do contato:" required="required"></textarea>
             </p>
 
             <p class="enviar">
                 <input type="submit" name="enviar" value="Enviar">
             </p>
         </form>
+    </section>
+    
+    <div>
 
         <footer class="footer-vó">
             <div class="center-footer">
@@ -162,7 +139,8 @@ if ($texto != "") {
                     <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
                 </div>
 
-                <div class="footer-right">
+                <div class="footer-right" style="justify-content: center;
+                flex-wrap: wrap;">
                     <p>Você pode nos ajudar compartilhando nossa causa</p>
                     <span>
                         <a target="_blank" href="javascript:void(0)" onclick="share()">
