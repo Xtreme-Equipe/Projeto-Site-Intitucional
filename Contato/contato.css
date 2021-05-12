@@ -94,8 +94,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
-
-form{
+.formulario{ /* css de impacto no upload de imagem admin*/
 	font-size: 21px;
 	max-width: 400px;
 	height: auto;

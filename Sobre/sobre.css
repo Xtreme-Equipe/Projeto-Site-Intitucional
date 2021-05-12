@@ -8,8 +8,8 @@
 #container {
     max-width: 80%;
     max-height: 80%;
-    background: #ffffff;
-    position: relative;
+    background: #7a7a7a;
+    position: rergb(128, 128, 128)
 }
 
 /*
@@ -28,6 +28,7 @@ Sobre Nós
     margin-right: 18%;
     background-position: 100%;
     background-image: url(../Sobre/sobrenos.jpg);
+    background-color: darkgrey;
 }
 
 .center-sobre-nos{
@@ -35,6 +36,7 @@ Sobre Nós
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .sobre{
     font-family: 'Cabin Sketch', cursive;
@@ -95,7 +97,7 @@ Sobre Nós
     margin-left: 5%;
 }
 
-p{
+.paragrafo-missao p,.paragrafo-visao p,.paragrafo-valores p{
     margin-right: 10%;
     font-size: 6mm;
 }

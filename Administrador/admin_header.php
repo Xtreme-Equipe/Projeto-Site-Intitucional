@@ -42,11 +42,17 @@
     <span class="welcome">
         Bem-vindo(a) <strong><?=$nome_logado?></strong>
 </span>
-    
-   <div class="sair">
+
+    <div class="sair">
         <form action="../Administrador/login.php" method="POST">
             <input type="hidden" name="logout" value="True">
             <button class="sair">Sair</button>
+        </form>
+    </div>
+
+<div class="painel">
+        <form action="../Administrador/listagem_adm.php" method="GET">
+            <button class="painel">Painel Administrador</button>
         </form>
     </div>
 </div> 

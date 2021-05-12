@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">
 </head>
 
 <body>
@@ -22,14 +23,14 @@
         <div class="center-nav">
             <div class="logo">
                 <a href="../Home/index.html">
-                <img src="../Home/imagem/Vó-logo.jpeg">
+                <img src="../Home/imagem/Vó-logo.png">
             </div><!--logo-->
 
             <ul class="menu">
                 <li><a href="../Home/index.html">Home</a></li>
                 <li><a href="../Sobre/sobre.html">Sobre</a></li>
                 <li><a href="../Projetos/projetos.html">Projetos</a></li>
-                <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                <li><a href="../Voluntario/cadastro_voluntario.html">Seja um voluntário</a></li>
                 <li><a class="btn-menu" href="../Contato/Contato2.html">Contato</a></li>
                 <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
             </ul><!--menu-->
@@ -84,7 +85,7 @@
 
 <div class="faleconosco">
 
-    <form name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.html">
+    <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.html">
 
         <p class="nome">
             <input type="texte" name="nome" placeholder="Nome:" required="required">
@@ -101,7 +102,7 @@
         <p class="mensagem">
             <textarea type="textarea" maxlength="120" name="mensagem" placeholder="Descreva o motivo do contato:" required="required"></textarea>
         </p>
-
+        
         <p class="enviar">
             <input type="submit" name="enviar" value="Enviar">
         </p>

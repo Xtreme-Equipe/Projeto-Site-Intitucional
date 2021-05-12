@@ -7,15 +7,15 @@
     opacity: 1;
     font-size: larger;
     text-align: center;
+    font-family: "Graphik", sans-serif;
 }
 .welcome{
     text-align: center;
     color:white;
-
     font-size: xx-large;
 
 }
-.sair{
+.sair, .painel{
     float: right;
     color: white;
     font-size: large;
@@ -24,6 +24,10 @@
     background: #088eaf;
     width: 90px;
     height: 25px;
+}
+.painel{
+    width: 230px;
+    margin-right: 3px;
 }
 
 .btn button:hover{

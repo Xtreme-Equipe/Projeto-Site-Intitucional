@@ -39,6 +39,7 @@ if ($texto_direito_valores != "") {
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">
     <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
 </head>
@@ -60,7 +61,7 @@ if ($texto_direito_valores != "") {
         <div class="center-nav">
             <div class="logo">
                 <a href="../Home/index.php">
-                <img src="../Home/imagem/Vó-logo.jpeg">
+                <img src="../Home/imagem/Vó-logo.png">
             </div><!--logo-->
 
             <ul class="menu">

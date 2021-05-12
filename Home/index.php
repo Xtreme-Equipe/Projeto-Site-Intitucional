@@ -24,7 +24,7 @@ if ($imagem_direita) {
     <title>Vó Maria Félix</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Home/imagem/Vó-logo.jpeg">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">
 
     <!-- Estilo customizado -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,7 +52,7 @@ if ($imagem_direita) {
         <nav>
             <div class="center-nav">
                 <div class="logo">
-                    <img src="../Home/imagem/Vó-logo.jpeg">
+                    <img src="../Home/imagem/Vó-logo.png">
                 </div><!--logo-->
 
                 <ul class="menu">
@@ -150,7 +150,7 @@ if ($imagem_direita) {
 
                 <div class="você-pode-right">
                     <a href="../Doaçao/formulario_doador.php"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
-                    <a href="../Voluntario/cadastrovoluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
+                    <a href="../Voluntario/cadastro_voluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
                     <a href="../Participantes/cadastro_participantes.php"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
                 </div>
             </div><!--center-->
