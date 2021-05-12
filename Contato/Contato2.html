@@ -11,103 +11,102 @@
 </head>
 
 <body>
-    <header>
-        <div class="center-header">
-            <div class="vó-fundo">
-                <img src="../Home/imagem/fundo-3.jpeg">
-            </div><!--vó-fundo-->
-        </div><!--center-->
-    </header>
+    <div class="container">
+        <header>
+            <div class="center-header">
+                <div class="vó-fundo">
+                    <img src="../Home/imagem/fundo-3.jpeg">
+                </div><!--vó-fundo-->
+            </div><!--center-->
+        </header>
 
-    <nav>
-        <div class="center-nav">
-            <div class="logo">
-                <a href="../Home/index.html">
-                <img src="../Home/imagem/Vó-logo.png">
-            </div><!--logo-->
+        <nav>
+            <div class="center-nav">
+                <div class="logo">
+                    <a href="../Home/index.html">
+                    <img src="../Home/imagem/Vó-logo.png">
+                </div><!--logo-->
 
-            <ul class="menu">
-                <li><a href="../Home/index.html">Home</a></li>
-                <li><a href="../Sobre/sobre.html">Sobre</a></li>
-                <li><a href="../Projetos/projetos.html">Projetos</a></li>
-                <li><a href="../Voluntario/cadastro_voluntario.html">Seja um voluntário</a></li>
-                <li><a class="btn-menu" href="../Contato/Contato2.html">Contato</a></li>
-                <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
-            </ul><!--menu-->
-
-            <ul class="menu-mobile">
-            <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
-                <div class="menu-itens">
+                <ul class="menu">
                     <li><a href="../Home/index.html">Home</a></li>
                     <li><a href="../Sobre/sobre.html">Sobre</a></li>
                     <li><a href="../Projetos/projetos.html">Projetos</a></li>
-                    <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                    <li><a href="../Voluntario/cadastro_voluntario.html">Seja um voluntário</a></li>
                     <li><a class="btn-menu" href="../Contato/Contato2.html">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
+                </ul><!--menu-->
+
+                <ul class="menu-mobile">
+                <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
+                    <div class="menu-itens">
+                        <li><a href="../Home/index.html">Home</a></li>
+                        <li><a href="../Sobre/sobre.html">Sobre</a></li>
+                        <li><a href="../Projetos/projetos.html">Projetos</a></li>
+                        <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                        <li><a class="btn-menu" href="../Contato/Contato2.html">Contato</a></li>
+                        <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
+                    </div>
+                </ul>
+
+            </div><!--center-->
+        </nav>
+
+            <section class="tudão">
+
+                <h1 class="titulo">Contato</h1>
+
+                <div class="info">
+                    <div class="left">
+                        <p class="tel">
+                            TELEFONE: (12) 3966-2823
+                        </p>
+
+                        <p class="email">
+                            E-MAIL: administracao@aamu.org.br
+                        </p>
+
+                        <p class="face">
+                            FACEBOOK: CECOI VÓ MARIA FÉLIX
+                        </p>
+
+                        <p class="horario">
+                            Horário de Segunda á Sexta das 07:00h ás 17:00h
+                        </p>
+                    </div>
                 </div>
-            </ul>
 
-        </div><!--center-->
-    </nav>
+                <div class="right">
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14660.29387667944!2d-45.8999728!3d-23.27678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd429ce060f725c70!2sCECOI%20V%C3%B3%20Maria%20F%C3%A9lix!5e0!3m2!1sen!2sbr!4v1617325066947!5m2!1sen!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </p>
+                </div>
 
-    <h1 class="titulo">Contato</h1>
-    
-<div>
-    <div class="info">
-        <div class="paragrafos">
-            <p class="tel">
-                TELEFONE: (12) 3966-2823
-            </p>
+                    <h2 class="faleconosco">FALE CONOSCO</h2>
 
-            <p class="email">
-                E-MAIL: administracao@aamu.org.br
-            </p>
+                <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.html">
 
-            <p class="face">
-                FACEBOOK: CECOI VÓ MARIA FÉLIX
-            </p>
+                    <p class="nome">
+                        <input type="texte" name="nome" placeholder="Nome:" required="required">
+                    </p>
 
-            <p class="horario">
-                Horário de Segunda á Sexta das 07:00h ás 17:00h
-            </p>
-        </div>
+                    <p class="email1">
+                        <input type="email" name="email" placeholder="E-mail:" required="required">
+                    </p>
+
+                    <p class="assunto">
+                        <input type="number" name="assunto" placeholder="Telefone:" required="required">
+                    </p>
+
+                    <p class="mensagem">
+                        <textarea type="textarea" maxlength="120" name="mensagem" placeholder="Descreva o motivo do contato:" required="required"></textarea>
+                    </p>
+                
+                    <p class="enviar">
+                        <input type="submit" name="enviar" value="Enviar">
+                    </p>
+                </form>
+            </section>
     </div>
-
-        <div class="google">
-            <p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14660.29387667944!2d-45.8999728!3d-23.27678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd429ce060f725c70!2sCECOI%20V%C3%B3%20Maria%20F%C3%A9lix!5e0!3m2!1sen!2sbr!4v1617325066947!5m2!1sen!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </p>
-        </div>
-
-</div>
-
-    <h2 class="faleconosco2">FALE CONOSCO</h2>
-
-<div class="faleconosco">
-
-    <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.html">
-
-        <p class="nome">
-            <input type="texte" name="nome" placeholder="Nome:" required="required">
-        </p>
-
-        <p class="email1">
-            <input type="email" name="email" placeholder="E-mail:" required="required">
-        </p>
-
-        <p class="assunto">
-            <input type="number" name="assunto" placeholder="Telefone:" required="required">
-        </p>
-
-        <p class="mensagem">
-            <textarea type="textarea" maxlength="120" name="mensagem" placeholder="Descreva o motivo do contato:" required="required"></textarea>
-        </p>
-        
-        <p class="enviar">
-            <input type="submit" name="enviar" value="Enviar">
-        </p>
-    </form>
-
     <footer class="footer-vó">
         <div class="center-footer">
             <div class="footer-left">
@@ -147,7 +146,10 @@
         </div>
     </footer>
 
-</div><!--/fim container -->
+        </div>
+
+
+
 </body>
 
 <script>
