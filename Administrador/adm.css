@@ -8,12 +8,12 @@
     
 }
 .background, body{
-    background-color:#e5e5e52f;
+    background-color:#e5e5e5ab;
     margin: 0px;
 }
 
 #tabela{
-    width: 400px;
+    width: max-content;
     margin: auto;
     padding: 30px;
     padding-bottom: 3%;
@@ -21,10 +21,18 @@
     text-align: center;
 }
 
-.coluna_acoes{ 
-    padding-right: 20px;
-    padding-left: 20px;
+.coluna{
+    white-space: nowrap;
+    padding-right: 25px;
+    padding-left: 25px;
+}
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
 }
 .botao_acoes{
     height: 25px;
@@ -77,4 +85,15 @@ h1{
     left: 0px;
     height: 25px;
     padding-bottom: 30px;
+}
+
+/*CSS DO INDEX*/
+.fundo{
+    background-image: url("imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo:before{
+    opacity: 0.1;
 }

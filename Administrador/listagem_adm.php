@@ -10,7 +10,7 @@ if ($id_adm != "") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@ if ($id_adm != "") {
     <title>Administrador</title>
 </head>
 
-<body class="background">
+<body class="background fundo">
     <div>
         <?php
         include('../Administrador/admin_header.php');
@@ -34,7 +34,7 @@ if ($id_adm != "") {
         <table>
             <tr class="cabecalho" >
                 <th>Nome</th>
-                <th class="coluna_email">E-mail</th>
+                <th>E-mail</th>
                 <th class="coluna_acoes">Ações</th>
             </tr>
 
@@ -47,17 +47,17 @@ if ($id_adm != "") {
             }
             while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
                 echo "<tr>";
-                echo "<td>" . $item_da_lista_resultado["name"] . "</td>";
-                echo "<td>" . $item_da_lista_resultado["email"] . "</td>";
-                echo "<td>";
-                echo "  <form action=\"editar_adm.php\" method=\"GET\">";
+                echo "<td class=\"coluna\">" . $item_da_lista_resultado["name"] . "</td>";
+                echo "<td class=\"coluna\">" . $item_da_lista_resultado["email"] . "</td>";
+                echo "<td class=\"coluna\">";
+                echo "  <form  class=\"left\" action=\"editar_adm.php\" method=\"GET\">";
                 echo "      <button class=\"botao_acoes\">";
                 echo "          <input type=\"hidden\" name=\"admin\" value=\"1\">";
                 echo "          <input type=\"hidden\" name=\"userid\" value=\"" . $item_da_lista_resultado["id"] . "\">";
                 echo "         <img class=\"\" src=\"imagens/Edit-icon.png\" alt=\"Imagem de edição\" title=\"Editar dados do administrador\">";
                 echo "      </button>";
                 echo "  </form>";
-                echo "  <form action=\"listagem_adm.php\" method=\"POST\">";
+                echo "  <form class=\"right\" action=\"listagem_adm.php\" method=\"POST\">";
                 echo "      <button class=\"botao_acoes\">";
                 echo "          <input type=\"hidden\" name=\"userid\" value=\"" . $item_da_lista_resultado["id"] . "\">";
                 echo "          <img class=\"\" src=\"imagens/Trash-icon.png\" alt=\"Imagem de remoção\" title=\"Remover administrador\">";

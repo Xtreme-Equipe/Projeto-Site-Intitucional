@@ -54,7 +54,7 @@ if ($id_adm != "") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -68,8 +68,10 @@ if ($id_adm != "") {
     <title><?= $title_pag ?></title>
 </head>
 
-<body>
+<body class="fundo">
     <?php
+    $botao_esquerdo['texto'] = "Voltar";
+    $botao_esquerdo['action'] = "listagem_adm.php";
     include('../Administrador/admin_header.php');
     ?>
     <div class="background" id="tabela">
@@ -79,15 +81,15 @@ if ($id_adm != "") {
         <form action="editar_adm.php" method="POST">
             <div class="campo">
                 <div>
-                    <label for="name">Nome</label> <input type="text" name="name" value="<?= $result_name ?>" class="input">
+                    <label for="name">Nome</label> <br> <input type="text" name="name" value="<?= $result_name ?>" class="input">
                 </div>
 
-                <div class="left">
-                    <label for="email">Email</label> <input type="email" name="email" value="<?= $result_email ?>" class="input">
+                <div>
+                    <label for="email">Email</label> <br> <input type="email" name="email" value="<?= $result_email ?>" class="input">
                 </div>
 
-                <div class="left">
-                    <label for="password">Senha</label> <input type="password" name="password" value="<?= $result_password ?>" class="input">
+                <div>
+                    <label for="password">Senha</label> <br> <input type="password" name="password" value="<?= $result_password ?>" class="input">
                 </div>
             </div>
 
