@@ -1,11 +1,19 @@
 <?php
 $id_adm = isset($_POST['userid']) ? $_POST['userid'] : "";
+
 if ($id_adm != "") {
     $conection = mysqli_connect("localhost", "root", "", "bd_admin");
     $preparado = mysqli_prepare($conection, "delete from tb_user where id = ?"); //deleta usuário
     mysqli_stmt_bind_param($preparado, "i", $id_adm);
     mysqli_stmt_execute($preparado);
     header('Location: /Projeto-Site-Intitucional/Administrador/listagem_adm.php?');
+}
+
+if ($id_adm == ""){
+    $title_pag = "Adicionar novo administrador";
+}
+else{
+    $title_pag = "Editar administrador";
 }
 ?>
 
@@ -25,11 +33,11 @@ if ($id_adm != "") {
 </head>
 
 <body class="background fundo">
-    <div>
-        <?php
-        include('../Administrador/admin_header.php');
-        ?>
-    </div>
+    <?php
+    $botao_esquerdo['texto'] = "Voltar";
+    $botao_esquerdo['action'] = "index.php";
+    include('../Administrador/admin_header.php');
+    ?>
     <div class="background"id="tabela">
         <table>
             <tr class="cabecalho" >

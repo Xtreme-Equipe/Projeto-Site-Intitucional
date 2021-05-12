@@ -69,7 +69,7 @@ if (!isset($botao_esquerdo)) {
     </div>
 
     <div class="painel">
-        <form action="../Administrador/listagem_adm.php" method="GET">
+        <form action="../Administrador/index.php" method="GET">
             <button class="painel">Painel Administrador</button>
         </form>
     </div>
