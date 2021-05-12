@@ -231,6 +231,15 @@ if ($imagem_direita) {
 
                     <div class="preenchimento-form">
                         <div class="campo center">
+                            <div id="html_element"></div>
+                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                            async defer>
+                            </script>   
+                        </div> 
+                   </div>
+
+                    <div class="preenchimento-form">
+                        <div class="campo center">
                             <button class="botao" type="submit">Enviar</button>
                         </div> 
                    </div>
