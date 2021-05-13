@@ -72,6 +72,8 @@ if ($id_adm != "") {
     <?php
     $botao_esquerdo['texto'] = "Voltar";
     $botao_esquerdo['action'] = "listagem_adm.php";
+    $botao_direito["css"] = "hidden";
+    $welcome["css"] = "welcome-voltar";
     include('../Administrador/admin_header.php');
     ?>
     <div class="background" id="tabela">
@@ -81,15 +83,15 @@ if ($id_adm != "") {
         <form action="editar_adm.php" method="POST">
             <div class="campo">
                 <div>
-                    <label for="name">Nome</label> <br> <input type="text" name="name" value="<?= $result_name ?>" class="input">
+                    <label for="name">Nome</label> <br> <input type="text" name="name" value="<?= $result_name ?>" class="input" required>
                 </div>
 
                 <div>
-                    <label for="email">Email</label> <br> <input type="email" name="email" value="<?= $result_email ?>" class="input">
+                    <label for="email">Email</label> <br> <input type="email" name="email" value="<?= $result_email ?>" class="input" required>
                 </div>
 
                 <div>
-                    <label for="password">Senha</label> <br> <input type="password" name="password" value="<?= $result_password ?>" class="input">
+                    <label for="password">Senha</label> <br> <input type="password" name="password" value="<?= $result_password ?>" class="input" required>
                 </div>
             </div>
 

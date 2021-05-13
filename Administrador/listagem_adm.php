@@ -36,6 +36,8 @@ else{
     <?php
     $botao_esquerdo['texto'] = "Voltar";
     $botao_esquerdo['action'] = "index.php";
+    $welcome["css"] = "welcome-voltar";
+    $botao_direito["css"] = "hidden";
     include('../Administrador/admin_header.php');
     ?>
     <div class="background"id="tabela">
@@ -66,7 +68,12 @@ else{
                 echo "      </button>";
                 echo "  </form>";
                 echo "  <form class=\"right\" action=\"listagem_adm.php\" method=\"POST\">";
-                echo "      <button class=\"botao_acoes\">";
+                if($_SESSION["email"] == $item_da_lista_resultado["email"]){
+                    echo "      <button class=\"botao_acoes\"disabled>";
+                }
+                else{
+                     echo "      <button class=\"botao_acoes\">";
+                }
                 echo "          <input type=\"hidden\" name=\"userid\" value=\"" . $item_da_lista_resultado["id"] . "\">";
                 echo "          <img class=\"\" src=\"imagens/Trash-icon.png\" alt=\"Imagem de remoção\" title=\"Remover administrador\">";
                 echo "      </button>";

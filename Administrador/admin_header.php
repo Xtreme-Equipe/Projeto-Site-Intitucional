@@ -35,6 +35,15 @@ if (!isset($botao_esquerdo)) {
     $botao_customizado = "show";
     $botao_padrao = "hidden";
 }
+if(!isset($botao_esquerdo['css'])){
+    $botao_esquerdo['css'] = "";
+}
+if(!isset($botao_direito)){
+    $botao_direito["css"] = "";
+}
+if(!isset($welcome)){
+    $welcome["css"] = "";
+}
 ?>
 
 <div class="barra_admin btn">
@@ -53,11 +62,11 @@ if (!isset($botao_esquerdo)) {
 
         <div class="<?=$botao_customizado?>">
             <form action="<?=$botao_esquerdo['action']?>" method="GET">
-                <button class="editar"><?=$botao_esquerdo['texto']?></button>
+                <button class="editar <?=$botao_esquerdo['css']?>"><?=$botao_esquerdo['texto']?></button>
             </form>
         </div>
     </div>
-    <span class="welcome">
+    <span class="welcome <?=$welcome['css']?>">
         Bem-vindo(a) <strong><?= $nome_logado ?></strong>
     </span>
 
@@ -68,7 +77,7 @@ if (!isset($botao_esquerdo)) {
         </form>
     </div>
 
-    <div class="painel">
+    <div class="painel <?=$botao_direito["css"]?>">
         <form action="../Administrador/index.php" method="GET">
             <button class="painel">Painel Administrador</button>
         </form>

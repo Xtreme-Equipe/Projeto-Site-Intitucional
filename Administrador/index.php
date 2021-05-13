@@ -14,7 +14,11 @@
 
 <body class="fundo">
     <?php
-        include('../Administrador/admin_header.php');
+       $botao_esquerdo["css"] = "hidden";
+       $botao_esquerdo["action"] = "hidden";
+       $botao_esquerdo["texto"] = "hidden";
+       $botao_direito["css"] = "hidden";
+       include('../Administrador/admin_header.php');
     ?>
     <div class="botao btn">
         <a href="listagem_adm.php" class="botao">
