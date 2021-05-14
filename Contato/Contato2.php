@@ -78,24 +78,31 @@ if ($texto != "") {
         <h1 class="titulo">Contato</h1>
 
         <div class="info">
+
             <div class="left">
-                <p class="tel">
-                    TELEFONE: (12) 3966-2823
-                </p>
+                    <?php
+                    /*Formulário de edição de texto */
+                    if ($admin == "1") {
+                        echo "<form action=\"Contato2.php\" method=\"POST\"> 
+                                <textarea id=\"editor\" name=\"texto_esquerdo\">";
+                    }
+                    $conexao = mysqli_connect("localhost", "root", "", "bd_contato");
+                    $consulta = "select conteudo from tb_conteudo where pagina = 'Contato2' and localizacao = 'esquerda'";
+                    $resultado = mysqli_query($conexao, $consulta);
+                    if (!$resultado) {
+                        die("OPS! Algo deu errado :( Entre em contato conosco!" . mysqli_error($conexao));
+                    }
+                    while ($item_da_lista_resultado = mysqli_fetch_assoc($resultado)) {
+                        echo $item_da_lista_resultado["conteudo"];
+                    }
 
-                <p class="email">
-                    E-MAIL: administracao@aamu.org.br
-                </p>
+                    if ($admin == "1") {
+                        echo "</textarea> <button type=\"submit\">Salvar</button>
+                        </form>";
+                    }
+                    ?>
 
-                <p class="face">
-                    FACEBOOK: CECOI VÓ MARIA FÉLIX
-                </p>
-
-                <p class="horario">
-                    Horário de Segunda á Sexta das 07:00h ás 17:00h
-                </p>
             </div>
-        </div>
 
         <div class="right">
             <p>
