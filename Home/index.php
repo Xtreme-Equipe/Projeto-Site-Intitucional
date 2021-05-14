@@ -150,7 +150,7 @@ if ($imagem_direita) {
 
                 <div class="você-pode-right">
                     <a href="../Doaçao/formulario_doador.php"><button>Seja um doador<img src="imagem/vó-doe.jpeg"></button></a>
-                    <a href="../Voluntario/cadastrovoluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
+                    <a href="../Voluntario/cadastro_voluntario.php"><button>Seja um voluntário<img src="imagem/vó-voluntário.jpeg"></button></a>
                     <a href="../Participantes/cadastro_participantes.php"><button>Inscreva seu filho<img src="imagem/vó-inscreva.jpeg"></button></a>
                 </div>
             </div><!--center-->
@@ -164,14 +164,15 @@ if ($imagem_direita) {
                         <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
                 </div>
 
-                <div class="footer-right">
+                <div class="footer-right" style="justify-content: center;
+                flex-wrap: wrap;">
                     <p>Você pode nos ajudar compartilhando nossa causa</p>
                     <span>
                         <a target="_blank" href="javascript:void(0)" onclick="share()">
                             <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
                         </a>
                             
-                        <a target="_blank" href="">
+                        <a target="_blank" href="https://www.instagram.com/explore/locations/1023028168/cecoi-vo-maria-felix/">
                             <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
                         </a>
 

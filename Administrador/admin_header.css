@@ -12,10 +12,14 @@
 .welcome{
     text-align: center;
     color:white;
-
     font-size: xx-large;
-
+    margin-right: -90px;
 }
+
+.welcome-voltar{
+    margin-left: -137px;
+}
+
 .sair, .painel{
     float: right;
     color: white;
@@ -35,7 +39,7 @@
     background-image: linear-gradient(to right, #3cb9df, #1393b3);
 }
 
-.editar, .descartar{
+.editar, .descartar{ /*botão: editar, descartar e voltar*/
     float: left;
     color: white;
     font-size: large;

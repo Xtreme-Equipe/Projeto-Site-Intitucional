@@ -10,46 +10,42 @@ body{
     text-align: center;
     font-size: 7em;
 	margin-top: 150px;
-	margin-bottom: 90px;
+	margin-bottom: 30px;
 }
 
 .faleconosco{
-	width: 100%;
-	font-weight: bold;
-}
-
-.faleconosco2{
 	font-size: 7mm;
-	padding-left: 44%;
 	height: auto;
-	display: inline;
-	margin-top: 65%;
+	display: flex;
 	flex-wrap: wrap;
+	text-align: center;
+	padding-top: 40%;
 }
 
-.info{
+.left{
 	border-radius: 10px;
 	border: black solid;
 	max-width: auto;
 	display: inline flex;
-	text-align: center;
 	font-size: 6mm;
 	float: left;
-	margin-left: 18%;
-	margin-right: 1%;
-	width: 30%;
+	margin-left: 1%;
+	width: 40%;
 	flex-wrap: wrap;
 }
 
-.info p{
+.left p{
 	display: flex;
+	text-align: center;
 }
 
-.google{
+.right{
 	display: flex;
 	position: relative;
 	margin: auto;
 	padding-bottom: 50px;
+	float: right;
+	padding-right: 1%;
 }
 
 .assunto{
@@ -61,8 +57,9 @@ body{
 .tel{
 	padding-bottom: 20px;
     padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;	
+    padding-left: 40px;
+    padding-right: 10px;
+	flex-wrap: wrap;	
 }
 
 .email{
@@ -99,11 +96,10 @@ body{
 	max-width: 400px;
 	height: auto;
 	margin: auto;
-	padding: 0 15px 15px 15px;
+	padding: 15px 15px 15px 15px;
     margin-bottom: 10px;
 	border: solid rgb(160, 158, 158);
 	margin-top: 30px;
-	text-align: center;
 	flex-wrap: wrap;
 	display: flex;
 	font-weight: bold;
@@ -155,3 +151,10 @@ textarea{
 	margin-left: 20px;
 }
 
+.tudão{
+    margin: 0 auto;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(241, 237, 237, 0.151);
+    /*border: 1px solid red;*/
+}

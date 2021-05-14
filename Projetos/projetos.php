@@ -143,7 +143,7 @@ if ($imagem_direita) {
             </div><!--center-conteúdo-->
         </section><!--conteúdo-->
 
-        <form class="formulario" method = "post" action="cadastrado_com_sucesso_projeto.html">
+        <form class="formulario" method = "post" action="cadastrado_com_sucesso_projeto.php">
             <div class="center-form">
 
                 <div class="titulo-form">
@@ -223,11 +223,20 @@ if ($imagem_direita) {
                     </div>
 
                     <div class="preenchimento-form">
-                        <div class="campo center">
+                        <div class="campo left">
                             <label for="projeto"><strong>Descrição do projeto</strong></label>
                             <input type="text" name="projeto" id="projeto" placeholder="Descreva seu projeto aqui" required>  
                         </div>
                     </div>
+
+                    <div class="preenchimento-form">
+                        <div class="campo center">
+                            <div id="html_element"></div>
+                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                            async defer>
+                            </script>   
+                        </div> 
+                   </div>
 
                     <div class="preenchimento-form">
                         <div class="campo center">
@@ -248,14 +257,15 @@ if ($imagem_direita) {
                         <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
                 </div>
 
-                <div class="footer-right">
+                <div class="footer-right" style="justify-content: center;
+                flex-wrap: wrap;">
                     <p>Você pode nos ajudar compartilhando nossa causa</p>
                     <span>
                         <a target="_blank" href="javascript:void(0)" onclick="share()">
                             <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
                         </a>
                                 
-                        <a target="_blank" href="">
+                        <a target="_blank" href="https://www.instagram.com/explore/locations/1023028168/cecoi-vo-maria-felix/">
                             <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
                         </a>
 
