@@ -56,7 +56,7 @@
 
 - <img src = "./readme/feito.jpeg" /> [SPRINT 2](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint2) - 29/03/2021 a 18/04/2021
 
-- <img src = "./readme/a_fazer.jpeg" /> [SPRINT 3](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint3) - 26/04/2021 a 16/05/2021
+- <img src = "./readme/feito.jpeg" /> [SPRINT 3](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint3) - 26/04/2021 a 16/05/2021
 
 - <img src = "./readme/a_fazer.jpeg" /> [SPRINT 4](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint4) - 17/05/2021 a 05/06/2021
 
@@ -76,9 +76,9 @@
 <h1 align="center"> <img src = "./readme/tecnologias.png"/></h1>
 
 * **Banco de Dados:** MySQL;
-* **Back-end:** PhP;
+* **Back-end:** PhP, Apache;
 * **Front-end:** HTML, CSS, JavaScript;
-* **Ferramentas:** Visual Studio Code, phpMyAdmin, Miro, Canva, Trello,Marvel, Git e Github;
+* **Ferramentas:** Visual Studio Code, phpMyAdmin, Miro, Canva, Trello, CkEditor, Git e Github;
 
 <br>
 
