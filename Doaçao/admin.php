@@ -58,16 +58,74 @@
         </div><!--center-->
     </nav>
     <section class="man">
-        <h1 class="titu">Participantes</h1>
-        <br> 
+        <h1 class="titu">Projetos</h1>
         <div class="formm">
           <form  method="POST">
               <label >Ordenar por:</label>
               <input type="submit" name='id' value="Data de Inscrição"/>
               <input type="submit" name='id' value="Ordem Alfabetica (A-Z)"/>
           </form>  
-        </div>
+        </div> 
+        <br>
+        <table class="tabela"> 
+          <tr> 
+            <th>ID</th> 
+            <th>Nome Empreendedor</th> 
+            <th>Nome Empresa</th>
+            <th>CPF/CNPJ</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Celular</th> 
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Pessoa fis/jur</th>
+            <th>Rede_Social</th> 
+            <th>Youtube</th>
+            <th>Outros</th> 
+            <th>Descrição do Projeto</th>
+          </tr> 
+
+          <?php #Comando para que o botao escolha entre as alternativas de ORDEM
+              $ordem_projetos = ($_POST['id']);
+              switch ($ordem_projetos) {
+                case "Data de Inscrição":
+                  $sql_projeto = 'SELECT * FROM tb_projetos  GROUP by cpf ORDER BY id';
+                break;
+                case "Ordem Alfabetica (A-Z)":
+                  $sql_projeto = 'SELECT * FROM tb_projetos  GROUP by cpf ORDER BY nome';
+                break;
+              }
+          ?>
+          <?php
+            $conexao = mysqli_connect("localhost","root","","bd_projetos"); #conexao com o banco de dados voluntarios
+            $consultas_projeto = mysqli_query($conexao,$sql_projeto);
+          ?>
+              
+          <?php while($dados_projetos =$consultas_projeto->fetch_array()) { ?> 
+            <tr> 
+              <td><?php echo $dados_projetos['id']; ?></td>
+              <td><?php echo $dados_projetos['nome']; ?></td> 
+              <td><?php echo $dados_projetos['nome_empresa']; ?></td> 
+              <td><?php echo $dados_projetos['cpf']; ?></td> 
+              <td><?php echo $dados_projetos['email']; ?></td> 
+              <td><?php echo $dados_projetos['tel_number']; ?></td> 
+              <td><?php echo $dados_projetos['celular']; ?></td>
+              <td><?php echo $dados_projetos['cidade']; ?></td> 
+              <td><?php echo $dados_projetos['estado']; ?></td> 
+              <td><?php echo $dados_projetos['fisica_juridica']; ?></td>  
+              <td><?php echo $dados_projetos['redesocial']; ?></td>
+              <td><?php echo $dados_projetos['youtube']; ?></td>
+              <td><?php echo $dados_projetos['outros']; ?></td>
+              <td><?php echo $dados_projetos['descriçao']; ?></td>
+              </td> 
+            </tr> 
+          <?php } ?> 
+        </table> 
+        <br>
+
+        <h1 class="titu">Participantes</h1>
         <br> 
+        
         <table class="tabela">
           <tr>
               <th>ID</th> 
@@ -124,57 +182,6 @@
         </table>
         <br>
 
-        <h1 class="titu">Projetos</h1>
-        <br>
-        <table class="tabela"> 
-          <tr> 
-            <th>ID</th> 
-            <th>Nome Empreendedor</th> 
-            <th>Nome Empresa</th>
-            <th>CPF/CNPJ</th>
-            <th>E-mail</th>
-            <th>Telefone</th>
-            <th>Celular</th> 
-            <th>Cidade</th>
-            <th>Estado</th>
-            <th>Pessoa fis/jur</th>
-            <th>Descrição do Projeto</th>
-          </tr> 
-          <?php #Comando para que o botao escolha entre as alternativas de ORDEM
-              $ordem_projetos = ($_POST['id']);
-              switch ($ordem_projetos) {
-                case "Data de Inscrição":
-                  $sql_projeto = 'SELECT * FROM tb_projetos  GROUP by cpf ORDER BY id';
-                break;
-                case "Ordem Alfabetica (A-Z)":
-                  $sql_projeto = 'SELECT * FROM tb_projetos  GROUP by cpf ORDER BY nome';
-                break;
-              }
-          ?>
-          <?php
-            $conexao = mysqli_connect("localhost","root","","bd_projetos"); #conexao com o banco de dados voluntarios
-            $consultas_projeto = mysqli_query($conexao,$sql_projeto);
-          ?>
-              
-          <?php while($dados_projetos =$consultas_projeto->fetch_array()) { ?> 
-            <tr> 
-              <td><?php echo $dados_projetos['id']; ?></td>
-              <td><?php echo $dados_projetos['nome']; ?></td> 
-              <td><?php echo $dados_projetos['nome_empresa']; ?></td> 
-              <td><?php echo $dados_projetos['cpf']; ?></td> 
-              <td><?php echo $dados_projetos['email']; ?></td> 
-              <td><?php echo $dados_projetos['tel_number']; ?></td> 
-              <td><?php echo $dados_projetos['celular']; ?></td>
-              <td><?php echo $dados_projetos['cidade']; ?></td> 
-              <td><?php echo $dados_projetos['estado']; ?></td> 
-              <td><?php echo $dados_projetos['fisica_juridica']; ?></td>  
-              <td><?php echo $dados_projetos['descriçao']; ?></td>
-              </td> 
-            </tr> 
-          <?php } ?> 
-        </table> 
-        <br>
-
         <h1 class="titu">Voluntarios</h1>
         <br>
         <table class="tabela"> 
@@ -188,6 +195,9 @@
             <th>Celular</th> 
             <th>E-mail</th> 
             <th>Voluntario</th> 
+            <th>Rede_Social</th> 
+            <th>Youtube</th>
+            <th>Outros</th> 
             <th>Especialidade</th>
           </tr> 
           <?php #Comando para que o botao escolha entre as alternativas de ORDEM
@@ -217,6 +227,9 @@
               <td><?php echo $dados_voluntario['celular']; ?></td>
               <td><?php echo $dados_voluntario['email']; ?></td> 
               <td><?php echo $dados_voluntario['voluntario']; ?></td>
+              <td><?php echo $dados_voluntario['redesocial']; ?></td>
+              <td><?php echo $dados_voluntario['youtube']; ?></td>
+              <td><?php echo $dados_voluntario['outros']; ?></td>
               <td><?php echo $dados_voluntario['especialidade']; ?></td>
               </td> 
             </tr> 
@@ -323,7 +336,7 @@
                             <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
                         </a>
                             
-                        <a target="_blank" href="https://www.instagram.com/explore/locations/1023028168/cecoi-vo-maria-felix/">
+                        <a target="_blank" href="">
                             <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
                         </a>
 

@@ -159,7 +159,7 @@ if ($imagem_direita) {
 
                         <div class="campo right">
                             <label for="empresa"><strong>Nome da empresa</strong></label>
-                            <input type="text" name="empresa" id="empresa" placeholder="Insira o nome da empresa (opcional)">
+                            <input type="text" name="nome_empresa" id="nome_empresa" placeholder="Insira o nome da empresa (opcional)">
                         </div>
                     </div>
 
@@ -171,7 +171,7 @@ if ($imagem_direita) {
         
                         <div class="campo right">
                             <label class="email"><strong>Email</strong> </label>
-                            <input type="email" name="email" id="email" placeholder="Insira seu email" required maxlength="10">
+                            <input type="email" name="email" id="email" placeholder="Insira seu email" required maxlength="20">
                         </div>
                     </div>
 
@@ -201,11 +201,11 @@ if ($imagem_direita) {
 
                     <div class="preenchimento-form">
                        <div class="campo inline left">
-                            <label>
-                                <input type="radio" name="pessoa" value="física" checked>Pessoa Física
+                       <label>
+                                <input type="radio" name="fisica_juridica" value="física" checked>Pessoa Física
                             </label>
                             <label>
-                                <input type="radio" name="pessoa" value="jurídica">Pessoa Jurídica
+                                <input type="radio" name="fisica_juridica" value="jurídica">Pessoa Jurídica
                             </label>
                         </div>
                     </div>
@@ -225,7 +225,7 @@ if ($imagem_direita) {
                     <div class="preenchimento-form">
                         <div class="campo left">
                             <label for="projeto"><strong>Descrição do projeto</strong></label>
-                            <input type="text" name="projeto" id="projeto" placeholder="Descreva seu projeto aqui" required>  
+                            <input type="text" name="descriçao" id="descriçao" placeholder="Descreva seu projeto aqui" required>  
                         </div>
                     </div>
 

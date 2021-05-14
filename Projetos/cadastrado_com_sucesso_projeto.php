@@ -164,7 +164,7 @@
             $conexao = mysqli_connect("localhost","root","","bd_projetos");
             
 
-            $nome_empreendedor = isset($_POST['nome_empreendedor'])?$_POST['nome_empreendedor']:"";
+            $nome              = isset($_POST['nome'])?$_POST['nome']:"";
             $nome_empresa      = isset($_POST['nome_empresa'])?$_POST['nome_empresa']:"";
             $cpf               = isset($_POST['cpf'])?$_POST['cpf']:"";
             $email             = isset($_POST['email'])?$_POST['email']:"";
@@ -173,10 +173,13 @@
             $cidade            = isset($_POST['cidade'])?$_POST['cidade']:"";
             $estado            = isset($_POST['estado'])?$_POST['estado']:"";
             $fisica_juridica   = isset($_POST['fisica_juridica'])?$_POST['fisica_juridica']:"";
+            $redesocial        = isset($_POST['redesocial'])?$_POST['redesocial']:"";
+            $youtube           = isset($_POST['youtube'])?$_POST['youtube']:"";
+            $outros            = isset($_POST['outros'])?$_POST['outros']:"";
             $descriçao         = isset($_POST['descriçao'])?$_POST['descriçao']:"";
 
                     
-            $sql_projeto = "insert into tb_projetos (nome_empreendedor,nome_empresa,cpf,email,tel_number,celular,cidade,estado,fisica_juridica,descriçao) values ('$nome_empreendedor','$nome_empresa','$cpf','$email','$tel_number','$celular','$cidade','$estado','$fisica_juridica','$descriçao')";
+            $sql_projeto = "insert into tb_projetos (nome,nome_empresa,cpf,email,tel_number,celular,cidade,estado,fisica_juridica,descriçao,redesocial,youtube,outros) values ('$nome','$nome_empresa','$cpf','$email','$tel_number','$celular','$cidade','$estado','$fisica_juridica','$descriçao','$redesocial','$youtube','$outros')";
             $salvar = mysqli_query($conexao, $sql_projeto);
         ?>
         

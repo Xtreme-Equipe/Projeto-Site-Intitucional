@@ -172,9 +172,12 @@
             $celular      = isset($_POST['celular'])?$_POST['celular']:"";
             $email        = isset($_POST['email'])?$_POST['email']:"";
             $voluntario   = isset($_POST['voluntario'])?$_POST['voluntario']:"";
+            $redesocial   = isset($_POST['redesocial'])?$_POST['redesocial']:"";
+            $youtube      = isset($_POST['youtube'])?$_POST['youtube']:"";
+            $outros       = isset($_POST['outros'])?$_POST['outros']:"";
             $especialidade= isset($_POST['especialidade'])?$_POST['especialidade']:"";
                     
-            $sql_voluntario = "insert into tb_voluntario (nome,nascimento,cpf,rg,tel_number,celular,email,voluntario,especialidade) values ('$nome','$nascimento','$cpf','$rg','$tel_number','$celular','$email','$voluntario','$especialidade')";
+            $sql_voluntario = "insert into tb_voluntario (nome,nascimento,cpf,rg,tel_number,celular,email,voluntario,redesocial,youtube,outros,especialidade) values ('$nome','$nascimento','$cpf','$rg','$tel_number','$celular','$email','$voluntario','$redesocial','$youtube','$outros','$especialidade')";
             $salvar = mysqli_query($conexao,$sql_voluntario);
 
             
