@@ -117,7 +117,7 @@ if ($texto != "") {
             </div><!--center-conteúdo-->
         </section><!--conteúdo-->
 
-        <form class="formulario" method = "post" action="cadastrado_com_sucesso2.php">
+        <form class="formulario" method = "post" action="participante_concluido.php">
             <div class="center-form">
 
                 <div class="titulo-form">
