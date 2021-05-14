@@ -143,7 +143,7 @@ if ($imagem_direita) {
             </div><!--center-conteúdo-->
         </section><!--conteúdo-->
 
-        <form class="formulario" method = "post" action="cadastrado_com_sucesso_projeto.html">
+        <form class="formulario" method = "post" action="cadastrado_com_sucesso_projeto.php">
             <div class="center-form">
 
                 <div class="titulo-form">

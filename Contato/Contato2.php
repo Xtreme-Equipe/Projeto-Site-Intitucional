@@ -112,7 +112,7 @@ if ($texto != "") {
 
         <h2 class="faleconosco">FALE CONOSCO</h2>
 
-        <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.html">
+        <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.php">
 
             <p class="nome">
                 <input type="texte" name="nome" placeholder="Nome:" required="required">

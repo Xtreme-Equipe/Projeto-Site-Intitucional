@@ -156,7 +156,7 @@ if ($imagem_direita) {
             </div><!--center-conteúdo-->
         </section><!--conteúdo-->
 
-        <form class="formulario" method = "post" action="cadastrado_com_sucesso_volutario.html"> <!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
+        <form class="formulario" method = "post" action="cadastrado_com_sucesso_volutario.php"> <!--Em um form so aceita uma action e entao sera enviado para cadstro_concluido e de la salvara as informaçoes no banco de dados, por isso teria que ter uma pagina para cada cadastro-->
             <div class="center-form">
 
                 <div class="titulo-form">
