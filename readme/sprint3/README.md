@@ -103,7 +103,7 @@ Nesta Sprint, com o site finalizado, demos ênfase ao painel administrativo, tor
 
 Tabelas de cadastro do banco de dados sem estilização.
 
-<h1 align="center"> <img src = "../sprint3/dados_bd_antes.png"/></h1>
+![](dados_bd_antes.PNG)
 
 Tabelas de cadastro do banco de dados estilizado.
 
