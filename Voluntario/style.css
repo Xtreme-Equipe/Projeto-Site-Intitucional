@@ -2,14 +2,93 @@
 
 /*Estilos da página de cadastro de voluntário*/
 
-#titulo{
+section.conteudo{
+    position: relative;
+    display: flex;
+    margin-top: 227px;
+    font-size: 1em; /* tamanho da letra*/
+    color: black;
+    justify-content: center;
+    text-align: justify; 
+    /*border: 1px solid red;*/
+}
+
+.center-conteudo{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(241, 237, 237, 0.151);
+    /*border: 1px solid red;*/
+}
+
+.titulo-voluntários{
+    width: 100%;
+}
+
+.titulo{
     font-family: 'Cabin Sketch', cursive;
     color: #545454;   
     text-align: center;
-    font-size: 7em;
+    font-size: 7em;  
+    /*border: 1px solid red;*/
 }
-/*altera o subtítulo*/
-#subtitulo{
+
+.texto{
+    position: relative;
+    float: left;
+    width: 48%;
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: auto;
+    margin-right: 2%;
+    margin-top: 15px;
+    /*border: 1px solid red;*/
+}
+
+.imagem{
+    position: relative;
+    width: 48%;
+    float: right;
+    margin-left: 2%;
+    margin-top: 30px;
+    /*border: 1px solid red;*/
+}
+
+.imagem img{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+form.formulario{
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    /*border: 1px solid red;*/
+}
+
+.center-form{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: #f1f1f1;
+    /*border: 1px solid red;*/
+}
+
+.titulo-form{
+    width: 100%;
+}
+
+.subtitulo{ /*altera o subtítulo*/
     font-family: 'Cabin Sketch', cursive;
     color: #545454;
     text-align: center;
@@ -17,72 +96,63 @@
     font-size: 4em;
     padding-top: 60px;
     margin-bottom: 0px;
+    /*border: 1px solid red;*/
 }
 
-.conteudo{
-    display: table;
-    padding-top: 31px;
+.grupo{
+    width: 100%;
+    padding-top: 50px;
+    border: 0;
+    /*border: 1px solid red;*/
 }
 
-.imagem img{
-    display: table-cell;
-    float: right;
-    width: 48%;
+/*Altera o corpo da página*/
+.preenchimento-form{
+    width: 97%;
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding-top: 5px;
+    /*border: 1px solid red;*/
 }
 
-.texto{
-    display: table-cell;
+.campo.left{
+    position: relative;
     float: left;
     width: 50%;
-    margin-top: -3px;
-    margin-right: 2%  ;
-    text-align: justify;
-    font-size: 1.2em;
-    text-justify: auto;
+    /*border: 1px solid red;*/
 }
 
-fieldset{
-    border: 0;
-}
-/*Altera o corpo da página*/
-.cadastro_voluntario{
-    background-color: rgba(241, 237, 237, 0.151);
-    font-family: sans-serif;
-    font-size: 1em; /* tamanho da letra*/
-    color: black;
-    margin-left: 18%;
-    margin-right: 18%;
-    margin-top: 227px; /*margem do cabeçalho*/
-    justify-content: center;
-    text-align: justify;    
-}
-
-.formulario fieldset.grupo div.campo {
-    float: left;
-    margin-right: 0;
-    width: 49%;
-}
-
-.formulario fieldset.grupo div.campo.right {
+.campo.right{
+    position: relative;
     float: right;
+    width: 50%;
+    /*border: 1px solid red;*/
 }
 
-
-.formulario{
-    background-color: #f1f1f1;
-
-}
-
-input, select, textarea, button{
-    border-radius: 5px;
-}
-
-.campo{
-    margin-bottom: 1em; /*margem da parte inferior*/
-}
-
-div.campo.inline{
+.campo.inline.left{
+    position: relative;
+    float: left;
+    width: 98%;
     display: flex;
+}
+
+.campo.center{
+    position: relative;
+    width: 98%;
+    text-align: center;
+    /*border: 1px solid red;*/
+}
+
+.onde-conheceu{
+    position: relative;
+    width: 96%;
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-bottom: 25px;
+    /*border: 1px solid red;*/
 }
 
 .campo label{ /*nome dos campos a serem preenchidos*/
@@ -91,39 +161,53 @@ div.campo.inline{
     display: block;
 }
 
-fieldset.grupo .campo{
-    float: left;
-    margin-right: 10em;
+.campo.left label, .campo.right label, .campo.center label{ /*nome dos campos a serem preenchidos*/
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
 }
 
-.campo input[type="text"], .campo input[type="tel"], .campo input[type="email"], .campo input[type="date"], .campo textarea{
+.campo.inline.left label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"], textarea{
     padding: 0.5em;
     border: 1px solid rgba(194, 190, 190, 0.452);
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
-    width: 90%;
+    width: 95%;
 }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus{
+.campo.center input[type="text"]{
+    width: 49%;
+}
+
+input:focus, select:focus, textarea:focus{
     background: rgba(156, 193, 241, 0.356);
 }
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
 .mensagem{
     margin: auto;
     display: block;
 }
+
 .botao{
     font-size: 1.2em;
     background: #0E7AF0;
     border:0;
+    margin-top: 30px;
+    position: relative;
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: relative;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
 
 .botao:hover{
@@ -131,4 +215,103 @@ fieldset.grupo .campo{
     background: #bedaf8;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
+}
+ 
+@media screen and (max-width: 768px){
+    section.conteudo{ 
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .center-conteudo{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo{
+       font-size:300%;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    .texto p{
+        font-size: 100%;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+
+    form.formulario{
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .center-form{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+     .subtitulo{
+       font-size:300%;
+    }
+
+    .preenchimento-form{
+        width: 97%;
+         /*border: 1px solid red;*/
+    }
+
+    .campo.left{
+        width: 100%;
+    }
+
+    .campo.right{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .campo.inline.left{
+        width: 97%;
+        padding-top: 10px;
+    }
+
+    .campo.center input[type="text"]{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 480px){
+     .center-conteudo{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+     .texto p{
+        font-size: 82%;
+    }
+
+    .center-form{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .preenchimento-form{
+        width: 94%;
+        /*border: 1px solid red;*/
+    }
+
+    .campo.inline.left label{
+        display: inline-flex;
+    }
+
+    .campo.center{
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .campo.center input[type="text"]{
+        width: 105%;
+    }
 }

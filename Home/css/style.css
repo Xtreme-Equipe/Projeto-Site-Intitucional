@@ -10,9 +10,33 @@
     max-height: 100%;
     background: #ffffff;
     position: relative;
+    /*border: 1px solid red;*/
 }
 
-.center {
+.center-header{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.vó-fundo img{
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 64%;
+    height: 350px;
+    position: absolute;
+    opacity: 30%;
+    display: flex;
+    border-radius: 0 0 10% 10%;
+}
+
+.center-nav{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -24,25 +48,6 @@
     padding-left: 30px;
     padding-top: 30px;
     width: 100%;
-}
-
-header {
-    text-indent: -9999px;
-    background: url(../imagem/fundo-3.jpeg);
-    background-position: center;
-    background-size: cover;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 18%;
-    margin-right: 18%;
-    width: 64%;
-    height: 350px;
-    position: absolute;
-    opacity: 30%;
-    display: flex;
-    border-radius: 0 0 10% 10%;
 }
 
 .logo img {
@@ -149,11 +154,10 @@ header {
 }
 
 .menu .btn-menu {
-    background-color:rgba(88, 82, 82, 0.411);
+    background-color:rgb(88, 82, 82, 0.411);
     display: inline-block;
     padding: 8px 20px;
-    color:#000000;
-    
+    color:#000000;   
 }
 
 .menu .btn-menu:hover {
@@ -170,11 +174,19 @@ section.main {
      -o-background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
+    height: 220px;
+    position: relative;
     margin-left: 25%;
     margin-right: 25%;
-    height: 100%;
-    top: 150px;
-    position: relative;
+    margin-top: 140px;
+}
+
+.center-main{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 .main_cta{
@@ -196,16 +208,40 @@ section.main {
 /*
 Section Vó Center
 */
-section.vó.center{
+section.vó-content{
     position: relative;
-    padding-top: 190px;
+    padding-top: 80px;
     display: flex;
 }
 
-.center1{
+.center-vó{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 18%;
+    margin-right: 18%;
     justify-content: space-between;
+}
+
+.vó-content-left {
+    position: relative;
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+.vó-content-left p{
+    font-size: 24px;
+    position: relative;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.vó-content-right {
+    position: relative;
+    width: 48%;
+    float: right;
+    margin-left: 2%;
 }
 
 .vó-img{
@@ -219,58 +255,47 @@ section.vó.center{
     width: 100%;
 }
 
-.vó-content.left {
-    float: left;
-    margin-right: 2%;
-}
-
-.vó-content.right {
-    float: right;
-    margin-left: 2%;
-}
-
-.vó-content{
-    position: relative;
-    width: 48%;
-}
-
-.vó-content p{
-    font-size: 24px;
-    position: relative;
-    flex-direction: column;
-    text-align: justify;
-}
-
 /*
 Section Você Pode
 */
-
 section.você-pode {
     position: relative;
     padding-top: 75px;
     display: flex;
 }
 
-.center2{
+.center-você-pode{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 18%;
+    margin-right: 18%;
     justify-content: space-between;
 }
 
-.você-pode-content{
+.você-pode-left {
     position: relative;
+    width: 48%;
+    float: left;
+    margin-right: 5%;
 }
 
-.você-pode-content p{
+.você-pode-right {
     position: relative;
-    font-size: 75px;
+    width: 43%;
+    float: right;
+    margin-right: 1%;
+}
+.você-pode-left p{
+    position: relative;
+    font-size: 67px;
     font-style: normal;
     font-variant: normal;
     flex-direction: column;
     text-align: center;
 }
 
-.você-pode-content span{
+.você-pode-left span{
     font-family: 'Cabin Sketch', cursive;
 }
 
@@ -282,11 +307,11 @@ section.você-pode {
     color: #ff9052;
 }
 
-.botões{
+.você-pode-right{
     position: relative;
 }
 
-.botões button{
+.você-pode-right button{
     background-color: #0e7af0;
     color:white;
     margin-top: 15px;
@@ -304,12 +329,12 @@ section.você-pode {
     border-radius: 20px;
 }
 
-.botões button p{
+.você-pode-right button p{
     position: relative;
     left: -30px;
 }
 
-.botões button img{
+.você-pode-right button img{
     position: relative;
     width: 100px;
     height: 100px;
@@ -319,25 +344,22 @@ section.você-pode {
 /*
 Footer
 */
-.footer-home {
+footer.footer-vó{
     position: relative;
-    margin-left: 18%;
-    margin-right: 18%;
     padding-top: 90px;
+    display: flex;
 }
 
-.footer{
-    position: relative;
+.center-footer{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 18%;
+    margin-right: 18%;
     padding: 20px 20px 20px 20px;
     background: #ff9052;
     font-weight: bold;
-}
-
-.footer-inline{
-    width: 100%;
-    display: inline-block;
+    justify-content: space-between;
 }
 
 .footer-left{
@@ -367,8 +389,6 @@ Footer
 
 .footer-right span{
     display: inline-flex;
-    flex-wrap: wrap;
-
 }
 
 .footer-right a {
@@ -392,16 +412,6 @@ Footer
     text-decoration: none;
 }
 
-.vó-icons{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    top: -40px;
-    left: 450px;
-    flex-wrap: wrap;
-}
-
 .vó-icons-share { /*Icones de compartilhamento*/
     position: relative;
     width: 30px;
@@ -412,27 +422,30 @@ Footer
 }
 
 /*
-Site Responsivo Tablet (Com resoluções de 768px a 900px)
+Site Responsivo Tablet (Com resoluções de até 768px)
 */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
+    .center-header{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     /*
     Header
     */
-    header{
-        position: absolute;
-        width: 90%;
+    .vó-fundo img {
+        width: 80%;
         height: 240px;
-        margin-left: 5%;
-        margin-right: 5%;
         background-position: right;
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-repeat: no-repeat;
+        position: absolute;
     }
 
-    /*
+     /*
     Nav
     */
     .menu{
@@ -464,16 +477,197 @@ Site Responsivo Tablet (Com resoluções de 768px a 900px)
         padding-top: 2%;
         margin-top: 2%;
         width: 50%;
-        margin-right: -20%;
-        margin-left: -20%;
     }
 
     .logo img {
         position: relative;
         height: 35%;
         float: left;
+    }
+
+    /*
+    Logomarca
+    */
+      section.main {
+        width: 80%;
+        height: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+     .center-main{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*
+    Section Vó Content
+    */
+    section.vó-content{
+        position: relative;
+        padding-top: 30px;
+    }
+
+    .center-vó{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .vó-content-left{
+        width: 100%;
+    }
+
+    .vó-content-left p{
+        font-size: 110%;
+    }
+
+    .vó-content-right{
+        width: 100%;
+        float: right;
+        margin-right: 3%;
+        margin-left: 3%;
+        padding-top: 10px;
+    }
+
+    .vó-img{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        float: right;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    /*
+    Section Você Pode
+    */
+    .center-você-pode{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .você-pode-left{
+        width: 100%;
+        text-align: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .você-pode-left p{
+        text-align: center;
+    }
+
+    .você-pode-right{
+        width: 100%;
+        float: right;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-top: 10px;
+    }
+
+   /*
+    Footer
+    */
+
+    .center-footer{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer-left{
+        width: 100%;
+        float: center;
+        margin-right: 0;
+        margin-left: 0;
+        /*border: 1px solid red;*/
+    }
+
+    .footer-left p{
+        font-size: 100%;
+        float: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 5px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .footer-right{
+        width: 100%;
+        padding-top: 10px;
+        float: center;
+        margin-right: 0;
+        margin-left: 0;
+        /*border: 1px solid red;*/
+    }
+
+    .footer-right p{
+        font-size: 110%;
+        float: center;
+        text-align: center;
+        flex-direction: column;
+        margin-right: 14%;
+        margin-left: 14%;
+        flex-direction: column;
+    }
+
+    .footer-right span{
+        text-align: center;
+        display: inline-flex;
+        padding-top: 10px;
+        /*border: 1px solid red;*/
+    }
+}
+
+/*
+Site Responsivo Celular (Com resoluções de até 480px)
+*/
+@media screen and (max-width: 480px){
+    .center-header{
         margin-left: 2%;
         margin-right: 2%;
+    }
+    /*
+    Header
+    */
+    .vó-fundo img{
+        width: 95%;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        display: flex;
+    }
+
+     /*
+    Nav(Menu mobile)
+    */
+    .logo img {
+        height: 30%;
+        float: right;
+        margin-left: 35%;
+        margin-right: 35%;
+
+    }
+
+    .menu-mobile img{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .menu-itens{
+        width: 50%;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 
     /*
@@ -481,192 +675,91 @@ Site Responsivo Tablet (Com resoluções de 768px a 900px)
     */
       section.main {
         width: 90%;
-        height: 90%;
+        height: 10%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: -150px;
+        margin-top: 0;
     }
 
-    /*
-    Section Vó Content
-    */
-    .vó-content{
-        width: 100%;
-    }
-
-    /*
-    Section Vó Center
-    */
-    .vó-content.left1 p{
-        font-size: 100%;
-        text-align: center;
-    }
-
-     /*
-    Section Você Pode
-    */
-    .vó-content.left p{
-        font-size: 200%;
-    }
-
-    /*
-    Footer
-    */
-    .footer-left{
-        width: 100%;
-        font-size: 100%;
-        text-align: center;
-    }
-
-    .footer-left p{
-        padding: 5px 5px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-right{
-        width: 100%;
-        font-size: 100%;
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 10%;
-    }
-
-    .footer-right p{
-        padding: 5px 5px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-right span{
-        padding: 10px 1px;
-        margin-left: 25%;
-    }
-
-    .footer-center{
-        text-align: center;
-    }
-
-    .footer-right span{
-        margin-left: 27%;
-        
-    }
-
-    .vó-icons-share{
-        display: inline;
-        align-items: center;
-        margin-left: 25%;
-    }
-}
-
-/*
-Site Responsivo Celular (Com resoluções de 425px a 600 px)
-*/
-@media screen and (max-width: 600px){
-    /*
-    Header
-    */
-    header{
-        width: 90%;
-        background-position: right;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-repeat: no-repeat;
+    .center-main{
         margin-left: 2%;
         margin-right: 2%;
     }
 
     /*
-    Footer
+    Section Vó Content
     */
-    .footer-right span{
-        margin-right: 10%;
-        margin-left: 10%; 
-        padding: 5px;
-    }
-}
-
-/*
-Site Responsivo Celular (Com resoluções de 325px a 375 px)
-*/
-@media screen and (max-width: 480px){
-    /*
-    Header
-    */
-    header{
-        margin-left: 5%;
-        margin-right: 5%;
+    .center-vó{
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
-    /*
-    Nav(Menu mobile)
-    */
-    .menu-mobile img{
-        margin-left: 5%;
-    }
-
-    /*
-    Logo
-    */
-    .logo img {
-        margin-top: 5%;
+    .vó-content-left p{
+        font-size: 98%;
     }
 
      /*
     Section Você Pode
-    */
-    .botões button{
-        position: relative;
-        margin-left: -5%;
+    */   
+     section.você-pode {
+        padding-top: 30px;
+    }
+
+     .center-você-pode{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .você-pode-left{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .você-pode-left p{
+        font-size: 300%;
+        text-align: center;
     }
 
     /*
     Footer
     */
-    .footer-right span{
-        margin-right: 10%;
-        margin-left: 10%; 
-        padding: 30px;
-        align-items: center;        
-    }
-}
-
-/*
-Site Responsivo Celular (Com resoluções de até 320px)
-*/
-@media screen and (max-width: 320px){
-    /*
-    Nav(Menu mobile)
-    */
-    .menu-itens{
-        width: 90%;
-        margin-left: 10%;
-    }
-}
-
-/*
-Site Responsivo Celular (Com resoluções de até 280px - celulares antigos e Galaxy Fold)
-*/
-@media screen and (max-width: 280px){
-    /*
-    Nav(Menu mobile)
-    */
-    .menu-itens{
-        width: 60%;
-        margin-left: 32%;
+    .center-footer{
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
-    /*
-    Section Você Pode
-    */
-    .você-pode-content p{
-        margin-right: 20%;
+    .footer-left{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin-right: 0;
+        margin-left: 0;
     }
 
-    .botões button{
-        position: relative;
-        margin-left: -10%;
+    .footer-left p{
+        font-size: 75%;
+        float: center;
+        text-align: center;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .footer-right{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .footer-right p{
+        font-size: 80%;
+        float: center;
+        text-align: center;
+        margin-right: 9%;
+        margin-left: 9%;
     }
 }

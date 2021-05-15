@@ -7,15 +7,20 @@
     opacity: 1;
     font-size: larger;
     text-align: center;
+    font-family: "Graphik", sans-serif;
 }
 .welcome{
     text-align: center;
     color:white;
-
     font-size: xx-large;
-
+    margin-right: -90px;
 }
-.sair{
+
+.welcome-voltar{
+    margin-left: -137px;
+}
+
+.sair, .painel{
     float: right;
     color: white;
     font-size: large;
@@ -25,12 +30,16 @@
     width: 90px;
     height: 25px;
 }
+.painel{
+    width: 230px;
+    margin-right: 3px;
+}
 
 .btn button:hover{
     background-image: linear-gradient(to right, #3cb9df, #1393b3);
 }
 
-.editar, .descartar{
+.editar, .descartar{ /*botão: editar, descartar e voltar*/
     float: left;
     color: white;
     font-size: large;
