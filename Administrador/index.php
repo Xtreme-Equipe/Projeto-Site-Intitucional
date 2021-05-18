@@ -18,6 +18,7 @@
        $botao_esquerdo["action"] = "hidden";
        $botao_esquerdo["texto"] = "hidden";
        $botao_direito["css"] = "hidden";
+       $_GET["admin"] = "1";
        include('../Administrador/admin_header.php');
     ?>
     <div class="botao btn">

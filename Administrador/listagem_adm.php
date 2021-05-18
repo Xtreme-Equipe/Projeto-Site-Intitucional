@@ -38,6 +38,7 @@ else{
     $botao_esquerdo['action'] = "index.php";
     $welcome["css"] = "welcome-voltar";
     $botao_direito["css"] = "hidden";
+    $_GET["admin"] = "1";
     include('../Administrador/admin_header.php');
     ?>
     <div class="background"id="tabela">
