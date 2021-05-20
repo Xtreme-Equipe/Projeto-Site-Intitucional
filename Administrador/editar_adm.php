@@ -74,6 +74,7 @@ if ($id_adm != "") {
     $botao_esquerdo['action'] = "listagem_adm.php";
     $botao_direito["css"] = "hidden";
     $welcome["css"] = "welcome-voltar";
+    $_GET["admin"] = "1";
     include('../Administrador/admin_header.php');
     ?>
     <div class="background" id="tabela">
