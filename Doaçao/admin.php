@@ -86,7 +86,7 @@
           </tr> 
 
           <?php #Comando para que o botao escolha entre as alternativas de ORDEM
-              $ordem_projetos = ($_POST['id']);
+              $ordem_projetos = isset($_POST['id']) ? $_POST['id'] : "Data de Inscrição";
               switch ($ordem_projetos) {
                 case "Data de Inscrição":
                   $sql_projeto = 'SELECT * FROM tb_projetos  GROUP by cpf ORDER BY id';
@@ -145,7 +145,7 @@
           </tr>
  
           <?php #Comando para que o botao escolha entre as alternativas de ORDEM
-            $ordem_participantes = ($_POST['id']);
+            $ordem_participantes = isset($_POST['id']) ? $_POST['id'] : "Data de Inscrição";
             switch ($ordem_participantes) {
               case "Data de Inscrição":
                 $sql_participantes = 'SELECT * FROM tb_participantes WHERE nascimento BETWEEN "2015-01-01" AND "2021-12-31" GROUP by cpf ORDER BY id';
@@ -201,7 +201,7 @@
             <th>Especialidade</th>
           </tr> 
           <?php #Comando para que o botao escolha entre as alternativas de ORDEM
-            $ordem_voluntarios = ($_POST['id']);
+            $ordem_voluntarios = isset($_POST['id']) ? $_POST['id'] : "Data de Inscrição";
             switch ($ordem_voluntarios) {
               case "Data de Inscrição":
                 $sql_voluntario = 'SELECT * FROM tb_voluntario  GROUP by cpf ORDER BY id';
@@ -251,7 +251,7 @@
           </tr> 
 
           <?php #Comando para que o botao escolha entre as alternativas de ORDEM
-            $ordem_doaçoes = ($_POST['id']);
+            $ordem_doaçoes = isset($_POST['id']) ? $_POST['id'] : "Data de Inscrição";
             switch ($ordem_doaçoes) {
               case "Data de Inscrição":
                 $sql_doacao = 'SELECT * FROM tb_doacao GROUP by cpf ORDER BY id';
@@ -293,7 +293,7 @@
           </tr> 
 
           <?php #Comando para que o botao escolha entre as alternativas de ORDEM
-            $ordem_contato = ($_POST['id']);
+            $ordem_contato = isset($_POST['id']) ? $_POST['id'] : "Data de Inscrição";
             switch ($ordem_contato) {
               case "Data de Inscrição":
                 $sql_contato = 'SELECT * FROM tb_contato  GROUP by nome ORDER BY id';
