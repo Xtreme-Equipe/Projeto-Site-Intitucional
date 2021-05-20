@@ -82,7 +82,7 @@
             <th>Rede_Social</th> 
             <th>Youtube</th>
             <th>Outros</th> 
-            <th>Descrição do Projeto</th>
+            <th>Descricao do Projeto</th>
           </tr> 
 
           <?php #Comando para que o botao escolha entre as alternativas de ORDEM
@@ -116,7 +116,7 @@
               <td><?php echo $dados_projetos['redesocial']; ?></td>
               <td><?php echo $dados_projetos['youtube']; ?></td>
               <td><?php echo $dados_projetos['outros']; ?></td>
-              <td><?php echo $dados_projetos['descriçao']; ?></td>
+              <td><?php echo $dados_projetos['descricao']; ?></td>
               </td> 
             </tr> 
           <?php } ?> 
@@ -246,7 +246,7 @@
             <th>CPF</th> 
             <th>Telefone</th> 
             <th>Celular</th> 
-            <th>Endereço</th> 
+            <th>Endereco</th> 
             <th>Doador</th>
           </tr> 
 
@@ -314,7 +314,7 @@
               <td><?php echo $dados_contato['nome']; ?></td> 
               <td><?php echo $dados_contato['celular']; ?></td>
               <td><?php echo $dados_contato['email']; ?></td> 
-              <td><?php echo $dados_contato['descriçao']; ?></td>
+              <td><?php echo $dados_contato['descricao']; ?></td>
               </td> 
             </tr> 
           <?php } ?> 

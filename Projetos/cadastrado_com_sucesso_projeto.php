@@ -176,10 +176,10 @@
             $redesocial        = isset($_POST['redesocial'])?$_POST['redesocial']:"";
             $youtube           = isset($_POST['youtube'])?$_POST['youtube']:"";
             $outros            = isset($_POST['outros'])?$_POST['outros']:"";
-            $descriçao         = isset($_POST['descriçao'])?$_POST['descriçao']:"";
+            $descricao         = isset($_POST['descricao'])?$_POST['descricao']:"";
 
                     
-            $sql_projeto = "insert into tb_projetos (nome,nome_empresa,cpf,email,tel_number,celular,cidade,estado,fisica_juridica,descriçao,redesocial,youtube,outros) values ('$nome','$nome_empresa','$cpf','$email','$tel_number','$celular','$cidade','$estado','$fisica_juridica','$descriçao','$redesocial','$youtube','$outros')";
+            $sql_projeto = "insert into tb_projetos (nome,nome_empresa,cpf,email,tel_number,celular,cidade,estado,fisica_juridica,descricao,redesocial,youtube,outros) values ('$nome','$nome_empresa','$cpf','$email','$tel_number','$celular','$cidade','$estado','$fisica_juridica','$descricao','$redesocial','$youtube','$outros')";
             $salvar = mysqli_query($conexao, $sql_projeto);
         ?>
         

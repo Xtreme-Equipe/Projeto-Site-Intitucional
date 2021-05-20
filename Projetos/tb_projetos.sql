@@ -9,7 +9,10 @@ create table if not exists tb_projetos(
     cidade varchar (40) not null,
     estado varchar (40) not null,
     fisica_juridica varchar (10) null,
-    descriçao varchar (230) not null
+    redesocial varchar (12) null,
+    youtube varchar (10) null,
+    outros varchar (10) null,
+    descricao varchar (230) not null
 
 )default charset utf8;
 
