@@ -27,21 +27,20 @@ if ($texto_direito_valores != "") {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-	<title>Sobre</title>
     <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="sobre.css">
-    <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="sobre.css" media="screen">
+    <link rel="icon" href="../Home/imagem/Vó-logo.png">  
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Leckerli+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../Home/imagem/Vó-logo.png">
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
-    <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
+    <title>Sobre</title>
 </head>
 
 <body>
@@ -49,57 +48,64 @@ if ($texto_direito_valores != "") {
         include('../Administrador/admin_header.php'); //não remover, faz parte do admin!
     ?>
     
-    <header>
-        <div class="center-header">
-            <div class="vó-fundo">
-                <img src="../Home/imagem/fundo-3.jpeg">
-            </div><!--vó-fundo-->
-        </div><!--center-->
-    </header>
+    <div id="container"><!-- Início container -->
 
-    <nav>
-        <div class="center-nav">
-            <div class="logo">
-                <a href="../Home/index.php">
-                <img src="../Home/imagem/Vó-logo.png">
-            </div><!--logo-->
+        <header>
+            <div class="center-header">
+                <div class="vó-fundo">
+                    <img src="../Home/imagem/fundo-3.jpeg">
+                </div><!--vó-fundo-->
+            </div><!--center-->
+        </header>
 
-            <ul class="menu">
-                <li><a href="../Home/index.php">Home</a></li>
-                <li><a class="btn-menu" href="../Sobre/sobre.php">Sobre</a></li>
-                <li><a href="../Projetos/projetos.php">Projetos</a></li>
-                <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                <li><a href="../Contato/Contato2.php">Contato</a></li>
-                <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
-            </ul><!--menu-->
+        <nav>
+            <div class="center-nav">
+                <div class="logo">
+                    <a href="../Home/index.php">
+                    <img src="../Home/imagem/Vó-logo.png">
+                </div><!--logo-->
 
-            <ul class="menu-mobile">
-            <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
-                <div class="menu-itens">
+                <ul class="menu">
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a class="btn-menu" href="../Sobre/sobre.php">Sobre</a></li>
                     <li><a href="../Projetos/projetos.php">Projetos</a></li>
                     <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
                     <li><a href="../Contato/Contato2.php">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
+                </ul><!--menu-->
+
+                <ul class="menu-mobile">
+                <img class="menu-mobile-icon" src="../Home/imagem/Vó-menu-mobile.png">
+                    <div class="menu-itens">
+                        <li><a href="../Home/index.php">Home</a></li>
+                        <li><a class="btn-menu" href="../Sobre/sobre.php">Sobre</a></li>
+                        <li><a href="../Projetos/projetos.php">Projetos</a></li>
+                        <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
+                        <li><a href="../Contato/Contato2.php">Contato</a></li>
+                        <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
+                    </div>
+                </ul>
+
+            </div><!--center-->
+        </nav>
+
+
+        <section class="titulo-conteudo">
+            <div class="center-titulo">
+                <div class="titulo-sobre-nos">
+                    <h2 class="titulo">Sobre Nós</h2>  
                 </div>
-            </ul>
+            </div>
+        </section>
 
-        </div><!--center-->
-    </nav>
+        <section class="sobre-nos">
+            <div class="center-sobre-nos">
 
-    <h1 class="sobre">Sobre Nós</h1> 
-
-    <body>
-
-        <div id="container"><!-- Início container -->
-    
-            <section class="sobre-nos">
-                <div class="center-sobre-nos">
-
-    
-                    <div class="paragrafo-missao">
+                <div class="paragrafo-missao">
+                    <div class="texto-missao">
                         <h2 class="missao">Missão</h2> 
+                    </div>
+                    <div class="p-missao">
                         <?php
                         /*Formulário de edição de texto */
                         if ($admin == "1") {
@@ -122,9 +128,13 @@ if ($texto_direito_valores != "") {
                         }
                         ?>
                     </div>
-                    
-                    <div class="paragrafo-visao">
+                </div>
+
+                <div class="paragrafo-visao">
+                    <div class="texto-visao">
                         <h2 class="visao">Visão</h2> 
+                    </div>
+                    <div class="p-visao">
                         <?php
                         /*Formulário de edição de texto */
                         if ($admin == "1") {
@@ -147,9 +157,13 @@ if ($texto_direito_valores != "") {
                         }
                         ?>  
                     </div>
-    
-                    <div class="paragrafo-valores">
+                </div>
+
+                <div class="paragrafo-valores">
+                    <div class="texto-valores">
                         <h2 class="valores">Valores</h2> 
+                    </div>
+                    <div class="p-valores">
                         <?php
                         /*Formulário de edição de texto */
                         if ($admin == "1") {
@@ -170,30 +184,30 @@ if ($texto_direito_valores != "") {
                             echo "</textarea> <button type=\"submit\">Salvar</button>
                         </form>";
                         }
-                        ?>     
+                        ?>
                     </div>
+                </div>
                     
-                </div><!--center-->
-            </section><!--sobre-nos-->
+            </div><!--center-->
+        </section><!--sobre-nos-->
 
-        </div><!--/fim container -->
 
         <footer class="footer-vó">
             <div class="center-footer">
                 <div class="footer-left">
-                    <p>Telefone : (12) 3966- 2833</p>
-                    <p>E-mail: administracao@aamu.org.br</p>
-                    <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
+                        <p>Telefone : (12) 3966- 2833</p>
+                        <p>E-mail: administracao@aamu.org.br</p>
+                        <p>Horário de Segunda a Sexta, das 07:00h às 17:00hs</p>
                 </div>
 
-                <div class="footer-right"style="justify-content: center;
+                <div class="footer-right" style="justify-content: center;
                 flex-wrap: wrap;">
                     <p>Você pode nos ajudar compartilhando nossa causa</p>
                     <span>
                         <a target="_blank" href="javascript:void(0)" onclick="share()">
                             <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
                         </a>
-                                
+                            
                         <a target="_blank" href="https://www.instagram.com/explore/locations/1023028168/cecoi-vo-maria-felix/">
                             <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
                         </a>
@@ -211,11 +225,13 @@ if ($texto_direito_valores != "") {
                 <div class="footer-center">
                     <p>2021 
                     <a href="">Vó Maria Félix</a> 
-                    - Todos os direitos reservados.</p>
+                        - Todos os direitos reservados.</p>
                 </div>
 
             </div>
         </footer>
+
+    </div><!--/fim container -->
 
     <script>
         document.addEventListener(
