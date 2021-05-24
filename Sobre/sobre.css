@@ -105,3 +105,67 @@ section.sobre-nos{
     margin-right: 10%;
     font-size: 6mm;
 }
+
+@media screen and (max-width: 768px){
+    section.titulo-conteudo{
+        position: relative;
+        margin-top: 50px;
+
+    }
+
+    .center-titulo{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo-sobre-nos{
+        width: 100%;
+    }
+
+    .titulo{
+       font-size:300%;
+    }
+
+    section.sobre-nos{
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .center-sobre-nos{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .paragrafo-missao, .paragrafo-visao, .paragrafo-valores{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .missao, .visao, .valores{
+        width: 100%;
+        font-size: 300%;
+    }
+
+    .center-sobre-nos p{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .paragrafo-missao p,.paragrafo-visao p,.paragrafo-valores p{
+        font-size: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+     .center-titulo{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .center-sobre-nos{
+        margin-left: 2%;
+        margin-right: 2%;
+        background-position: 85%;
+    }
+}
