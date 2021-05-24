@@ -1,66 +1,59 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Graphik", sans-serif;
+@charset "UTF-8";
+
+/*Estilos da página de cadastro de projetos*/
+
+section.titulo-conteudo{
+    position: relative;
+    display: flex;
+    margin-top: 227px;
+    font-size: 1em; /* tamanho da letra*/
+    color: black;
+    justify-content: center;
+    text-align: justify; 
+    /*border: 1px solid red;*/
 }
 
-#container {
-    max-width: 80%;
-    max-height: 80%;
-    background: #7a7a7a;
-    position: rergb(128, 128, 128)
+.center-titulo{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    /*border: 1px solid red;*/
 }
 
-/*
-Sobre Nós
-*/
+.titulo--sobre-nos{
+    width: 100%;
+}
 
-.sobre-nos{
+.titulo{
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;   
+    text-align: center;
+    font-size: 7em;  
+    /*border: 1px solid red;*/
+}
+
+section.sobre-nos{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
-    width: 65%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 18%;
-    margin-right: 18%;
-    background-position: 100%;
-    background-image: url(../Sobre/sobrenos.jpg);
-    background-color: rgba(241, 237, 237, 0.151);
+    margin-top: 50px;
 }
 
 .center-sobre-nos{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-}
-
-
-.sobre{
-    font-family: 'Cabin Sketch', cursive;
-    color: #545454;   
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 11%;
-    font-size: 600%;
-    margin-left: 40%;
-    margin-right: 34%;
-    text-align: center;
-}
-
-.missao{
-    color: fuchsia;
-}
-
-.valores{
-    color: cornflowerblue;
-}
-
-.visao{
-    color: goldenrod;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-image: url(../Sobre/sobrenos.jpg);
+    background-position: right;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .paragrafo-missao{
@@ -81,20 +74,31 @@ Sobre Nós
     margin-top: 30px;
 }
 
-.center-sobre-nos p{
-    width: 70%;
-    padding-left: 50px;
-    font-size: 5mm;
-    text-align: unset;
-    flex-wrap: wrap;
-}
-
-.center-sobre-nos h2{
+.missao, .visao, .valores{
     width: 50%;
     font-size: 30mm;
     text-align: left;
     font-family: 'Dancing Script', cursive;
+    padding-top: 20px;
     margin-left: 5%;
+}
+
+.missao{
+    color: fuchsia;
+}
+
+.valores{
+    color: cornflowerblue;
+}
+
+.visao{
+    color: goldenrod;
+}
+
+.center-sobre-nos p{
+    width: 50%;
+    text-align: center;
+    margin-right: 5%;
 }
 
 .paragrafo-missao p,.paragrafo-visao p,.paragrafo-valores p{
