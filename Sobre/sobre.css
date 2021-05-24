@@ -143,6 +143,7 @@ section.sobre-nos{
 
     .missao, .visao, .valores{
         width: 100%;
+        padding-top: 40px;
         font-size: 300%;
     }
 
@@ -167,5 +168,9 @@ section.sobre-nos{
         margin-left: 2%;
         margin-right: 2%;
         background-position: 85%;
+    }
+
+    .missao, .visao, .valores{
+        padding-top: 60px;
     }
 }
