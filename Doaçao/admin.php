@@ -287,7 +287,7 @@
           <tr> 
             <th>ID</th> 
             <th>Nome</th> 
-            <th>Celular</th> 
+            <th>Telefone</th> 
             <th>E-mail</th> 
             <th>Descrição</th>
           </tr> 
@@ -312,7 +312,7 @@
             <tr> 
               <td><?php echo $dados_contato['id']; ?></td>
               <td><?php echo $dados_contato['nome']; ?></td> 
-              <td><?php echo $dados_contato['celular']; ?></td>
+              <td><?php echo $dados_contato['telefone']; ?></td>
               <td><?php echo $dados_contato['email']; ?></td> 
               <td><?php echo $dados_contato['descricao']; ?></td>
               </td> 

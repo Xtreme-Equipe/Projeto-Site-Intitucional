@@ -154,12 +154,12 @@
             
 
             $nome         = isset($_POST['nome'])?$_POST['nome']:"";
-            $celular      = isset($_POST['celular'])?$_POST['celular']:"";
+            $celular      = isset($_POST['telefone'])?$_POST['telefone']:"";
             $email        = isset($_POST['email'])?$_POST['email']:"";
-            $descricao   = isset($_POST['descriçao'])?$_POST['descriçao']:"";
+            $descricao   = isset($_POST['descricao'])?$_POST['descricao']:"";
            
                     
-            $sql_contato = "insert into tb_contato (nome,celular,email,descricao) values ('$nome','$celular','$email','$descricao')";
+            $sql_contato = "insert into tb_contato (nome,telefone,email,descricao) values ('$nome','$telefone','$email','$descricao')";
             $salvar = mysqli_query($conexao,$sql_contato);
 
             

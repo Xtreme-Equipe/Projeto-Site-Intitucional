@@ -112,7 +112,7 @@ if ($texto != "") {
 
         <h2 class="faleconosco">FALE CONOSCO</h2>
 
-        <form class="formulario" name="formtest" method="post" action="../Contato/cadastrado_com_sucesso_contato.php">
+        <form class="formulario" name="formtest" method="post" action="cadastrado_com_sucesso_contato.php">
 
             <p class="nome">
                 <input type="texte" name="nome" placeholder="Nome:" required="required">
@@ -123,11 +123,11 @@ if ($texto != "") {
             </p>
 
             <p class="assunto">
-                <input type="number" name="assunto" placeholder="Telefone:" required="required">
+                <input type="number" name="telefone" placeholder="Telefone:" required="required">
             </p>
 
             <p class="mensagem">
-                <textarea type="textarea" maxlength="120" name="mensagem" placeholder="Descreva o motivo do contato:" required="required"></textarea>
+                <textarea type="textarea" maxlength="120" name="descricao" placeholder="Descreva o motivo do contato:" required="required"></textarea>
             </p>
 
             <p class="enviar">
