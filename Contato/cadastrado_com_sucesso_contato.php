@@ -154,7 +154,7 @@
             
 
             $nome         = isset($_POST['nome'])?$_POST['nome']:"";
-            $celular      = isset($_POST['telefone'])?$_POST['telefone']:"";
+            $telefone    = isset($_POST['telefone'])?$_POST['telefone']:"";
             $email        = isset($_POST['email'])?$_POST['email']:"";
             $descricao   = isset($_POST['descricao'])?$_POST['descricao']:"";
            

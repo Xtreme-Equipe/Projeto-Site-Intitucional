@@ -104,7 +104,7 @@
           <?php while($dados_projetos =$consultas_projeto->fetch_array()) { ?> 
             <tr> 
               <td><?php echo $dados_projetos['id']; ?></td>
-              <td><?php echo $dados_projetos['nome']; ?></td> 
+              <td><?php echo $dados_projetos['nome_empreendedor']; ?></td> 
               <td><?php echo $dados_projetos['nome_empresa']; ?></td> 
               <td><?php echo $dados_projetos['cpf']; ?></td> 
               <td><?php echo $dados_projetos['email']; ?></td> 
