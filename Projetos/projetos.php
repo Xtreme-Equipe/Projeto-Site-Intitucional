@@ -171,7 +171,7 @@ if ($imagem_direita) {
         
                         <div class="campo right">
                             <label class="email"><strong>Email</strong> </label>
-                            <input type="email" name="email" id="email" placeholder="Insira seu email" required maxlength="20">
+                            <input type="email" name="email" id="email" placeholder="Insira seu email" required maxlength="50">
                         </div>
                     </div>
 
