@@ -179,7 +179,7 @@
             $descricao         = isset($_POST['descricao'])?$_POST['descricao']:"";
 
                     
-            $sql_projeto = "insert into tb_projetos (nome_empreendedor,nome_empresa,cpf,email,tel_number,celular,cidade,estado,fisica_juridica,descricao,redesocial,youtube,outros) values ('$nome','$nome_empresa','$cpf','$email','$tel_number','$celular','$cidade','$estado','$fisica_juridica','$descricao','$redesocial','$youtube','$outros')";
+            $sql_projeto = "insert into tb_projetos (nome,nome_empresa,cpf,email,tel_number,celular,cidade,estado,fisica_juridica,descricao,redesocial,youtube,outros) values ('$nome','$nome_empresa','$cpf','$email','$tel_number','$celular','$cidade','$estado','$fisica_juridica','$descricao','$redesocial','$youtube','$outros')";
             $salvar = mysqli_query($conexao, $sql_projeto);
         ?>
         
