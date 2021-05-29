@@ -92,7 +92,9 @@ else{
             </div>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="xtreme">by Equipe Xtreme <br>github.com/Xtreme-Equipe</div> 
+    </div>
 </body>
 
 </html>

@@ -87,6 +87,13 @@ h1{
     padding-bottom: 30px;
 }
 
+.xtreme{
+    font-size: medium;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+}
+ 
 /*CSS DO INDEX*/
 .fundo{
     background-image: url("imagens/background.png");
