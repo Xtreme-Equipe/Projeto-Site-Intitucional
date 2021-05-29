@@ -168,11 +168,11 @@ if ($texto != "") {
                 flex-wrap: wrap;">
                     <p>Você pode nos ajudar compartilhando nossa causa</p>
                     <span>
-                        <a target="_blank" href="javascript:void(0)" onclick="share()">
+                        <a target="_blank" href="javascript:void(0)" onclick="share()" >
                             <img class="vó-icons-share"src="../Home/imagem/compartilhar.png" />
                         </a>
                                 
-                        <a target="_blank" href="">
+                        <a target="_blank" href="https://www.instagram.com/explore/locations/1023028168/cecoi-vo-maria-felix/">
                             <img class="vó-icons-share vó-icons-share-insta"src="../Home/imagem/logo-instagram.png" />
                         </a>
 
@@ -189,7 +189,7 @@ if ($texto != "") {
                 <div class="footer-center">
                     <p>2021 
                     <a href="">Vó Maria Félix</a> 
-                        - Todos os direitos reservados.</p>
+                    - Todos os direitos reservados.</p>
                 </div>
 
             </div>
