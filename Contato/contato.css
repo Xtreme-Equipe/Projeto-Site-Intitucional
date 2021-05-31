@@ -40,6 +40,7 @@ section.conteudo{
     margin-right: 2%;
     margin-top: 15px;
     font-size: 6mm;
+    padding-top: 20px;
     border-radius: 10px;
     border: black solid;
     max-width: auto;
@@ -49,6 +50,12 @@ section.conteudo{
     float: center;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 1em;
+}
+
+.left span{
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .imagem{
@@ -182,6 +189,7 @@ textarea{
 
     .left{
         width: 100%;
+        padding-top: 0;
     }
 
     .left p{
