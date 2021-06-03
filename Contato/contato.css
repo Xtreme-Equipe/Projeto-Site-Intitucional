@@ -54,11 +54,6 @@ section.conteudo{
     margin-bottom: 1em;
 }
 
-.left span{
-    display: inline-block;
-    flex-wrap: wrap; 
-}
-
 .imagem{
     position: relative;
     width: 48%;
