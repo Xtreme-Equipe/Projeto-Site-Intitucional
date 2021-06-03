@@ -33,8 +33,17 @@
         </a>
     </div>
 
-    <div class="footer">
-      <div class="xtreme">by Equipe Xtreme <br>github.com/Xtreme-Equipe</div> 
+    <div class="help">
+        <a href="../Administrador/Ajuda.php" target="_blank">
+            <div class="help">
+                <img src="../Administrador/imagens/help-icon.png" alt="Imagem Ajuda" title="Dúvidas sobre painel administrativo? Acesse aqui.">
+            </div>
+        </a>
     </div>
+
+    <div class="footer">
+        <div class="xtreme">by Equipe Xtreme <br>github.com/Xtreme-Equipe</div> 
+      </div> 
+
 </body>
 </html>

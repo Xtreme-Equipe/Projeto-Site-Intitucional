@@ -78,7 +78,7 @@ h1{
 }
 
 .footer {
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;
     background-image: linear-gradient(to right, #319cb7, #76c4d7);
@@ -122,9 +122,28 @@ h1{
     margin: auto;
     padding-top: 220px;
     text-decoration: none;
-    
-
-
 }
 
+.help{
+    float: right;
+    width: 115px;
+    padding-top: 115px;
+    
+    
+}   
+
+/* CSS DA PAG. AJUDA*/
+.video_center{
+    text-align: center;
+    background-image: url("imagens/background_ajuda.png");
+
+}
+.video_center h1{
+    padding-top: 17px;
+    margin-block-start: 0em;
+}
+
+.video_center .footer{
+    position: relative;
+}
 
