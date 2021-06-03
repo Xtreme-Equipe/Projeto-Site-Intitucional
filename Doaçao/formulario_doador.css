@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-/*Estilos da página de cadastro de projetos*/
+/*Estilos da Página de Cadastro de Doação*/
 
+/*
+Conteúdo de Doação
+*/
 section.conteudo{
     position: relative;
     display: flex;
@@ -10,7 +13,6 @@ section.conteudo{
     color: black;
     justify-content: center;
     text-align: justify; 
-    /*border: 1px solid red;*/
 }
 
 .center-conteudo{
@@ -20,7 +22,6 @@ section.conteudo{
     margin-left: 18%;
     margin-right: 18%;
     background-color: rgba(241, 237, 237, 0.151);
-    /*border: 1px solid red;*/
 }
 
 .titulo-doações{
@@ -32,7 +33,6 @@ section.conteudo{
     color: #545454;   
     text-align: center;
     font-size: 7em;  
-    /*border: 1px solid red;*/
 }
 
 .texto{
@@ -44,7 +44,6 @@ section.conteudo{
     text-justify: auto;
     margin-right: 2%;
     margin-top: 30px;
-    /*border: 1px solid red;*/
 }
 
 .imagem{
@@ -53,7 +52,6 @@ section.conteudo{
     float: right;
     margin-left: 2%;
     margin-top: 30px;
-    /*border: 1px solid red;*/
 }
 
 .imagem img{
@@ -67,11 +65,13 @@ section.conteudo{
     width: 100%;
 }
 
+/*
+Formulário de Doação
+*/
 form.formulario{
     position: relative;
     display: flex;
     margin-top: 50px;
-    /*border: 1px solid red;*/
 }
 
 .center-form{
@@ -81,7 +81,6 @@ form.formulario{
     margin-left: 18%;
     margin-right: 18%;
     background-color: #f1f1f1;
-    /*border: 1px solid red;*/
 }
 
 .titulo-form{
@@ -96,14 +95,12 @@ form.formulario{
     font-size: 4em;
     padding-top: 60px;
     margin-bottom: 0px;
-    /*border: 1px solid red;*/
 }
 
 .grupo{
     width: 100%;
     padding-top: 50px;
     border: 0;
-    /*border: 1px solid red;*/
 }
 
 /*Altera o corpo da página*/
@@ -114,21 +111,18 @@ form.formulario{
     margin-right: 1em;
     margin-bottom: 1em;
     padding-top: 5px;
-    /*border: 1px solid red;*/
 }
 
 .campo.left{
     position: relative;
     float: left;
     width: 50%;
-    /*border: 1px solid red;*/
 }
 
 .campo.right{
     position: relative;
     float: right;
     width: 50%;
-    /*border: 1px solid red;*/
 }
 
 .campo.inline.left{
@@ -142,7 +136,6 @@ form.formulario{
     position: relative;
     width: 98%;
     text-align: center;
-    /*border: 1px solid red;*/
 }
 
 .onde-conheceu{
@@ -152,7 +145,6 @@ form.formulario{
     margin-left: 6px;
     margin-right: 6px;
     padding-bottom: 25px;
-    /*border: 1px solid red;*/
 }
 
 .campo label{ /*nome dos campos a serem preenchidos*/
@@ -217,6 +209,9 @@ input, select, textarea, button{
     text-shadow: none;
 }
 
+/*
+Conteúdo de Doação 2 (Banco, QRCode e Endereço da Doação)
+*/
 section.conteudo2{
     position: relative;
     display: flex;
@@ -225,7 +220,6 @@ section.conteudo2{
     color: black;
     justify-content: center;
     text-align: justify; 
-    /*border: 1px solid red;*/
 }
 
 .center-conteudo2{
@@ -235,7 +229,6 @@ section.conteudo2{
     margin-left: 18%;
     margin-right: 18%;
     background-color: rgba(241, 237, 237, 0.151);
-    /*border: 1px solid red;*/
 }
 
 .texto2{
@@ -290,11 +283,13 @@ section.conteudo2{
     margin-top: 30px;
     text-justify: auto;
     font-weight: bold;
-    /*border: 1px solid red;*/
 }
 
 
 @media screen and (max-width: 768px){
+    /*
+    Conteúdo de Doação
+    */
     section.conteudo{
         position: relative;
         margin-top: 50px;
@@ -322,6 +317,9 @@ section.conteudo2{
         width: 100%;
     }
 
+    /*
+    Formulário de Doação
+    */
     form.formulario{
         position: relative;
         margin-top: 50px;
@@ -336,9 +334,9 @@ section.conteudo2{
        font-size:300%;
     }
 
+    /*Altera o corpo da página*/
     .preenchimento-form{
         width: 97%;
-         /*border: 1px solid red;*/
     }
 
     .campo.left{
@@ -359,6 +357,9 @@ section.conteudo2{
         width: 98%;
     }
 
+    /*
+    Conteúdo de Doação 2 (Banco, QRCode e Endereço da Doação)
+    */
     section.conteudo2{
         position: relative;
         margin-top: 50px;
@@ -394,23 +395,29 @@ section.conteudo2{
 }
 
 @media screen and (max-width: 480px){
-     .center-conteudo{
+    /*
+    Conteúdo de Doação
+    */
+    .center-conteudo{
         margin-left: 2%;
         margin-right: 2%;
     }
 
-     .texto p{
+    .texto p{
         font-size: 82%;
     }
 
+    /*
+    Formulário de Doação
+    */
     .center-form{
         margin-left: 2%;
         margin-right: 2%;
     }
 
+    /*Altera o corpo da página*/
     .preenchimento-form{
         width: 94%;
-        /*border: 1px solid red;*/
     }
 
     .campo.inline.left label{
@@ -426,12 +433,15 @@ section.conteudo2{
         width: 105%;
     }
 
+    /*
+    Conteúdo de Doação 2 (Banco, QRCode e Endereço da Doação)
+    */
     .center-conteudo2{
         margin-left: 2%;
         margin-right: 2%;
     }
 
-     .dados{
+    .dados{
         font-size: 82%;
     }
 

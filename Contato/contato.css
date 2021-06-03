@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-/*Estilos da página de cadastro de contato*/
+/*Estilos da Página de Cadastro de Contato*/
 
+/*
+Conteúdo de Contato
+*/
 section.conteudo{
     position: relative;
     display: flex;
@@ -29,8 +32,7 @@ section.conteudo{
     font-family: 'Cabin Sketch', cursive;
     color: #545454;   
     text-align: center;
-    font-size: 7em;  
-    /*border: 1px solid red;*/
+    font-size: 7em; 
 }
 
 .left{
@@ -78,6 +80,9 @@ section.conteudo{
     width: 100%;
 }
 
+/*
+Formulário de Contato
+*/
 form.formulario{
     position: relative;
     display: flex;
@@ -113,6 +118,7 @@ form.formulario{
     margin-bottom: 2em;
 }
 
+/*Altera o corpo da página*/
 .preenchimento-form{
     width: 100%;
     text-align: center;
@@ -127,12 +133,10 @@ form.formulario{
     margin-top: 25px;
 }
 
-
 .campo.center{
     position: relative;
     width: 100%;
     text-align: center;
-    /*border: 1px solid red;*/
 }
 
 input[type="text"], input[type="tel"], input[type="email"], textarea{
@@ -173,6 +177,9 @@ textarea{
 }
 
 @media screen and (max-width: 768px){
+    /*
+    Conteúdo de Contato
+    */
     section.conteudo{
         position: relative;
         margin-top: 50px;
@@ -209,9 +216,11 @@ textarea{
         width: 95%;
     }
 
+    /*
+    Formulário de Contato
+    */
     form.formulario{
         position: relative;
-
     }
 
     .center-formulario{
@@ -240,12 +249,15 @@ textarea{
 }
 
 @media screen and (max-width: 480px){
+    /*
+    Conteúdo de Contato
+    */
     .center-conteudo{
         margin-left: 2%;
         margin-right: 2%;
     }
 
-     .left p{
+    .left p{
         font-size: 82%;
     }
 
@@ -254,6 +266,9 @@ textarea{
         height: 150%;
     }
 
+    /*
+    Formulário de Contato
+    */
     .center-formulario{
         margin-left: 2%;
         margin-right: 2%;

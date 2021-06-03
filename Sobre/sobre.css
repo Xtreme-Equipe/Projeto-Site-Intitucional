@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-/*Estilos da página de cadastro de projetos*/
+/*Estilos da Página Sobre*/
 
+/*
+Título de Sobre Nós
+*/
 section.titulo-conteudo{
     position: relative;
     display: flex;
@@ -10,7 +13,6 @@ section.titulo-conteudo{
     color: black;
     justify-content: center;
     text-align: justify; 
-    /*border: 1px solid red;*/
 }
 
 .center-titulo{
@@ -19,7 +21,6 @@ section.titulo-conteudo{
     flex-wrap: wrap;
     margin-left: 18%;
     margin-right: 18%;
-    /*border: 1px solid red;*/
 }
 
 .titulo--sobre-nos{
@@ -30,10 +31,12 @@ section.titulo-conteudo{
     font-family: 'Cabin Sketch', cursive;
     color: #545454;   
     text-align: center;
-    font-size: 7em;  
-    /*border: 1px solid red;*/
+    font-size: 7em; 
 }
 
+/*
+Conteúdo de Sobre Nós
+*/
 section.sobre-nos{
     position: relative;
     display: flex;
@@ -108,6 +111,9 @@ section.sobre-nos{
 }
 
 @media screen and (max-width: 768px){
+    /*
+    Título de Sobre Nós
+    */
     section.titulo-conteudo{
         position: relative;
         margin-top: 50px;
@@ -127,6 +133,9 @@ section.sobre-nos{
        font-size:300%;
     }
 
+    /*
+    Conteúdo de Sobre Nós
+    */
     section.sobre-nos{
         position: relative;
         margin-top: 30px;
@@ -162,11 +171,17 @@ section.sobre-nos{
 }
 
 @media screen and (max-width: 480px){
-     .center-titulo{
+    /*
+    Título de Sobre Nós
+    */
+    .center-titulo{
         margin-left: 2%;
         margin-right: 2%;
     }
 
+    /*
+    Conteúdo de Sobre Nós
+    */
     .center-sobre-nos{
         margin-left: 2%;
         margin-right: 2%;

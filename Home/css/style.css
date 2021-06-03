@@ -10,7 +10,6 @@
     max-height: 100%;
     background: #ffffff;
     position: relative;
-    /*border: 1px solid red;*/
 }
 
 .center-header{
@@ -584,7 +583,6 @@ Site Responsivo Tablet (Com resoluções de até 768px)
         float: center;
         margin-right: 0;
         margin-left: 0;
-        /*border: 1px solid red;*/
     }
 
     .footer-left p{
@@ -603,7 +601,6 @@ Site Responsivo Tablet (Com resoluções de até 768px)
         float: center;
         margin-right: 0;
         margin-left: 0;
-        /*border: 1px solid red;*/
     }
 
     .footer-right p{
@@ -620,7 +617,6 @@ Site Responsivo Tablet (Com resoluções de até 768px)
         text-align: center;
         display: inline-flex;
         padding-top: 10px;
-        /*border: 1px solid red;*/
     }
 }
 

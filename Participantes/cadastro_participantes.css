@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-/*Estilos da página de cadastro de projetos*/
+/*Estilos da Página de Cadastro de Participantes*/
 
+/*
+Conteúdo de Participantes
+*/
 section.conteudo-alunos{
     position: relative;
     display: flex;
@@ -10,7 +13,6 @@ section.conteudo-alunos{
     color: black;
     justify-content: center;
     text-align: justify; 
-    /*border: 1px solid red;*/
 }
 
 .center-alunos{
@@ -20,7 +22,6 @@ section.conteudo-alunos{
     margin-left: 18%;
     margin-right: 18%;
     background-color: rgba(241, 237, 237, 0.151);
-    /*border: 1px solid red;*/
 }
 
 .titulo-alunos{
@@ -32,7 +33,6 @@ section.conteudo-alunos{
     color: #545454;   
     text-align: center;
     font-size: 7em;  
-    /*border: 1px solid red;*/
 }
 
 .texto{
@@ -41,14 +41,15 @@ section.conteudo-alunos{
     text-align: center;
     font-size: 1.5em;
     text-justify: auto;
-    /*border: 1px solid red;*/
 }
 
+/*
+Formulário de Participantes
+*/
 form.formulario{
     position: relative;
     display: flex;
     margin-top: 50px;
-    /*border: 1px solid red;*/
 }
 
 .center-form{
@@ -58,7 +59,6 @@ form.formulario{
     margin-left: 18%;
     margin-right: 18%;
     background-color: #f1f1f1;
-    /*border: 1px solid red;*/
 }
 
 .titulo-form{
@@ -73,14 +73,12 @@ form.formulario{
     font-size: 4em;
     padding-top: 60px;
     margin-bottom: 0px;
-    /*border: 1px solid red;*/
 }
 
 .grupo{
     width: 100%;
     padding-top: 50px;
     border: 0;
-    /*border: 1px solid red;*/
 }
 
 /*Altera o corpo da página*/
@@ -91,21 +89,18 @@ form.formulario{
     margin-right: 1em;
     margin-bottom: 1em;
     padding-top: 5px;
-    /*border: 1px solid red;*/
 }
 
 .campo.left{
     position: relative;
     float: left;
     width: 50%;
-    /*border: 1px solid red;*/
 }
 
 .campo.right{
     position: relative;
     float: right;
     width: 50%;
-    /*border: 1px solid red;*/
 }
 
 .campo.inline.left{
@@ -119,7 +114,6 @@ form.formulario{
     position: relative;
     width: 98%;
     text-align: center;
-    /*border: 1px solid red;*/
 }
 
 .onde-conheceu{
@@ -129,7 +123,6 @@ form.formulario{
     margin-left: 6px;
     margin-right: 6px;
     padding-bottom: 25px;
-    /*border: 1px solid red;*/
 }
 
 .checkbox{
@@ -202,6 +195,9 @@ input, select, textarea, button{
 
 
 @media screen and (max-width: 768px){
+    /*
+    Conteúdo de Participantes
+    */
     section.conteudo-alunos{
         position: relative;
         margin-top: 50px;
@@ -225,6 +221,9 @@ input, select, textarea, button{
         font-size: 100%;
     }
 
+    /*
+    Formulário de Participantes
+    */
     form.formulario{
         position: relative;
         margin-top: 50px;
@@ -235,13 +234,13 @@ input, select, textarea, button{
         margin-right: 10%;
     }
 
-     .subtitulo{
+    .subtitulo{
        font-size:300%;
     }
 
+    /*Altera o corpo da página*/
     .preenchimento-form{
         width: 97%;
-         /*border: 1px solid red;*/
     }
 
     .campo.left{
@@ -263,23 +262,29 @@ input, select, textarea, button{
 }
 
 @media screen and (max-width: 480px){
-     .center-alunos{
+    /*
+    Conteúdo de Participantes
+    */
+    .center-alunos{
         margin-left: 2%;
         margin-right: 2%;
     }
 
-     .texto p{
+    .texto p{
         font-size: 82%;
     }
 
+    /*
+    Formulário de Participantes
+    */
     .center-form{
         margin-left: 2%;
         margin-right: 2%;
     }
 
+    /*Altera o corpo da página*/
     .preenchimento-form{
         width: 94%;
-        /*border: 1px solid red;*/
     }
 
     .campo.inline.left label{
