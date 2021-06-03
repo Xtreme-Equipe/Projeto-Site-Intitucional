@@ -63,6 +63,7 @@ if ($imagem_direita) {
                 <div class="logo">
                     <a href="../Home/index.php">
                     <img src="../Home/imagem/Vó-logo.png">
+                    </a>
                 </div><!--logo-->
 
                 <ul class="menu">
