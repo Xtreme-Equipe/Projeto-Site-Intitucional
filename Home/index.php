@@ -30,7 +30,7 @@ if ($imagem_direita) {
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css"><!--não remover, faz parte do admin!-->
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css"><!--não remover, faz parte do admin!-->
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script><!--não remover, faz parte do admin!-->
 
 </head>

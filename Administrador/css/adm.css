@@ -96,7 +96,7 @@ h1{
  
 /*CSS DO INDEX*/
 .fundo{
-    background-image: url("imagens/background.png");
+    background-image: url("../imagens/background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

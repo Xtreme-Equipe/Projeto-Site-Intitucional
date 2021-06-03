@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../Home/imagem/Vó-logo.png">
-  <link rel="stylesheet" type="text/css" href="../Doaçao/css/admin.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+  <link rel="stylesheet" type="text/css" href="/Administrador/css/relatorio.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css">
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Admin Dados</title>

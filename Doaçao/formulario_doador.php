@@ -29,7 +29,7 @@ if ($imagem_direita) {
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css">
     <link rel="icon" href="../Home/imagem/Vó-logo.png">
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
     <title>Doações</title>
@@ -234,7 +234,7 @@ if ($imagem_direita) {
 
                 <div class="texto3">
                     <p>Caso transifra dinheiro para a nossa conta,
-                    pedimos que nos envie o informções sobre a transação via e-mail ou ligue para
+                    pedimos que nos envie as informações sobre a transação via e-mail ou ligue para
                     o número de telefone (12) 3966-2823.</p>
                     </br>
                     <p>Para fazer doações pessoalmente:</p>

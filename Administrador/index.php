@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Home/imagem/Vó-logo.png">
-    <link rel="stylesheet" type="text/css" href="../Administrador/adm.css">
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/adm.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css">
 
     <title>Painel administrativo</title>
 
@@ -28,7 +28,7 @@
         <a href="../Home/index.php" class="botao">
              <button class="button" title="Modo edição do site">Editar site</button>
         </a>
-        <a href="../Doaçao/admin.php" class="botao">
+        <a href="../Administrador/relatorio.php" class="botao">
             <button class="button" title="Acessar dados cadastrados através dos formulários site">Acessar relatórios de dados</button>
         </a>
     </div>

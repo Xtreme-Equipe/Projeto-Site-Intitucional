@@ -40,7 +40,7 @@ if ($texto_direito_valores != "") {
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css"><!--não remover, faz parte do admin!-->
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css"><!--não remover, faz parte do admin!-->
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script> <!--não remover, faz parte do admin!-->
     <title>Sobre</title>
 </head>
