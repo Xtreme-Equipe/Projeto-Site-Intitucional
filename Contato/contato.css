@@ -50,12 +50,13 @@ section.conteudo{
     float: center;
     text-align: center;
     margin-top: 30px;
+    flex-wrap: wrap;
     margin-bottom: 1em;
 }
 
 .left span{
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: inline-block;
+    flex-wrap: wrap; 
 }
 
 .imagem{
