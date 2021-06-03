@@ -41,9 +41,5 @@
         </a>
     </div>
 
-    <div class="footer">
-        <div class="xtreme">by Equipe Xtreme <br>github.com/Xtreme-Equipe</div> 
-      </div> 
-
 </body>
 </html>
