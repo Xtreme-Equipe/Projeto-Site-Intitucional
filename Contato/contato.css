@@ -54,6 +54,11 @@ section.conteudo{
     margin-bottom: 1em;
 }
 
+.email{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
 .imagem{
     position: relative;
     width: 48%;
@@ -190,6 +195,10 @@ textarea{
 
     .left p{
         font-size: 90%;
+    }
+
+    .email{
+        display: inline;
     }
 
     .imagem{
