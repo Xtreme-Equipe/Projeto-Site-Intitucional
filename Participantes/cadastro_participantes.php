@@ -141,7 +141,7 @@ if ($texto != "") {
                     <div class="preenchimento-form">
                         <div class="campo left">
                             <label for="nome_pai"><strong>Nome do pai</strong></label>
-                            <input type="text" name="nome_pai" id="nome_pai" placeholder="Nome Completo" required>
+                            <input type="text" name="nome_pai" id="nome_pai" placeholder="Nome Completo">
                             <br>
                             <label><strong>Pai não declarado</strong></label>
                             <input type="checkbox" id="pai_desconhecido" name="paternidade" value="Pai não declarado">
