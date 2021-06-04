@@ -3,7 +3,7 @@
 
 ## :ballot_box_with_check: SPRINT 4
 
-Nesta Sprint, finalizamos a responsividade do site e demos enfâse aos manuais de intruções de intalação e usabilidade do produto.
+Nesta Sprint, finalizamos a responsividade do site e demos enfâse aos manuais de instruções de instalação e usabilidade do produto.
 <br>
 
 ## Sprint Backlog 
@@ -33,7 +33,7 @@ Nesta Sprint, finalizamos a responsividade do site e demos enfâse aos manuais d
 > Para ter uma visão completa acesse: [Manual do Site](../sprint4/manual_site.pdf)
 
 <br>
-<h3 align="center">Instruções em vídeo, assita:</h3>
+<h3 align="center">Instruções em vídeo, assista:</h3>
 <br>
 
 [![Alt text](https://img.youtube.com/vi/9K1p-P8zGd8/0.jpg)](https://www.youtube.com/watch?v=9K1p-P8zGd8)
@@ -49,7 +49,7 @@ Nesta Sprint, finalizamos a responsividade do site e demos enfâse aos manuais d
 
 <br>
 
-<h3 align="center">Instruções em vídeo, assita:</h3>
+<h3 align="center">Instruções em vídeo, assista:</h3>
 <br>
 
 [![Alt text](https://img.youtube.com/vi/Xhc94Nzb01o/0.jpg)](https://www.youtube.com/watch?v=Xhc94Nzb01o)
@@ -63,7 +63,7 @@ Nesta Sprint, finalizamos a responsividade do site e demos enfâse aos manuais d
 
 <br>
 
-<h3 align="center">Instruções em vídeo, assita:</h3>
+<h3 align="center">Instruções em vídeo, assista:</h3>
 
 <br>
 
@@ -71,7 +71,7 @@ Nesta Sprint, finalizamos a responsividade do site e demos enfâse aos manuais d
 
 <br>
 
-<h3 align="center">É poosóvel assistir as intruções também pelo próprio painel, clicando no botão de Ajuda</h3>
+<h3 align="center">É possível assistir as instruções também pelo próprio painel, clicando no botão de Ajuda</h3>
 
 <h1 align="center"> <img src = "../sprint4/painel_ajuda.gif"/></h1>
 
