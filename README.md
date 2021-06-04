@@ -113,7 +113,7 @@
 |**Taís Salomão**|Scrum Master|[@LinkedIn](https://www.linkedin.com/in/tais-salomao/)|[@GitHub](https://github.com/taissalomao)|<img src = "./readme/tais.jpeg">|
 |**Carlos Henrique**|Desenvolvedor |[@LinkedIn](https://www.linkedin.com/in/carlos-henrique-2788a0206/)|[@GitHub](https://github.com/carlosleitiii)|<img src = "./readme/carlos.jpeg">|
 |**Élen Petri**|Desenvolvedor|[@LinkedIn](https://www.linkedin.com/in/elen-petri/)|[@GitHub](https://github.com/elenpetri)| <img src = "./readme/elen.jpeg">|
-|**Julio Cesar**|Desenvolvedor|[@LinkedIn]()|[@GitHub](https://github.com/juliocesar1316)|<img src = "./readme/julio.jpg">|
+|**Julio Cesar**|Desenvolvedor|[@LinkedIn](https://www.linkedin.com/in/juliocesar-07b55a139/)|[@GitHub](https://github.com/juliocesar1316)|<img src = "./readme/julio.jpg">|
 |**Leandro Massafera**|Desenvolvedor|[@LinkedIn](https://www.linkedin.com/in/leandro-massafera/)|[@GitHub](https://github.com/LEANDROMASSAFERA)|<img src = "./readme/leandro.jpeg">|
 |**Rodrigo de Andrade**|Desenvolvedor|[@LinkedIn](https://www.linkedin.com/in/rodrigo-de-andrade-a34605104/)|[@GitHub](https://github.com/RodrigodeAndrade90)| <img src = "./readme/rodrigo.jpeg">|
 |**Vinicios Almeida**|Desenvolvedor|[@LinkedIn](https://www.linkedin.com/in/vin%C3%ADcios-almeida-46800a206/)|[@GitHub](https://github.com/ViniciosAlmeida)|<img src = "./readme/vinicios.jpeg">|

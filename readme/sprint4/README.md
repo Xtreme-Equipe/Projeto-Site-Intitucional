@@ -1,7 +1,7 @@
 
 # Xtreme ![Equipe Xtreme](../sprint3/equipe_xtreme_pequeno.png)
 
-## :ballot_box_with_check: SPRINT 3
+## :ballot_box_with_check: SPRINT 4
 
 Nesta Sprint, finalizamos a responsividade do site e demos enfâse aos manuais de intruções de intalação e usabilidade do produto.
 <br>
