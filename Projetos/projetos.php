@@ -39,7 +39,7 @@ if ($imagem_direita) {
           });
         };
     </script>
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css">
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
 </head>
 
@@ -63,6 +63,7 @@ if ($imagem_direita) {
                 <div class="logo">
                     <a href="../Home/index.php">
                     <img src="../Home/imagem/Vó-logo.png">
+                    </a>
                 </div><!--logo-->
 
                 <ul class="menu">
@@ -171,7 +172,7 @@ if ($imagem_direita) {
         
                         <div class="campo right">
                             <label class="email"><strong>Email</strong> </label>
-                            <input type="email" name="email" id="email" placeholder="Insira seu email" required maxlength="20">
+                            <input type="email" name="email" id="email" placeholder="Insira seu email" required maxlength="50">
                         </div>
                     </div>
 
@@ -225,7 +226,7 @@ if ($imagem_direita) {
                     <div class="preenchimento-form">
                         <div class="campo left">
                             <label for="projeto"><strong>Descrição do projeto</strong></label>
-                            <input type="text" name="descriçao" id="descriçao" placeholder="Descreva seu projeto aqui" required>  
+                            <input type="text" name="descricao" id="descricao" placeholder="Descreva seu projeto aqui" required>  
                         </div>
                     </div>
 

@@ -29,13 +29,14 @@
                 <div class="logo">
                     <a href="../Home/index.html">
                     <img src="../Home/imagem/Vó-logo.png">
+                    </a>
                 </div><!--logo-->
 
                 <ul class="menu">
                     <li><a href="../Home/index.html">Home</a></li>
                     <li><a href="../Sobre/sobre.html">Sobre</a></li>
                     <li><a href="../Projetos/projetos.html">Projetos</a></li>
-                    <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                    <li><a href="../Voluntario/cadastro_voluntario.html">Seja um voluntário</a></li>
                     <li><a class="btn-menu" href="../Contato/Contato2.html">Contato</a></li>
                     <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
                 </ul><!--menu-->
@@ -46,7 +47,7 @@
                         <li><a href="../Home/index.html">Home</a></li>
                         <li><a href="../Sobre/sobre.html">Sobre</a></li>
                         <li><a href="../Projetos/projetos.html">Projetos</a></li>
-                        <li><a href="../Voluntario/cadastrovoluntario.html">Seja um voluntário</a></li>
+                        <li><a href="../Voluntario/cadastro_voluntario.html">Seja um voluntário</a></li>
                         <li><a class="btn-menu" href="../Contato/Contato2.html">Contato</a></li>
                         <li><a href="../Doaçao/formulario_doador.html">Doações</a></li>
                     </div>
@@ -55,25 +56,36 @@
             </div><!--center-->
         </nav>
 
-        <a href="..//Home/index.html">
-            <div class="imagem_check">
-                <img src="imagens/Accept-icon.png" alt="Imagem check">
+        <section class="check">
+            <div class="center-check">
+                <div class="imagem_check">
+                    <a href="..//Home/index.html">
+                        <img src="imagens/Accept-icon.png" alt="Imagem check">
+                    </a>
+                </div>
             </div>
-        </a>
-        <h1 class="h1">SUCESSO!</h1>
-
-        <div class="h2_h3">
-            <h2>Seu cadastro foi enviado!</h2>
-
-            <div class="imagem_maos">
-                <img src="../Participantes/mãos_cadastrado_com_sucesso.jpeg" alt="Imagem de mÃ£os coloridas">
-
-            </div>
-
-            <h3>AGRADECEMOS A SUA PARTICIPAÇÃO!</h3>
-
-        </div>
+        </section>
         
+        <section class="sucesso">
+            <div class="center-sucesso">
+                <div class="titulo-sucesso">
+                    <h1 class="h1">SUCESSO!</h1>
+                </div>
+
+                <div class="subtitulo-sucesso">
+                    <h2 class="h2">Seu cadastro foi enviado!</h2>
+                </div>
+
+                <div class="imagem_maos">
+                    <img src="imagens/mãos_cadastrado_com_sucesso.jpeg" alt="Imagem de mÃ£os coloridas">
+                </div>
+
+                <div class="titulo-agradecimento">
+                    <h3 class="h3">AGRADECEMOS A SUA PARTICIPAÇÃO!</h3>
+                </div>
+            </div>
+        </section>
+
         <footer class="footer-vó">
             <div class="center-footer">
                 <div class="footer-left">
@@ -112,7 +124,7 @@
 
             </div>
         </footer>
-        
+
     </div>
 
     <script>
@@ -146,28 +158,26 @@
         });
 
     </script>
+        
 
 </body>
 <!--  
 <?php
-            $conexao = mysqli_connect("localhost","root","","bd_voluntario");
+    $conexao = mysqli_connect("localhost","root","","bd_contato");
             
 
-            $nome         = isset($_POST['nome'])?$_POST['nome']:"";
-            $nascimento   = isset($_POST['nascimento'])?$_POST['nascimento']:"";
-            $cpf          = isset($_POST['cpf'])?$_POST['cpf']:"";
-            $rg           = isset($_POST['rg'])?$_POST['rg']:"";
-            $tel_number   = isset($_POST['tel_number'])?$_POST['tel_number']:"";
-            $celular      = isset($_POST['celular'])?$_POST['celular']:"";
-            $email        = isset($_POST['email'])?$_POST['email']:"";
-            $voluntario   = isset($_POST['voluntario'])?$_POST['voluntario']:"";
-            $especialidade= isset($_POST['especialidade'])?$_POST['especialidade']:"";
+    $nome         = isset($_POST['nome'])?$_POST['nome']:"";
+    $celular      = isset($_POST['celular'])?$_POST['celular']:"";
+    $email        = isset($_POST['email'])?$_POST['email']:"";
+    $descriçao   = isset($_POST['descriçao'])?$_POST['descriçao']:"";
+           
                     
-            $sql1 = "insert into tb_voluntario (nome,nascimento,cpf,rg,tel_number,celular,email,voluntario,especialidade) values ('$nome','$nascimento','$cpf','$rg','$tel_number','$celular','$email','$voluntario','$especialidade')";
-            $salvar = mysqli_query($conexao,$sql1);
+    $sql_contato = "insert into tb_contato (nome,celular,email,descriçao) values ('$nome','$celular','$email','$descriçao')";
+    $salvar = mysqli_query($conexao,$sql_contato);
 
             
             
-        ?>
-        -->
+?>
+-->
 </html>
+

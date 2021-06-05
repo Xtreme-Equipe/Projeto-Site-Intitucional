@@ -9,10 +9,9 @@ if ($id_adm != "") {
     header('Location: /Projeto-Site-Intitucional/Administrador/listagem_adm.php?');
 }
 
-if ($id_adm == ""){
+if ($id_adm == "") {
     $title_pag = "Adicionar novo administrador";
-}
-else{
+} else {
     $title_pag = "Editar administrador";
 }
 ?>
@@ -25,9 +24,9 @@ else{
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Home/imagem/Vó-logo.png">
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css">
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
-    <link rel="stylesheet" type="text/css" href="../Administrador/adm.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/adm.css">
 
     <title>Administrador</title>
 </head>
@@ -38,11 +37,12 @@ else{
     $botao_esquerdo['action'] = "index.php";
     $welcome["css"] = "welcome-voltar";
     $botao_direito["css"] = "hidden";
+    $_GET["admin"] = "1";
     include('../Administrador/admin_header.php');
     ?>
-    <div class="background"id="tabela">
+    <div class="background" id="tabela">
         <table>
-            <tr class="cabecalho" >
+            <tr class="cabecalho">
                 <th>Nome</th>
                 <th>E-mail</th>
                 <th class="coluna_acoes">Ações</th>
@@ -68,11 +68,10 @@ else{
                 echo "      </button>";
                 echo "  </form>";
                 echo "  <form class=\"right\" action=\"listagem_adm.php\" method=\"POST\">";
-                if($_SESSION["email"] == $item_da_lista_resultado["email"]){
+                if ($_SESSION["email"] == $item_da_lista_resultado["email"]) {
                     echo "      <button class=\"botao_acoes\"disabled>";
-                }
-                else{
-                     echo "      <button class=\"botao_acoes\">";
+                } else {
+                    echo "      <button class=\"botao_acoes\">";
                 }
                 echo "          <input type=\"hidden\" name=\"userid\" value=\"" . $item_da_lista_resultado["id"] . "\">";
                 echo "          <img class=\"\" src=\"imagens/Trash-icon.png\" alt=\"Imagem de remoção\" title=\"Remover administrador\">";
@@ -86,12 +85,15 @@ else{
         </table>
         <div>
             <a href="../Administrador/editar_adm.php">
-            <div class="newuser">
-                <img src="../Administrador/imagens/adduser.png" alt="Imagem add user" title="Adicionar novo administrador">
-            </div>
+                <div class="newuser">
+                    <img src="../Administrador/imagens/adduser.png" alt="Imagem add user" title="Adicionar novo administrador">
+                </div>
+            </a>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="xtreme">by Equipe Xtreme <br>github.com/Xtreme-Equipe</div>
+    </div>
 </body>
 
 </html>

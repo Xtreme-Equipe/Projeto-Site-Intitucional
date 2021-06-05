@@ -1,11 +1,11 @@
+<!-- Para cada pagina de cadastro tera que ter um cadastro concluido a parte pra conter a conexao com mysql-->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Doaçao/cadastrado_com_sucesso.css" media="screen">
+    <link rel="stylesheet" href="cadastrado_com_sucesso.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../Home/css/style.css">
     <link rel="icon" href="../Home/imagem/Vó-logo.png">
     <title>Cadastro Concluído</title>
@@ -29,6 +29,7 @@
                 <div class="logo">
                     <a href="../Home/index.php">
                     <img src="../Home/imagem/Vó-logo.png">
+                    </a>
                 </div><!--logo-->
 
                 <ul class="menu">
@@ -54,25 +55,36 @@
 
             </div><!--center-->
         </nav>
-        
-        <a href="..//Home/index.php">
-            <div class="imagem_check">
-                <img src="accept-icon.png" alt="Imagem check">
+
+        <section class="check">
+            <div class="center-check">
+                <div class="imagem_check">
+                    <a href="..//Home/index.php">
+                        <img src="Accept-icon.png" alt="Imagem check">
+                    </a>
+                </div>
             </div>
-        </a>
-        <h1 class="h1">SUCESSO!</h1>
+        </section>
 
-        <div class="h2_h3">
-            <h2>Seu cadastro foi enviado!</h2>
+        <section class="sucesso">
+            <div class="center-sucesso">
+                <div class="titulo-sucesso">
+                    <h1 class="h1">SUCESSO!</h1>
+                </div>
 
-            <div class="imagem_maos">
-                <img src="../Participantes/mãos_cadastrado_com_sucesso.jpeg" alt="Imagem de mÃ£os coloridas">
+                <div class="subtitulo-sucesso">
+                    <h2 class="h2">Seu cadastro foi enviado!</h2>
+                </div>
 
+                <div class="imagem_maos">
+                    <img src="mãos_cadastrado_com_sucesso.jpeg" alt="Imagem de mÃ£os coloridas">
+                </div>
+
+                <div class="titulo-agradecimento">
+                    <h3 class="h3">AGRADECEMOS A SUA PARTICIPAÇÃO!</h3>
+                </div>
             </div>
-
-            <h3>AGRADECEMOS A SUA PARTICIPAÇÃO!</h3>
-
-        </div>
+        </section>
         
         <footer class="footer-vó">
             <div class="center-footer">
@@ -148,20 +160,20 @@
     </script>
 
 </body>
-   
+ 
 <?php
-            $conexao = mysqli_connect("localhost","root","","bd_doacao");
+    $conexao = mysqli_connect("localhost","root","","bd_doacao");
 
-            $nome         = isset($_POST['nome'])?$_POST['nome']:"";
-            $cpf          = isset($_POST['cpf'])?$_POST['cpf']:"";
-            $tel_number   = isset($_POST['tel_number'])?$_POST['tel_number']:"";
-            $celular      = isset($_POST['celular'])?$_POST['celular']:"";
-            $endereco     = isset($_POST['endereco'])?$_POST['endereco']:"";
-            $anonimo      = isset($_POST['anonimo'])?$_POST['anonimo']:"";
+    $nome         = isset($_POST['nome'])?$_POST['nome']:"";
+    $cpf          = isset($_POST['cpf'])?$_POST['cpf']:"";
+    $tel_number   = isset($_POST['tel_number'])?$_POST['tel_number']:"";
+    $celular      = isset($_POST['celular'])?$_POST['celular']:"";
+    $endereco     = isset($_POST['endereco'])?$_POST['endereco']:"";
+    $anonimo      = isset($_POST['anonimo'])?$_POST['anonimo']:"";
                     
-            $sql_doacao = "insert into tb_doacao (nome,cpf,tel_number,celular,endereco,anonimo) values ('$nome','$cpf','$tel_number','$celular','$endereco','$anonimo')";
-            $salvar = mysqli_query($conexao,$sql_doacao);
+    $sql_doacao = "insert into tb_doacao (nome,cpf,tel_number,celular,endereco,anonimo) values ('$nome','$cpf','$tel_number','$celular','$endereco','$anonimo')";
+    $salvar = mysqli_query($conexao,$sql_doacao);
             
-        ?>
-
+?>
+        
 </html>

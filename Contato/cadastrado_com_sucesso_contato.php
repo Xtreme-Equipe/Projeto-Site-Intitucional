@@ -29,6 +29,7 @@
                 <div class="logo">
                     <a href="../Home/index.php">
                     <img src="../Home/imagem/Vó-logo.png">
+                    </a>
                 </div><!--logo-->
 
                 <ul class="menu">
@@ -47,7 +48,7 @@
                         <li><a href="../Sobre/sobre.php">Sobre</a></li>
                         <li><a href="../Projetos/projetos.php">Projetos</a></li>
                         <li><a href="../Voluntario/cadastro_voluntario.php">Seja um voluntário</a></li>
-                        <li><a class="btn-menu"href="../Contato/Contato2.php">Contato</a></li>
+                        <li><a class="btn-menu" href="../Contato/Contato2.php">Contato</a></li>
                         <li><a href="../Doaçao/formulario_doador.php">Doações</a></li>
                     </div>
                 </ul>
@@ -55,24 +56,35 @@
             </div><!--center-->
         </nav>
 
-        <a href="..//Home/index.php">
-            <div class="imagem_check">
-                <img src="imagens/Accept-icon.png" alt="Imagem check">
+        <section class="check">
+            <div class="center-check">
+                <div class="imagem_check">
+                    <a href="..//Home/index.php">
+                        <img src="imagens/Accept-icon.png" alt="Imagem check">
+                    </a>
+                </div>
             </div>
-        </a>
-        <h1 class="h1">SUCESSO!</h1>
+        </section>
 
-        <div class="h2_h3">
-            <h2>Seu cadastro foi enviado!</h2>
+        <section class="sucesso">
+            <div class="center-sucesso">
+                <div class="titulo-sucesso">
+                    <h1 class="h1">SUCESSO!</h1>
+                </div>
 
-            <div class="imagem_maos">
-                <img src="../Participantes/mãos_cadastrado_com_sucesso.jpeg" alt="Imagem de mÃ£os coloridas">
+                <div class="subtitulo-sucesso">
+                    <h2 class="h2">Seu cadastro foi enviado!</h2>
+                </div>
 
+                <div class="imagem_maos">
+                    <img src="imagens/mãos_cadastrado_com_sucesso.jpeg" alt="Imagem de mÃ£os coloridas">
+                </div>
+
+                <div class="titulo-agradecimento">
+                    <h3 class="h3">AGRADECEMOS A SUA PARTICIPAÇÃO!</h3>
+                </div>
             </div>
-
-            <h3>AGRADECEMOS A SUA PARTICIPAÇÃO!</h3>
-
-        </div>
+        </section>
         
         <footer class="footer-vó">
             <div class="center-footer">
@@ -148,22 +160,22 @@
     </script>
 
 </body>
-
+ 
 <?php
-            $conexao = mysqli_connect("localhost","root","","bd_contato");
+    $conexao = mysqli_connect("localhost","root","","bd_contato");
             
 
-            $nome         = isset($_POST['nome'])?$_POST['nome']:"";
-            $celular      = isset($_POST['celular'])?$_POST['celular']:"";
-            $email        = isset($_POST['email'])?$_POST['email']:"";
-            $descriçao   = isset($_POST['descriçao'])?$_POST['descriçao']:"";
+    $nome         = isset($_POST['nome'])?$_POST['nome']:"";
+    $celular      = isset($_POST['celular'])?$_POST['celular']:"";
+    $email        = isset($_POST['email'])?$_POST['email']:"";
+    $descriçao   = isset($_POST['descriçao'])?$_POST['descriçao']:"";
            
                     
-            $sql_contato = "insert into tb_contato (nome,celular,email,descriçao) values ('$nome','$celular','$email','$descriçao')";
-            $salvar = mysqli_query($conexao,$sql_contato);
+    $sql_contato = "insert into tb_contato (nome,celular,email,descriçao) values ('$nome','$celular','$email','$descriçao')";
+    $salvar = mysqli_query($conexao,$sql_contato);
 
             
             
-        ?>
+?>
         
 </html>

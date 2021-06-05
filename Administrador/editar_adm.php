@@ -61,9 +61,9 @@ if ($id_adm != "") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Home/imagem/Vó-logo.png">
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css">
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script>
-    <link rel="stylesheet" type="text/css" href="../Administrador/adm.css">
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/adm.css">
 
     <title><?= $title_pag ?></title>
 </head>
@@ -74,6 +74,7 @@ if ($id_adm != "") {
     $botao_esquerdo['action'] = "listagem_adm.php";
     $botao_direito["css"] = "hidden";
     $welcome["css"] = "welcome-voltar";
+    $_GET["admin"] = "1";
     include('../Administrador/admin_header.php');
     ?>
     <div class="background" id="tabela">
@@ -101,7 +102,9 @@ if ($id_adm != "") {
             </div>
         </form>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="xtreme">by Equipe Xtreme <br>github.com/Xtreme-Equipe</div> 
+    </div>
 </body>
 
 </html>

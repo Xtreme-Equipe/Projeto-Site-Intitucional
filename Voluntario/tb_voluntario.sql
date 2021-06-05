@@ -8,6 +8,9 @@ create table if not exists tb_voluntario(
     celular varchar (11) not null, 
     email varchar (40) not null,
     voluntario varchar (12) null,
+    redesocial varchar (12) null,
+    youtube varchar (10) null,
+    outros varchar (10) null,
     especialidade varchar (80)
 
 )default charset utf8;

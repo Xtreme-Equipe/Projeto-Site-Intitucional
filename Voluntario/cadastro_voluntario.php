@@ -38,7 +38,7 @@ if ($imagem_direita) {
               });
             };
           </script>
-    <link rel="stylesheet" type="text/css" href="../Administrador/admin_header.css"><!--não remover, faz parte do admin!-->
+    <link rel="stylesheet" type="text/css" href="../Administrador/css/admin_header.css"><!--não remover, faz parte do admin!-->
     <script src="../ckeditor_4.16.0_b1a78bed529d/ckeditor/ckeditor.js"></script> <!--não remover, faz parte do admin!-->
 </head>
 
@@ -62,6 +62,7 @@ if ($imagem_direita) {
                 <div class="logo">
                     <a href="../Home/index.php">
                     <img src="../Home/imagem/Vó-logo.png">
+                    </a>
                 </div><!--logo-->
 
                 <ul class="menu">
