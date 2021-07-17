@@ -60,9 +60,9 @@
 
 - <img src = "./readme/feito.jpeg" /> [SPRINT 4](https://github.com/Xtreme-Equipe/Projeto-Site-Intitucional/tree/main/readme/sprint4) - 17/05/2021 a 05/06/2021
 
-- <img src = "./readme/a_fazer.jpeg" /> Apresentação Final - 06/06/2021 a 11/06/2021
+- <img src = "./readme/feito.jpeg" /> Apresentação Final - 06/06/2021 a 11/06/2021
 
-- <img src = "./readme/a_fazer.jpeg" /> Feira de Soluções - 14/06/2021 a 18/06/2021
+- <img src = "./readme/feito.jpeg" /> Feira de Soluções - 14/06/2021 a 18/06/2021
 
 
 <h1 align="center"> <img src = "./readme/cronograma_sprints.png"/></h1>
